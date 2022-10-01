@@ -6,12 +6,20 @@ body {
 .container{
   width:1280px;  
 }
-.case-study-intro{
+#case-study-intro{
 
     margin:200px auto 0 auto;
 
 }
-
+#case-study-summary{
+    float:left;
+    width:70%;
+        margin-right:80px
+}
+#case-study-aims{
+    float:left;
+    width:30%;
+}
 nav ul, footer ul {
     font-family:'Source-Sans-Pro','Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
