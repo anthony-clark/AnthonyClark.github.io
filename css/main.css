@@ -13,12 +13,12 @@ body {
 }
 #case-study-summary{
     float:left;
-    width:70%;
+    width:60%;
         margin-right:80px
 }
 #case-study-aims{
     float:left;
-    width:30%;
+
 }
 nav ul, footer ul {
     font-family:'Source-Sans-Pro','Helvetica', 'Arial', 'Sans-Serif';
