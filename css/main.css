@@ -3,8 +3,11 @@ body {
     width: 70%;
     font-family: 'Figtree';
 }
-container.wide{
-width:1280px;
+.container{
+  width:1280px;  
+}
+.case-study-intro{
+
     margin:200px auto 0 auto;
 
 }
