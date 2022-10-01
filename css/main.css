@@ -25,6 +25,7 @@ width:30%;
 }
 #case-study-aims ul li{
     padding:16px 0 16px 0;
+    display:block;
 }
 nav ul, footer ul {
     font-family:'Source-Sans-Pro','Helvetica', 'Arial', 'Sans-Serif';
