@@ -4,21 +4,27 @@ layout: default
 title: Anthony Clark - Design Portfolio
 ---
 <!DOCTYPE html>
-	<html>
+	<html lang="en">
 		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
+			
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 			<link rel="stylesheet" type="text/css" href="css/main.css">
 			<link rel="preconnect" href="https://fonts.gstatic.com">
 			<link href="https://fonts.googleapis.com/css?family=Figtree:800" rel="stylesheet"  type='text/css'>
 			<link href="https://fonts.googleapis.com/css?family=Figtree:300" rel="stylesheet"  type='text/css'>
 			<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700" rel='stylesheet' type='text/css'> 
 			<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+		
+		
 		</head>
 		<body>
 			<nav>
 	    		<ul>
-	        		<li><a href="/" class="back-button"><span class="material-icons-outlined">home</span></a></li>
+	        		<li><a href="/" class="back-button"><span class="material-icons-outlined">arrow_back</span></a></li>
 	    		</ul>
 			</nav>
 
@@ -47,8 +53,8 @@ title: Anthony Clark - Design Portfolio
 </div>
 
 
-</div><!-- /.container -->
-<div class="hero-image"> </div>
+</div>
+<div class="hero-image playmaker"> </div>
 <div class="container narrow">
 	<h2 class="larger-h2">Creating Playmaker</h2>
 	<h3>Atomic Design Approach</h3>
@@ -56,10 +62,38 @@ title: Anthony Clark - Design Portfolio
 	<h3>Mobile First</h3>
 	<p>Along with Atomic Design, working from a mobile first approach was also essential. Dealing with the smaller screen first meant the harder layout and design problems were dealt with earlier and allowed for a less problematic design phase. This was a massive time saver when it came to templates such as match centre, fixtures and player profiles.</p>
 </div>
-<div class="hero-image"> </div>
-<div class="hero-image"><h2>Key Templates & Features</h2></div>
+<div class="hero-image" style="background-color:#333;"> </div>
+
+
+
 <div class="container">
-<div class="screenshot-info">
+	<div class="screenshot-info-left">
+		<h2>Streamlined Design</h2>
+		<p>Flexible modules were designed for numerous elements such as player profiles. This saved having a number of different modules just to show a player in different pages/slots. Instead I designed one flexible module that could be tweaked using CSS to cater for a number of different scenarios. The same idea was used for features like next/last match modules and promotion modules. This, along with the other processes, led to a more streamlined design and development process.</p>
+	</div>
+	<div class="screenshot-right">Image here</div>
+</div>
+
+
+
+<div class="container">
+	<div class="screenshot-info-right">
+		<h2>Forward Planning</h2>
+		<p>To future proof the platform every symbol in Sketch was ordered and labelled and libraries were created. This will allow other designers to quickly create templates and modules that were consistant and available in the product. Moving forward this will allow future websites using this platform to be created with ease.</p>
+	</div>
+	<div class="screenshot-left">Image here</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="hero-image playmaker-templates"><h2>Key Templates & Features</h2></div>
+<div class="container">
+<div class="screenshot-info-left">
 	<h2>Homepage</h2>
 	<p>The homepage is built up of a number of different modules: Headline News, Latest News, Fixtures & Results, Videos, chosen Player Profile, Social feed, featured promotion and product carousel for the Online Shop. The idea being that the club can decide which modules to show and in what order, depending on their current focus and requirements. For example if they have just announced the new kit they may want the shop or promo module sitting higher up the page. Likewise if the season is over and there's no fixtures then they can turn the fixtures module off altogether.</p>
 	<h3 class="template-features">Template features</h3>
@@ -70,14 +104,157 @@ title: Anthony Clark - Design Portfolio
 	<li>Fully customisable shop module means clubs can promote anything from Kit ranges and training gear to Mother's/Father's day gifts.</li>
 	</ul>
 </div>
-<div class="screenshot-right"><img src="images/playmaker/homepage.jpeg" alt=""></div>
-	</div>
-<footer>
+<div class="screenshot-right"><img src="images/playmaker/homepage.jpg" alt=""></div>
+
+</div>
+<div class="container">
+<div class="screenshot-info-right">
+	<h2>Article pages</h2>
+	<p>My aim was to design Article pages that could be easily consumed. The use of a left column for content and right column for flashing banners has become the norm for many football websites. However, I have used the one-column approach as it allows the user to read the content without distraction.</p><p>
+		Within the main content, the club have the flexibility to add images, galleries, videos, captions and a host of other embedded content to create content-rich pages that fans will enjoy reading. Below this we bring in related and latest news to allow fans to move easily on to more news. Clubs also have the option to bring a range of modules from the home page onto the footer of the page to promote other features such as the new kit.</p>
+	<h3 class="template-features">Template features</h3>
 	<ul>
-		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
+	<li>Clear single-column approach</li>
+	<li>Host of embeddable content and features</li>
+	<li>Related content continues the fans' journeys</li>
+	<li>Clubs can drop modules on to this page to promote features such as player profiles and the shop</li>
 	</ul>
-</footer>
+</div>
+<div class="screenshot-left"><img src="images/playmaker/news-article.jpg" alt=""></div>
+
+</div>
+<div class="container">
+
+<div class="screenshot-info-left">
+	<h2>Team Listings</h2>
+	<p>'A team listing with a difference' - the default setting is for the listing to clearly show the selected team in order of position but through the use of filters the fan can hone in on stats such as who has the best pass completion or which defender has the most goals. Essentially this page is two-in-one: a team sheet and a season statistics breakdown.</p><p>
+		Further to this, the page allows fans to easily see players who are in/out on loan as well as who the skipper/vice skipper are. Fans can use the tabs at the top to easily jump between squads.</p>
+	<h3 class="template-features">Template features</h3>
+	<ul>
+	<li>Easy to browse the Team sheet</li>
+	<li>Options to order team by a host of stats</li>
+	<li>Quickly jump between teams using tabs</li>
+	</ul>
+</div>
+<div class="screenshot-right"><img src="images/playmaker/player-listing.jpg" alt=""></div>
+
+</div>
+<div class="container">
+<div class="screenshot-info-right">
+	<h2>Player Profiles</h2>
+	<p>'Everything you would want to know about a player all on one page' - fans can view a player's details and seasonal stats, as well as browse content such as his bio, latest news, videos or social posts.</p><p>
+		The 'Top Hero' area is flexible to cater for either a cut-out image, a match shot or even a video walk on, allowing the clubs to showcase the player in the best way.</p>
+	<h3 class="template-features">Template features</h3>
+	<ul>
+	<li>Host of player-specific content</li>
+	<li>Seasonal stats for each player</li>
+	<li>Flexible hero area allows for imagery and video</li>
+	<li>Ability to have sponsors for each player</li>
+	<li>Easy access to other players</li>
+	</ul>
+</div>
+<div class="screenshot-left"><img src="images/playmaker/player-profile.jpg" alt=""></div>
+
+
+</div>
+<div class="container">
+<div class="screenshot-info-left">
+	<h2>Fixtures & Results</h2>
+	<p>The Fixtures & Results page was designed to make the full calendar of games easier to view. The page default shows the current month of the season allowing fans to get to the next or last game easily. Fans can then quickly jump through the season month by month.</p><p>
+		Each fixture can be expanded to view either a buildup summary of an upcoming game or a post match summary highlighting the score and key incidents.
+		</p>
+	<h3 class="template-features">Template features</h3>
+	<ul>
+	<li>Fixtures viewable from a month by month approach</li>
+	<li>Each fixture expands to show more match info</li>
+	<li>Televised games highlighted in the list</li>
+	</ul>
+</div>
+<div class="screenshot-right"><img src="images/playmaker/fixtures.jpg" alt=""></div>
+
+
+
+</div>
+<div class="container">
+<div class="screenshot-info-right">
+	<h2>Match Centre</h2>
+	<p>This was designed to be a 'one stop shop' for everything match related. The match centre allows fans to follow all the build-up, live match and post match reaction all in place. Clubs can pull in updates, news and video related to the match along with any social posts to provide a rich experience for fans following the game online.</p><p>
+		The live match brings in a host of stats to give fans a real sense of what is going on in the current game. This page also shows the scorelines and stats from related games, preventing fans from having to leave the site to see how other results will affect their team's progress.
+		</p>
+	<h3 class="template-features">Template features</h3>
+	<ul>
+	<li>Pre, live and post match updates all in one place</li>
+	<li>Flexible content stream allows clubs to provide in depth coverage</li>
+	<li>In depth match stats from Opta</li>
+	<li>Integrated betting showing odds for next goal scorers etc</li>
+	<li>Ability to listen live</li>
+	<li>Future plans for 'watch live' facility</li>
+	</ul>
+</div>
+<div class="screenshot-left"><img src="images/playmaker/match-centre.jpg" alt=""></div>
+
+	</div>
+
+
+
+	<div class="container narrow">
+		<h2 class="larger-h2 center">Great on any device</h2>
+		<h3 class="center">Designed from the mobile up, meaning you can follow<br>your club wherever you are.</h3>
+		</div>
+
+
+
+
+	<div class="container">
+	
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		
+		<div class="carousel-inner">
+		  <div class="carousel-item active">
+			<img class="d-block w-100" src="images/lexus/filters.png" alt="First slide">
+		  </div>
+		  <div class="carousel-item">
+			<img class="d-block w-100" src="images/lexus/filter2.png" alt="Second slide">
+		  </div>
+		  <div class="carousel-item">
+			<img class="d-block w-100" src="images/lexus/filter3.png" alt="Third slide">
+		  </div>
+		  <div class="carousel-item">
+			<img class="d-block w-100" src="images/lexus/filter4.png" alt="Fourth slide">
+		  </div>
+		  <div class="carousel-item">
+			<img class="d-block w-100" src="images/lexus/filter5.png" alt="Fifth slide">
+		  </div>
+		  <div class="carousel-item">
+			<img class="d-block w-100" src="images/lexus/filter6.png" alt="Sixth slide">
+		  </div>
+		</div>
+	
+		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		  <span class="carousel-control-prev-icon  material-icons-outlined" aria-hidden="true">arrow_back</span>
+		  <span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		  <span class="carousel-control-next-icon material-icons-outlined" aria-hidden="true">arrow_forward</span>
+		  <span class="sr-only">Next</span>
+		</a>
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2"><li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+		  </ol>
+		
+	  </div>
+	</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
 
