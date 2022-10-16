@@ -4,6 +4,7 @@ body {
     margin:0;
     padding:0;
     background: #1A202C;
+
 }
 
 .container{
@@ -16,6 +17,14 @@ body {
     max-width:900px; 
     margin:120px auto 0 auto;
     display: block;
+  }
+  section{
+    margin: 0;
+    padding: 0;
+  }
+
+  section.project-list div.container.narrow{
+    margin: 0 auto;
   }
 #case-study-meta{
     display: flex;
@@ -118,10 +127,7 @@ h2 {
 }
 h2.larger-h2{
     font-size: 4em; 
-    background-image: linear-gradient(#3c4a65, #FFFFFF);
-    background-clip: text;
- -webkit-background-clip: text;
- color: transparent;
+
 }
 h3 {
     font-size: 1.8em;
@@ -281,9 +287,61 @@ opacity: 1;
     color: #8897aa;
 }
 
+section div.container{
+    display: block;
+    margin: 0 auto;
+}
+section.project-list{
+    background-color:#151A23 ;
+    padding: 120px 0 120px 0;
+    margin-top: 120px;
+    clear: both;
+  }
 
+  section.project-list ul{
+    list-style: none;
+    margin: 0;
+    pad: 0;
+  }
+  section.project-list ul li a{
+    border-bottom:1px solid #202c41;
+    padding: 60px 0 60px 0;
+    display: block;
+    font-size: 1.3em;
+    color:#8897aa;
+  }
+  section.project-list ul li a.active:hover span{
+    right: 30px;
+margin-top: -90px;
+  }
+  section.project-list ul li a strong{
+    display: block;
+    margin: 0 0 12px 0;
+    padding: 0;
+    font-size: 2em;
+    line-height: 1em;
+     font-family:'Figtree','Helvetica', 'Arial', 'Sans-Serif';
+    font-weight: 300;
+    color: #FFFFFF;
+  }
+  section.project-list ul li a span{
+  position: absolute;
+  right: 30px;
+    font-size: 88px;
+    margin-top:-60px;
+    transition: all 0.3s ease-out;
 
+  }
+  section.project-list ul li a:hover span{
+    right: 0px;
+   
 
-
-
+    }
+    section.project-list ul li a:hover{
+        text-decoration: none;
+        color:#8897aa; 
+    }
+    section.project-list ul li a:hover strong{
+        color:#8897aa; 
+    }
 
