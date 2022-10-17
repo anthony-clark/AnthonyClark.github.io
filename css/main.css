@@ -115,7 +115,8 @@ h1 {
      letter-spacing: -2px;
      /*color: #fff;*/
      color: #4284F0;
-     background-image: linear-gradient(80deg, #3c4a65, #FFFFFF);
+     /*background-image: linear-gradient(80deg, #3c4a65, #FFFFFF);*/
+     background-image: linear-gradient(80deg, #0F52BD, #4284F0);
      background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
