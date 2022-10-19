@@ -359,6 +359,9 @@ margin-top: -90px;
             h1 {
                 font-size: 5em;
             }
+            p {
+                font-size: 1.2em;
+            }
             #case-study-summary{
                 float:none;
                 width:100%;
