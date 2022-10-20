@@ -49,16 +49,21 @@ body {
 #case-study-summary h2{
 font-size: 2.5em;
 font-family:'Figtree','Helvetica', 'Arial', 'Sans-Serif';
-font-weight: 300;
+font-weight: 600;
 margin: 0 0 32px 0;
 }
 #case-study-aims h3{
-    margin: 8px 0 32px 0;
+    margin: 10px 0 30px 0;
+    font-size: 1.7em;
+    font-weight: 600;
+    font-family:'Figtree','Helvetica', 'Arial', 'Sans-Serif';
+    color: #fff;
     }
 #case-study-aims{
     float:right;
 width:30%;
 }
+
 ul{
 margin:0 0 0 16px;
     list-style: disc;
@@ -123,26 +128,34 @@ h2 {
     font-size: 2.8em;
      font-family:'Figtree','Helvetica', 'Arial', 'Sans-Serif';
     font-weight: 800;
-     margin: 0 0 32px 0;
+     margin: 0 0 48px 0;
           color: #fff;
 }
 h2.larger-h2{
-    font-size: 4em; 
+    font-size: 5em; 
 
 }
 h3 {
-    font-size: 1.8em;
+    font-size: 2.8em;
      font-family:'Figtree','Helvetica', 'Arial', 'Sans-Serif';
-    font-weight: 300;
+    font-weight: 600;
      margin: 0 0 32px 0;
      color: #fff;
      line-height: 1.4em;
 }
-h3.template-features {
+h4.template-features {
     font-size: 1.5em;
+    font-weight: 600;
+    margin: 0 0 32px 0;
+    font-family:'Figtree','Helvetica', 'Arial', 'Sans-Serif';
+    color: #fff;
 }
 .center{
     text-align: center;
+}
+h3.center{
+    font-weight: 300;
+    font-size: 2.5em;
 }
 p {
     line-height: 1.7em;
@@ -174,33 +187,33 @@ height: 600px;
 clear: both;
 margin-top:120px;
 }
-.hero-image.playmaker{
-    background-image: url("../images/playmaker/playmaker-hero.jpg");
-}
-.hero-image.playmaker-templates{
-    background-image: url("../images/playmaker/playmaker-template-hero.jpg");
-    height: 300px;
-}
-.hero-image.playmaker-templates h2 {
+.hero-image h2 {
     font-size: 5em;
     color: #fff;
     display: grid;
     align-items: center;
     text-align: center;
-    height: 300px;
+    height: 600px;
     width: 100%;
 }
+.hero-image.playmaker{
+    background-image: url("../images/playmaker/playmaker-hero.jpg");
+}
+.hero-image.playmaker-templates{
+    background-image: url("../images/playmaker/playmaker-template-hero.jpg");
+}
+
 .screenshot-info-left{
     float: left;
    width:30%;
    position: relative;
-   margin-top:40px;
+   margin-top:24px;
    height: 99%;
 }
 .screenshot-info-right{
     float: right;
     width: 30%;
-    margin-top: 40px;
+    margin-top: 24px;
     position: absolute;
     right: 0;
     height: 99%;
@@ -345,6 +358,13 @@ margin-top: -90px;
     }
 
     @media screen and (max-width: 600px) {
+        nav{
+            position:fixed;
+            bottom: 16px;
+            left: 16px;
+            top: auto;
+        }
+    
         .container{
             max-width:90%; 
             margin:60px auto 0 auto;
@@ -356,8 +376,28 @@ margin-top: -90px;
               margin:60px auto 0 auto;
               display: block;
             }
+            .hero-image{
+                background-attachment:inherit;
+                }
+            .hero-image h2 {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 4em;
+             }
             h1 {
-                font-size: 5em;
+                font-size: 4.5em;
+            }
+            h2, h2.larger-h2 {
+                font-size: 4em;
+            }
+            h3 {
+                font-size: 2.3em;
+            }
+            h3.center{
+                font-size: 1.8em;
+            }
+            ul li{
+                font-size: 1.2em;
             }
             p {
                 font-size: 1.2em;
