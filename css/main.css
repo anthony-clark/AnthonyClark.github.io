@@ -37,9 +37,20 @@ body {
      padding:24px 0;
 }
 #case-study-meta strong{
-    margin: 0 32px 0 8px;
+    margin: 2px 32px 0 8px;
     display: block;
     font-weight: normal;
+}
+#case-study-meta span{
+margin-top:2px;
+}
+#case-study-meta span.concept{
+    background: #f2eb9c;
+    border-radius: 100px;
+    color: #1A202C;
+    padding: 2px 16px;
+    font-weight: 600;
+    margin: 0 24px 0 0;
 }
 #case-study-summary{
     float:left;
@@ -114,6 +125,8 @@ nav ul li a span.material-icons-outlined{
 }
 nav ul li a:hover{
     text-decoration: none;
+    background: #f2eb9c;
+    color: #1A202C;
 }
 
 h1 {
@@ -123,10 +136,6 @@ h1 {
      font-weight: 800;
      letter-spacing: -2px;
      color: #fff;
-     background-image: linear-gradient(80deg, #4e5d7c, #FFFFFF);
-     background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
 }
 h2 {
     font-size: 3em;
@@ -202,6 +211,9 @@ margin-top:120px;
 }
 .hero-image.playmaker{
     background-image: url("../images/playmaker/playmaker-hero.jpg");
+}
+.hero-image.lexus{
+    background-image: url("../images/lexus/lexus-hero-v2.jpg");
 }
 .hero-image.playmaker-templates{
     background-image: url("../images/playmaker/playermaker-template-hero-v2.jpg");
@@ -284,7 +296,6 @@ margin: 0 auto;
 }
 .carousel-control-next:hover, .carousel-control-prev:hover{
 opacity: 1;
-
 }
 .carousel-control-next-icon, .carousel-control-prev-icon{
     background: none;
@@ -297,13 +308,20 @@ opacity: 1;
     background: #1A202C;
 }
 .carousel-control-next-icon:hover, .carousel-control-prev-icon:hover, .carousel-control-next-icon:focus, .carousel-control-prev-icon:focus{
-    color: #fff;
-    border: 1px solid #3d5166;
+    background: #f2eb9c;
+    color: #1A202C;
+    border: 0;
     opacity: 1;
 }
 .carousel-control-next-icon.material-icons-outlined, .carousel-control-prev-icon.material-icons-outlined{
     font-size: 32px;
     color: #8897aa;
+}
+.carousel-control-next-icon.material-icons-outlined:hover, .carousel-control-prev-icon.material-icons-outlined:hover{
+    font-size: 32px;
+    color: #1A202C;
+    background: #f2eb9c;
+    border: 1px solid #1A202C;
 }
 
 section div.container{
@@ -329,7 +347,7 @@ section.project-list{
     font-size: 1.3em;
     color: #8897aa;
   }
-  section.project-list ul li a.active strong{
+  section.project-list ul li a.active strong, section.project-list ul li a.active span{
     color:#8897aa; 
   }
   section.project-list ul li a.active:hover span{
@@ -348,6 +366,7 @@ margin-top: -90px;
   }
   section.project-list ul li a span{
   position: absolute;
+  color: #FFFFFF;
   right: 30px;
     font-size: 88px;
     margin-top:-60px;
@@ -356,6 +375,7 @@ margin-top: -90px;
   }
   section.project-list ul li a:hover span{
     right: 0px;
+    color:#f2eb9c;
     }
     section.project-list ul li a:hover{
         text-decoration: none;
@@ -385,7 +405,14 @@ margin-top: -90px;
     }
 
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 800px) {
+        nav{
+            position:fixed;
+            bottom: 16px;
+            left: 16px;
+            top: auto;
+            z-index: 10000;
+        }
         .container{
             max-width:80%; 
             margin:120px auto 0 auto;
@@ -410,6 +437,9 @@ margin-top: -90px;
                 display: inline-block;
                 width: 100%;
             }
+            #case-study-meta span.concept{
+                display: block;
+            }
             #case-study-meta span{
                float: left;
                 margin:0 16px 8px 0;
@@ -431,9 +461,7 @@ margin-top: -90px;
                 width: 100%;
                 margin: 40px 0;
                 position: relative;
-                right: ;
                 height: auto;
-          
             }
             .screenshot-right{
                 float: none;
@@ -445,6 +473,19 @@ margin-top: -90px;
                 width:100%;
                margin-right: 0;
             }
+          
+                section.project-list ul li a{
+                    padding-right: 88px;
+                    font-size: 1.2em;
+                }
+                section.project-list ul li a span{
+                    right: 0;
+                      margin-top:-56px;
+                }
+                section.project-list ul li a.active:hover span{
+                    right: 0;
+                
+                  }
             
     }
 
@@ -518,7 +559,7 @@ margin-top: -90px;
             width:100%;
             }
             #case-study-meta{
-                display: inline-block;
+                display: block;
                 width: 100%;
             }
             #case-study-meta span{
@@ -542,7 +583,6 @@ margin-top: -90px;
                 width: 100%;
                 margin: 40px 0;
                 position: relative;
-                right: ;
                 height: auto;
             }
             .screenshot-right{
@@ -566,6 +606,6 @@ margin-top: -90px;
             }
             section.project-list ul li a{
                 font-size: 1em;
-                padding-right: 80px;
+                padding-right: 64px;
             }
       }
