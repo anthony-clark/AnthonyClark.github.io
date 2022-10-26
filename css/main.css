@@ -11,6 +11,7 @@ body {
   margin:120px auto 0 auto;
   display: flex;
   position: relative;
+  clear: both;
 }
 
 
@@ -19,6 +20,11 @@ body {
     margin:120px auto 0 auto;
     display: block;
   }
+
+  .container.last{
+    margin:0 auto 0 auto;
+  }
+
   section{
     margin: 0;
     padding: 0;
@@ -210,10 +216,13 @@ margin-top:120px;
     width: 100%;
 }
 .hero-image.playmaker{
-    background-image: url("../images/playmaker/playmaker-hero.jpg");
+    background-image: url("../images/playmaker/playmaker-hero-3.jpg");
 }
 .hero-image.lexus{
     background-image: url("../images/lexus/lexus-hero-v2.jpg");
+}
+.hero-image.lfc{
+    background-image: url("../images/lfc/lfc-hero.jpg");
 }
 .hero-image.playmaker-templates{
     background-image: url("../images/playmaker/playermaker-template-hero-v2.jpg");
@@ -331,7 +340,6 @@ section div.container{
 section.project-list{
     background-color:#151A23 ;
     padding: 120px 0 120px 0;
-    margin-top: 120px;
     clear: both;
   }
 
@@ -423,6 +431,12 @@ margin-top: -90px;
               max-width:80%; 
               margin:120px auto 0 auto;
               display: block;
+            }
+            .hero-image.lexus{
+                background-position: right;
+            }
+            .hero-image.lfc{
+                background-position: right;
             }
             #case-study-summary{
                 float:none;
@@ -519,6 +533,12 @@ margin-top: -90px;
               max-width:90%; 
               margin:60px auto 0 auto;
               display: block;
+            }
+            .hero-image.lexus{
+                background-position: right;
+            }
+            .hero-image.lfc{
+                background-position: right;
             }
             .hero-image{
                 background-attachment:inherit;
