@@ -25,6 +25,10 @@ body {
     margin:0 auto 0 auto;
   }
 
+  .container.projects-home{
+    display: block;
+  }
+
   section{
     margin: 0;
     padding: 0;
@@ -39,24 +43,27 @@ body {
     border-bottom:1px solid #202c41;
     font-family:'Figtree','Helvetica', 'Arial', 'Sans-Serif';
     margin:0 0 40px 0;
-     line-height: 26px;
-     padding:24px 0;
+    padding:24px 0;
+     list-style: none;
 }
-#case-study-meta strong{
-    margin: 2px 32px 0 8px;
-    display: block;
-    font-weight: normal;
-}
-#case-study-meta span{
-margin-top:2px;
-}
-#case-study-meta span.concept{
-    background: #f2eb9c;
-    border-radius: 100px;
-    color: #1A202C;
-    padding: 2px 16px;
-    font-weight: 600;
+#case-study-meta ul{
+    display: flex;
     margin: 0 24px 0 0;
+}
+#case-study-meta li.meta-title{
+margin-right:16px;
+}
+#case-study-meta li{
+    display: flex;
+    padding: 0;
+    margin: 0 16px 0 0;
+    line-height: 1.7em;
+    color:#8897aa; 
+}
+#case-study-meta h2{
+    font-size: 1em;
+    line-height: 1.75em;
+    margin:0;
 }
 #case-study-summary{
     float:left;
@@ -89,13 +96,14 @@ a:hover {
 }
 ul{
 margin:0 0 0 16px;
-    list-style: disc;
+    list-style: none;
     padding:0;
+    margin: 0;
 }
 ul li{
     font-size: 1.1em;
-    padding:0 0 8px 0;
-    line-height: 1.7em;
+    padding:0 0 12px 0;
+    line-height: 1.5em;
     font-family:'Source Sans Pro', Arial, Helvetica, 'san serif';
 }
 nav{
@@ -226,6 +234,9 @@ margin-top:120px;
 .hero-image.lfc{
     background-image: url("../images/lfc/lfc-hero.jpg");
 }
+.hero-image.efc{
+    background-image: url("../images/efc/efc-hero.jpg");
+}
 .hero-image.playmaker-templates{
     background-image: url("../images/playmaker/playermaker-template-hero-v2.jpg");
     background-position: 0% 30%;
@@ -272,7 +283,7 @@ footer ul{
 
 .carousel{
 margin: 0 auto;
-   width:1024px;
+   width:1410px;
 }
 .carousel-inner{
     box-shadow: 10px 40px 60px rgb(0, 0, 0, 0.2);
@@ -395,9 +406,41 @@ margin-top: -90px;
         color:#8897aa; 
     }
 
-
-
-
+    .project{
+        background:#25384b;
+        padding:32px 48px 48px 48px;
+        width: 100%;
+        margin-bottom: 1px;
+        position: relative;
+    }
+    .project.everton{
+    background: #00019e;
+    }
+    .project h3{
+        font-size: 4em;
+        margin-bottom:16px;
+    }
+    .project span{
+        font-size: 1em;
+        display: block;
+        color: #FFFFFF;
+    }
+    .project p{
+        margin-bottom:32px;
+    }
+    .project-description{
+        width: 60%;
+    }
+    .project-image{
+        width: 25%;
+        float: right;
+        position: absolute;
+        right: 10px;
+        bottom: 0;;
+    }
+/*div{
+    border:1px solid #555;
+}*/
 
 
     @media only screen and (min-width: 1600px) {
@@ -415,7 +458,7 @@ margin-top: -90px;
     }
 
 
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 960px) {
         nav{
             position:fixed;
             bottom: 16px;
@@ -450,21 +493,22 @@ margin-top: -90px;
             width:100%;
             }
             #case-study-meta{
-                display: inline-block;
+                display:block;
                 width: 100%;
+                padding-bottom:4px;
+            }
+            #case-study-meta ul{
+                display:block;
+                width: 100%;
+                margin-bottom: 24px;
+            }
+            #case-study-meta li{
+                margin-bottom:8px;
             }
             #case-study-meta span.concept{
                 display: block;
             }
-            #case-study-meta span{
-               float: left;
-                margin:0 16px 8px 0;
-            }
-            #case-study-meta strong{
-                display: block;
-                width: 100%;
-                margin-bottom: 8px;
-            }
+
             .screenshot-info-left{
                 float: none;
                 width:100%;
@@ -584,15 +628,8 @@ margin-top: -90px;
                 display: block;
                 width: 100%;
             }
-            #case-study-meta span{
-               float: left;
-                margin:0 16px 8px 0;
-            }
-            #case-study-meta strong{
-                display: block;
-                width: 100%;
-                margin-bottom: 8px;
-            }
+      
+
             .screenshot-info-left{
                 float: none;
                width:100%;
