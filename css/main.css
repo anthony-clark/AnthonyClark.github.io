@@ -62,7 +62,7 @@ margin-right:16px;
 }
 #case-study-meta h2{
     font-size: 1em;
-    line-height: 1.75em;
+    line-height: 1.7em;
     margin:0;
 }
 #case-study-summary{
@@ -71,13 +71,14 @@ margin-right:16px;
     padding-right:72px;
 }
 #case-study-summary h2{
-font-size: 2.5em;
+font-size: 2.8em;
+line-height: 1.2em;
 font-family:'Figtree','Helvetica', 'Arial', 'Sans-Serif';
 font-weight: 600;
 margin: 0 0 32px 0;
 }
 #case-study-aims h3{
-    margin: 10px 0 30px 0;
+    margin: 16px 0 30px 0;
     font-size: 1.7em;
     font-weight: 600;
     font-family:'Figtree','Helvetica', 'Arial', 'Sans-Serif';
@@ -146,6 +147,7 @@ nav ul li a:hover{
 
 h1 {
     font-size: 7em;
+    line-height: 1em;
      font-family:'Figtree','Helvetica', 'Arial', 'Sans-Serif';
     margin:0 0 40px 0;
      font-weight: 800;
@@ -169,7 +171,7 @@ h3 {
     font-weight: 600;
      margin: 0 0 32px 0;
      color: #fff;
-     line-height: 1.5em;
+     line-height: 1.2em;
 }
 h4.template-features {
     font-size: 1.5em;
@@ -241,7 +243,31 @@ margin-top:120px;
     background-image: url("../images/playmaker/playermaker-template-hero-v2.jpg");
     background-position: 0% 30%;
 }
-
+.next-project{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:auto; 
+    background-position: left;
+    height: 300px;
+    clear: both;
+    margin-top:120px;
+    padding-top: 50px;
+    align-items: left;
+    text-align: left;
+    }
+    .next-project h2 span{
+        font-size: .3em; margin:0; display: block;}
+    .next-project h2{
+        font-size: 4.5em; margin:0;}
+    .next-project button{
+        width: 200px; color: #fff; background:none; font-size: 1em; margin:24px auto; padding: 16px 24px; border: 1px solid #fff; border-radius: 100px;}
+    .next-project.efc{
+        background-image: url("../images/efc/efc-hero.jpg");
+    }
+    .next-project .container{
+        display: block;
+        margin-top: 0;
+    }
 .screenshot-info-left{
     float: left;
    width:30%;
