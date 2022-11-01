@@ -748,37 +748,38 @@ margin-top: -90px;
                 font-size: 1em;
                 padding-right: 64px;
             }
+            .next-project{
+                height: 350px;
+            }
+
             .next-project h2 span{
-                font-size: .25em; 
+                font-size: .35em; 
                 margin:0; 
                 display: block; 
                 font-weight: 300;
-                text-transform: uppercase;}
+                text-transform: uppercase;
+            }
             .next-project h2{
-                font-size: 3.5em; 
-                margin:0 0 16px 0;
+                font-size: 3em; 
+                margin:0 0 8px 0;
             line-height: .95em;
-            width:300px;
+            width:250px;
         
         }
-        
             .next-project p{
-        color: #FFFFFF;
-        margin-bottom: 4px;
-        font-size: 1.2em;
-        width:300px;
+        display: none;
             }
             .next-project.efc{
-                background-position: 75%;
+                background-position: 80%;
             }
             .next-project.avfc{
-                background-position: 75%;
+                background-position:77%;
             }
             .next-project.lfc{
-                background-position: 75%;
+                background-position: 77%;
             }
             .next-project.playmaker{
-                background-position: 70%;
+                background-position: 73%;
             }
         
       }
