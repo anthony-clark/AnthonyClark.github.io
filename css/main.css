@@ -239,6 +239,9 @@ margin-top:120px;
 .hero-image.efc{
     background-image: url("../images/efc/efc-hero.jpg");
 }
+.hero-image.avfc{
+    background-image: url("../images/avfc/avfc-hero.jpg");
+}
 .hero-image.playmaker-templates{
     background-image: url("../images/playmaker/playermaker-template-hero-v2.jpg");
     background-position: 0% 30%;
@@ -525,6 +528,10 @@ margin-top: -90px;
 
 
     @media only screen and (max-width: 960px) {
+        h1 {
+            font-size: 5em;
+            line-height: 1em;
+        }
         nav{
             position:fixed;
             bottom: 16px;
