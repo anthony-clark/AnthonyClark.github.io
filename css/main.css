@@ -126,12 +126,12 @@ nav ul li a{
     width:96px;
     height: 96px;
     border-radius: 100px;
-    border: 2px solid #8897aa;
+    border: 2px solid #25384b;
     display: block;
     text-align:center;
     color: #8897aa;
     position: relative; 
-    z-index: 30000;
+    background: #1A202C; 
 
 }
 nav ul li a span.material-icons-outlined{
