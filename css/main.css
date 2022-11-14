@@ -885,5 +885,8 @@ margin-top: -90px;
         .responsive-views h3{
             font-size: 1.5em; 
     }
+    #client-list{
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
         
       }
