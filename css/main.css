@@ -543,6 +543,36 @@ margin-top: -90px;
     .responsive-views img{
         margin-top:40px;
     }
+    #client-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 2rem;
+    }
+    #client-list div{
+        height: 120px;
+        padding: 10%;
+        text-align: center;
+        line-height: 120px;
+        opacity: .8;
+    }
+    #client-list div.portrait img{
+        height: 100%;
+        width: auto;
+    }
+    #client-list div.landscape img{
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+    }
+    #client-list div.landscape.nhs{
+        padding-left: 22%;
+        padding-right: 22%;
+    }
+
+
+
+
+
 /*div{
     border:1px solid #555;
 }*/
@@ -808,7 +838,10 @@ margin-top: -90px;
                 height: 450px;
                 padding-top: 110px;
             }
-
+            .next-project a{
+                width: auto;
+                padding: 16px 24px; 
+            }
             .next-project h2 span{
                 font-size: .35em; 
                 margin:0; 
@@ -842,7 +875,7 @@ margin-top: -90px;
                 background-position: 75%;
             }
             .next-project.lexus{
-                background-position: 65%;
+                background-position: 63%;
             }
 
             .responsive-views h2{
