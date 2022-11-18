@@ -72,28 +72,39 @@ margin-right:16px;
 }
 #case-study-summary{
     float:left;
-    width:70%;
+    width:55%;
     padding-right:72px;
 }
-#case-study-summary h2{
+#case-study-intro{
+    overflow: auto;
+}
+#case-study-intro h2{
 font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-font-weight: 700;
-margin: 0 0 32px 0;
+font-weight: 300;
+padding: 0 0 56px 0;
+margin-bottom: 56px;
+border-bottom:2px solid #2a3042;
+font-size: 2.8em;
 }
 #case-study-summary p{
     font-family:'Source Sans Pro','Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     font-size: 1.25em;
 }
-#case-study-aims h3{
-    margin: 16px 0 30px 0;
-    font-size: 1.7em;
-    font-weight: 700;
+#case-study-aims h3, #case-study-deliverables h3, #case-study-summary h3{
+    margin: 0 0 30px 0;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 800;
     font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     color: #fff;
     }
 #case-study-aims{
-    float:right;
-width:30%;
+    float:left;
+width:25%;
+}
+#case-study-deliverables{
+    float:left;
+width:20%;
 }
 a {
     text-decoration: none;
@@ -152,18 +163,18 @@ nav ul li a:hover{
 }
 
 h1 {
-    font-size: 6.5em;
+    font-size: 7em;
     line-height: 1em;
      font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-    margin:0 0 40px 0;
-     font-weight: 700;
+    margin:0 0 20px 0;
+     font-weight: 800;
      letter-spacing: -2px;
      color: #fff;
 }
 h2 {
     font-size: 3em;
      font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-    font-weight: 700;
+    font-weight: 800;
      margin: 0 0 40px 0;
           color: #fff;
 }
@@ -174,14 +185,14 @@ h2.larger-h2{
 h3 {
     font-size: 2.7em;
      font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-    font-weight: 700;
+    font-weight: 800;
      margin: 0 0 32px 0;
      color: #fff;
      line-height: 1.2em;
 }
 h4.template-features {
     font-size: 1.5em;
-    font-weight: 700;
+    font-weight: 800;
     margin: 0 0 32px 0;
     font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     color: #fff;
@@ -290,7 +301,7 @@ font-size: 1.2em;
         color: #fff; 
         background:none; 
         font-size: .85em;
-        font-weight: 700; 
+        font-weight: 800; 
         margin:24px auto; 
         padding: 16px 24px; 
         border: 2px solid #fff; 
@@ -476,7 +487,7 @@ margin-top: -90px;
     font-size: 2em;
     line-height: 1em;
      font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-    font-weight: 700;
+    font-weight: 800;
      color: #fff;
   }
   section.project-list ul li a span{
@@ -634,25 +645,22 @@ margin-top: -90px;
                 width:100%;
                 padding-right:0;
             }
+            #case-study-intro h2{
+                font-size: 2.5em;
+                line-height: 1.5em;
+            }
             #case-study-aims{
-                float:none;
-            width:100%;
+                float:left;
+            width: 65%;
+            }
+            #case-study-deliverables{
+                float:left;
+            width:35%;
             }
             #case-study-meta{
                 display:block;
                 width: 100%;
                 padding-bottom:4px;
-            }
-            #case-study-meta ul{
-                display:block;
-                width: 100%;
-                margin-bottom: 24px;
-            }
-            #case-study-meta li{
-                margin-bottom:8px;
-            }
-            #case-study-meta span.concept{
-                display: block;
             }
 
             .screenshot-info-left{
@@ -769,7 +777,7 @@ margin-top: -90px;
             font-size: 4em;
              }
             h1 {
-                font-size: 4em;
+                font-size: 4.5em;
             }
             h2, h2.larger-h2 {
                 font-size: 3.5em;
@@ -794,7 +802,16 @@ margin-top: -90px;
                 width:100%;
                 padding-right:0;
             }
+            #case-study-intro h2{
+            font-size: 2em;
+            line-height: 1.5em;
+            }
             #case-study-aims{
+                float:none;
+            width: 100%;
+            margin-top:40px;
+            }
+            #case-study-deliverables{
                 float:none;
             width:100%;
             }
