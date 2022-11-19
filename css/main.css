@@ -19,7 +19,7 @@ body {
 
 
 .container.narrow{
-    max-width:900px; 
+    max-width:960px; 
     margin:120px auto 0 auto;
     display: block;
   }
@@ -220,12 +220,7 @@ img{
 }
 /*div{border:1px solid #fff;}*/
 
-.sticky-content{
-    position: -webkit-sticky;
-    position: sticky;
-    display: block;
-    top: 4%;
-}
+
 .hero-image{
 background-attachment: fixed;
 background-repeat: no-repeat;
@@ -347,32 +342,34 @@ font-size: 1.2em;
         display: block;
         margin-top: 0;
     }
-.screenshot-info-left{
+
+.container.screenshot{
+    display: flex;
+    justify-content: space-between;
+}
+.container.screenshots-alt{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.screenshot-info{
     float: left;
    width:30%;
    position: relative;
    margin-top:24px;
    height: 99%;
 }
-.screenshot-info-right{
-    float: right;
-    width: 30%;
-    margin-top: 24px;
-    position: absolute;
-    right: 0;
-    height: 99%;
+.screenshots{
+    width:62%;
 }
-.screenshot-right{
-    float: right;
-    width:65%;
-   margin-left:80px;
+.container.narrow .screenshot-info{
+    width: 45%;
 }
-.screenshot-left{
-    float: left;
-    width:65%;
-   margin-right: 80px;
+.container.narrow .screenshots{
+    width: 45%;
 }
-.screenshot-left img, .screenshot-right img{
+.screenshot img{
 box-shadow: 10px 40px 60px rgb(0, 0, 0, 0.2);
 }
 footer {
@@ -429,7 +426,7 @@ opacity: 1;
     width: 88px;
     height: 88px;
     display: block;
-    border: 1px solid #25384b;
+    border: 1px solid #f1f1f1;
     border-radius: 100px;
     padding: 28px 0 0 0;
     background: #1A202C;
@@ -442,7 +439,7 @@ opacity: 1;
 }
 .carousel-control-next-icon.material-icons-outlined, .carousel-control-prev-icon.material-icons-outlined{
     font-size: 32px;
-    color: #8897aa;
+    color: #f1f1f1;
 }
 .carousel-control-next-icon.material-icons-outlined:hover, .carousel-control-prev-icon.material-icons-outlined:hover{
     font-size: 32px;
@@ -588,8 +585,13 @@ margin-top: -90px;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         grid-gap: 1.7rem;
     }
+    .container.narrow .screenshot-info-left, .container.narrow .screenshot-info-right{
+       width:45%;
+    }
+    .container.narrow .screenshot-right, .container.narrow .screenshot-left{
 
-
+        width: 45%;
+    }
 
 /*div{
     border:1px solid #555;
@@ -603,7 +605,12 @@ margin-top: -90px;
         .container.narrow{
             max-width:1024px; 
           }
-
+          .sticky-content{
+            position: -webkit-sticky;
+            position: sticky;
+            display: block;
+            top: 4%;
+        }
 
 
 
@@ -662,31 +669,23 @@ margin-top: -90px;
                 width: 100%;
                 padding-bottom:4px;
             }
-
-            .screenshot-info-left{
+            .container.screenshot, .container.screenshots-alt{
+                display: block;
+            }
+            .screenshot-info{
                 float: none;
                 width:100%;
                 position: relative;
                 margin:40px 0;
                 height: auto;
             }
-            .screenshot-info-right{
-                float: none;
-                width: 100%;
-                margin: 40px 0;
-                position: relative;
-                height: auto;
-            }
-            .screenshot-right{
+         
+            .screenshots{
                 float: none;
                 width:100%;
                margin-left:0;
             }
-            .screenshot-left{
-                float: none;
-                width:100%;
-               margin-right: 0;
-            }
+           
           
             section.project-list ul li a{
                     padding-right: 88px;
