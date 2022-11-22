@@ -16,7 +16,9 @@ body {
   position: relative;
   clear: both;
 }
-
+.container.fullwidth-screen{
+    margin-top: 56px;
+}
 .container.title{
   margin:40px auto 0 auto;
 
@@ -185,18 +187,26 @@ h2 {
     padding-bottom: 56px;
     display: block;
     width: 100%;
-     margin: 0;
+     margin: 0 0 48px 0;
           color: #fff;
           border-bottom: 1px solid #2a3042;
 }
-
+h2.no-margin {
+    margin-bottom: 0;
+}
 h3 {
-    font-size: 2.7em;
+    font-size: 3.5em;
      font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     font-weight: 800;
-     margin: 40px 0 32px 0;
+     margin: 40px 0 40px 0;
      color: #fff;
      line-height: 1.2em;
+}
+h4{
+    font-size: 2.7em;
+    font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
+    margin: 32px 0 32px 0;
+    color: #fff;
 }
 h4.template-features {
     font-size: 1.5em;
@@ -239,13 +249,14 @@ clear: both;
 margin-top:120px;
 }
 .hero-image h2 {
-    font-size: 5em;
+    font-size: 8.5em;
     color: #fff;
     display: grid;
     align-items: center;
     text-align: center;
     height: 600px;
     width: 100%;
+    text-shadow: 1px 6px 40px #1A202C;
 }
 .hero-image.playmaker{
     background-image: url("../images/playmaker/playmaker-hero-3.jpg");
@@ -564,9 +575,10 @@ margin-top: -90px;
     margin-bottom:20px;
     border:0;
     padding: 0;
+    font-size: 5em;
 }
 .responsive-views h3{
-    margin-top:0;
+    margin:0 0 56px 0;
 }
     .responsive-views img{
         margin-top:40px;
@@ -598,11 +610,15 @@ margin-top: -90px;
     }
 
     .row-of-screenshots{
-        max-width:1180px; 
+        max-width:1200px; 
         margin:0 auto 0 auto;
         display: grid;
+        padding: 0 32px;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         grid-gap: 1.7rem;
+    }
+    .row-of-screenshots img{
+        margin-top: 0;
     }
     .container.narrow .screenshot-info-left, .container.narrow .screenshot-info-right{
        width:45%;
@@ -632,9 +648,8 @@ margin-top: -90px;
         }
         .container.title{
     max-width:1420px; 
-
-  
 }
+
 
 
 
@@ -749,6 +764,9 @@ margin-top: -90px;
             }
             .responsive-views h3{
                 font-size: 2em; 
+        }
+        .row-of-screenshots{
+            width: 80%;
         }
             
     }
@@ -933,6 +951,14 @@ margin-top: -90px;
     }
     #client-list{
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+    .row-of-screenshots{
+        width: 80%;
+        margin:0 auto 0 auto;
+        display: grid;
+        padding: 0 32px;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        grid-gap: 1.7rem;
     }
         
       }
