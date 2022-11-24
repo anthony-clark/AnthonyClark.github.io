@@ -3,7 +3,7 @@ body {
     font-size: .9em;
     margin:0;
     padding:0;
-    background: #1A202C url(../images/Shine.png);
+    background: #1A202C; /*url(../images/Shine.png);*/
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-origin: content-box;
@@ -25,7 +25,6 @@ body {
 }
 .container.narrow.title{
     margin:40px auto 0 auto;
-    text-align: center;
 }
 
 .container.narrow{
@@ -86,7 +85,7 @@ margin-right:16px;
 }
 #case-study-summary{
     float:left;
-    width:58%;
+    width:55%;
     padding-right:64px;
 }
 #case-study-intro{
@@ -101,20 +100,20 @@ border-bottom:2px solid #2a3042;
 font-size: 2.8em;
 }
 #case-study-summary p{
-    font-family:'Source Sans Pro','Urbanist','Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'Inter','Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     font-size: 1.25em;
 }
 #case-study-aims h3, #case-study-deliverables h3, #case-study-summary h3{
     margin: 0 0 30px 0;
-    font-size: 1em;
+    font-size: 1.1em;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 700;
     font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-    color: #9DA6B9;
+    color: #fff;
     }
 #case-study-aims{
     float:left;
-width:25%;
+width:28%;
 }
 #case-study-deliverables{
     float:left;
@@ -133,10 +132,10 @@ margin:0 0 0 16px;
 
 }
 ul li{
-    font-size: 1.1em;
+    font-size: 1em;
     padding:0 0 12px 0;
     line-height: 1.5em;
-    font-family:'Source Sans Pro', Arial, Helvetica, 'san serif';
+    font-family:'Inter', Arial, Helvetica, 'san serif';
 }
 nav{
     position:fixed;
@@ -177,7 +176,7 @@ nav ul li a:hover{
 }
 
 h1 {
-    font-size: 7em;
+    font-size: 8em;
     line-height: 1em;
      font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     margin:0 0 20px 0;
@@ -187,7 +186,7 @@ h1 {
 h2 {
     font-size: 6em;
      font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-    font-weight: 300;
+    font-weight: 700;
     padding-bottom: 56px;
     display: block;
     width: 100%;
@@ -201,7 +200,7 @@ h2.no-margin {
 h3 {
     font-size: 3.2em;
      font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-    font-weight: 300;
+    font-weight: 700;
      margin: 40px 0 40px 0;
      color: #fff;
      line-height: 1.2em;
@@ -214,7 +213,7 @@ h4{
 }
 h4.template-features {
     font-size: 1.5em;
-    font-weight: 300;
+    font-weight: 700;
     margin: 0 0 32px 0;
     font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     color: #fff;
@@ -227,11 +226,11 @@ h3.center{
     font-size: 2.5em;
 }
 p {
-    font-size: 1.1em;
+    font-size: 1em;
     line-height: 1.7em;
     color: #ffffff;
-    font-family:'Source Sans Pro', Arial, Helvetica, 'san serif';
-    font-weight:300;
+    font-family:'Inter', Arial, Helvetica, 'san serif';
+    font-weight:100;
     margin: 0 0 32px 0;
 }
 p  strong{
@@ -253,7 +252,7 @@ clear: both;
 margin-top:120px;
 }
 .hero-image h2 {
-    font-size: 8.5em;
+    font-size: 8em;
     color: #fff;
     display: grid;
     align-items: center;
@@ -267,6 +266,9 @@ margin-top:120px;
 }
 .hero-image.lexus{
     background-image: url("../images/lexus/lexus-hero.jpg");
+}
+.hero-image.lexus2{
+    background-image: url("../images/lexus/lexus-hero-v2.jpg");
 }
 .hero-image.lfc{
     background-image: url("../images/lfc/lfc-hero.jpg");
