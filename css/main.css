@@ -12,7 +12,6 @@ body {
 .container{
   max-width:1180px; 
   margin:120px auto 0 auto;
-  display: flex;
   position: relative;
   clear: both;
 }
@@ -139,42 +138,41 @@ ul li{
 }
 nav{
     position:fixed;
-    top: 16px;
-    left: 16px;
+width: 100%;
+display: flex;
+    justify-content: center;
 }
-nav ul {
-   
-    padding:0;
-    margin:0;
-    list-style: none;
-    color: #8897aa;
-}
-nav ul li a{
-    width:72px;
-    height: 72px;
+nav a{
+    width:80px;
+    height: 80px;
     border-radius: 100px;
     display: block;
     text-align:center;
-    color: #1A202C;
+    color: #f1f1f1;
     position: relative; 
-    background: #f1f1f1; 
+    background: #1A202C; 
+    position: absolute;
+    left: 16px;
 
 }
-nav ul li a span.material-icons-outlined{
+nav a span.material-icons-outlined{
     font-weight: 100;
-    font-size: 32px;
+    font-size: 40px;
     display: grid;
     align-items: center;
-    width:72px;
-    height: 72px;
+    width:80px;
+    height: 80px;
 }
-nav ul li a:hover{
+nav a:hover{
     text-decoration: none;
-    background: #f2eb9c;
+    background: #f1f1f1;
     color: #1A202C;
-    border: 2px solid #f2eb9c;
-}
 
+}
+nav img{
+    width:240px;
+    margin-top: 16px;
+}
 h1 {
     font-size: 8em;
     line-height: 1em;
@@ -373,15 +371,20 @@ font-size: 1.2em;
         display: block;
         margin-top: 0;
     }
+    section.projects{
+    background: #151A23;
+    overflow: auto;
+    padding-bottom: 120px;
+    }
     section div.container.home-projects{
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
         grid-gap: 2rem;
         }
 
         section div.container.home-projects .next-project{
-            height: 450px;
-            padding-top: 110px;
+            height: 300px;
+            padding-top: 30px;
             padding-left:24px;
             border-radius: 8px;
         }
@@ -401,22 +404,22 @@ font-size: 1.2em;
     }
 
         section div.container.home-projects .next-project.efc{
-            background-position: 80%;
+            background-position: 90%;
         }
         section div.container.home-projects .next-project.avfc{
-            background-position:77%;
+            background-position:90%;
         }
         section div.container.home-projects .next-project.lfc{
-            background-position: 77%;
+            background-position: 90%;
         }
         section div.container.home-projects .next-project.playmaker{
-            background-position: 73%;
+            background-position: 90%;
         }
         section div.container.home-projects .next-project.goape{
-            background-position: 75%;
+            background-position: 90%;
         }
         section div.container.home-projects .next-project.lexus{
-            background-position: 63%;
+            background-position: 90%;
         }
 
 
@@ -536,10 +539,10 @@ opacity: 1;
     border: 1px solid #1A202C;
 }
 
-section div.container{
+/*section div.container{
     display: block;
     margin: 0 auto;
-}
+}*/
 section.project-list{
     background-color:#151A23 ;
     padding: 120px 0 120px 0;
@@ -694,6 +697,13 @@ margin-top: -90px;
 /*div{
     border:1px solid #555;
 }*/
+
+
+
+
+
+
+
 
 
     @media only screen and (min-width: 1600px) {
