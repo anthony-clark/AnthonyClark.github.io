@@ -15,6 +15,14 @@ body {
   position: relative;
   clear: both;
 }
+.nav-container{
+    margin: 0 auto;
+    max-width:1150px; 
+    position: relative;
+    clear: both;
+
+    padding:24px 0;
+}
 .container.fullwidth-screen{
     margin-top: 56px;
 }
@@ -137,10 +145,7 @@ ul li{
     font-family:'Inter', Arial, Helvetica, 'san serif';
 }
 nav{
-    position:fixed;
 width: 100%;
-display: flex;
-    justify-content: center;
 }
 nav a{
     width:80px;
@@ -151,12 +156,12 @@ nav a{
     color: #f1f1f1;
     position: relative; 
     background: #1A202C; 
-    position: absolute;
     left: 16px;
-
+    margin-top: 24px;
+    position:fixed;
 }
 nav a span.material-icons-outlined{
-    font-weight: 100;
+    font-weight: 300;
     font-size: 40px;
     display: grid;
     align-items: center;
@@ -170,9 +175,10 @@ nav a:hover{
 
 }
 nav img{
-    width:240px;
-    margin-top: 16px;
+    width:200px;
+    margin-top: 20px;
 }
+
 h1 {
     font-size: 8em;
     line-height: 1em;
@@ -225,10 +231,10 @@ h3.center{
 }
 p {
     font-size: 1em;
-    line-height: 1.7em;
+    line-height: 1.8em;
     color: #ffffff;
     font-family:'Inter', Arial, Helvetica, 'san serif';
-    font-weight:100;
+    font-weight:300;
     margin: 0 0 32px 0;
 }
 p  strong{
@@ -245,7 +251,7 @@ background-attachment: fixed;
 background-repeat: no-repeat;
 background-size:cover; 
 background-position: center;
-height: 300px;
+height: 450px;
 clear: both;
 margin-top:120px;
 }
@@ -255,7 +261,7 @@ margin-top:120px;
     display: grid;
     align-items: center;
     text-align: center;
-    height: 300px;
+    height: 450px;
     width: 100%;
     text-shadow: 1px 6px 40px #1A202C;
 }
@@ -721,6 +727,12 @@ margin-top: -90px;
         }
         .container.title{
     max-width:1420px; 
+}
+.nav-container{
+    margin: 0 auto;
+    max-width:1410px; 
+    position: relative;
+    clear: both;
 }
 
 
