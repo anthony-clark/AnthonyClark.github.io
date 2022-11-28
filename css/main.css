@@ -354,6 +354,7 @@ font-size: 1.2em;
         background-attachment: scroll;
         background-size: cover;
         background-position: right;
+        background-color: #1A202C;
     }
     .next-project.efc{
         background-image: url("../images/efc/next-project-efc.jpg");
@@ -372,6 +373,9 @@ font-size: 1.2em;
     }
     .next-project.goape{
         background-image: url("../images/go-ape/next-project-go-ape.jpg");
+    }
+    .next-project.phonebook{
+        background-image: url("../images/barclays/next-project-phonebook.jpg");
     }
     .next-project .container{
         display: block;
@@ -393,6 +397,7 @@ font-size: 1.2em;
             padding-top: 30px;
             padding-left:24px;
             border-radius: 8px;
+           
         }
         section div.container.home-projects .next-project a{
             width: auto;
@@ -1048,5 +1053,58 @@ margin-top: -90px;
         grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
         grid-gap: 1.7rem;
     }
+
+
+
+    section div.container.home-projects .next-project{
+        height: 300px;
+        padding-top: 30px;
+        padding-left:0;
+        border-radius: 8px;
+       
+    }
+    section div.container.home-projects .next-project a{
+        width: auto;
+        padding: 16px 24px; 
+    }
+    section div.container.home-projects .next-project h2 span{
+        display: none;
+    }
+    section div.container.home-projects .next-project h2{
+        font-size: 2.7em; 
+    margin:0 0 8px 0;
+line-height: .95em;
+width:200px;
+
+}
+section div.container.home-projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-gap: 2rem;
+    }
+
+
+
+
+    section div.container.home-projects .next-project.efc{
+        background-position: 80%;
+    }
+    section div.container.home-projects .next-project.avfc{
+        background-position:77%;
+    }
+    section div.container.home-projects .next-project.lfc{
+        background-position: 77%;
+    }
+    section div.container.home-projects .next-project.playmaker{
+        background-position: 73%;
+    }
+    section div.container.home-projects .next-project.goape{
+        background-position: 75%;
+    }
+    section div.container.home-projects .next-project.lexus{
+        background-position: 63%;
+    }
+
+
         
       }
