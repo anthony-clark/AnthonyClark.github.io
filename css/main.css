@@ -1,6 +1,6 @@
 body {
     color: #e4e6eb;
-    font-size: .9em;
+    font-size: .95em;
     margin:0;
     padding:0;
     background: #1A202C; /*url(../images/Shine.png);*/
@@ -10,14 +10,14 @@ body {
 }
 
 .container{
-  max-width:1180px; 
+  max-width:1240px; 
   margin:120px auto 0 auto;
   position: relative;
   clear: both;
 }
 .nav-container{
     margin: 0 auto;
-    max-width:1150px; 
+    max-width:1220px; 
     position: relative;
     clear: both;
 
@@ -40,7 +40,7 @@ body {
     display: block;
   }
   .container.narrow p{
-    font-size: 1.25em;
+    font-size: .97em;
   }
   .container.last{
     margin:0 auto 0 auto;
@@ -101,15 +101,14 @@ margin-right:16px;
 #case-study-intro h2{
 font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
 font-weight: 300;
-padding: 0 0 136px 0;
+padding: 0 0 56px 0;
 margin-bottom: 56px;
-border-bottom:2px solid #2a3042;
+border-bottom:1px solid #2a3042;
 font-size: 2.6em;
-text-align: center;
 }
 #case-study-summary p{
     font-family:'Inter','Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-    font-size: 1.25em;
+font-size: 1.2em;
 }
 #case-study-aims h3, #case-study-deliverables h3, #case-study-summary h3{
     margin: 0 0 30px 0;
@@ -147,9 +146,9 @@ ul li{
 }
 nav{
 width: 100%;
-display: flex;
 position: relative;
 z-index: 150000;
+display: flex;
 }
 nav a{
     width:80px;
@@ -179,8 +178,8 @@ nav a:hover{
 
 }
 nav img{
-    width:80px;
-    margin-top: 8px;
+    width:180px;
+    margin-top: 22px;
 
 }
 
@@ -191,7 +190,6 @@ h1 {
     margin:0 0 20px 0;
      font-weight: 700;
      color: #e4e6eb;
-     text-align: center;
 }
 h2 {
     font-size: 6em;
@@ -236,7 +234,7 @@ h3.center{
     font-size: 2.5em;
 }
 p {
-    font-size: 1.05em;
+    font-size: .97em;
     line-height: 1.9em;
     color: #e4e6eb;
     font-family:'Inter', Arial, Helvetica, 'san serif';
@@ -381,7 +379,10 @@ font-size: 1.2em;
         background-image: url("../images/go-ape/next-project-go-ape.jpg");
     }
     .next-project.phonebook{
-        background-image: url("../images/barclays/next-project-phonebook.jpg");
+        background-image: url("../images/barclays/phonebook.jpg");
+    }
+    .next-project.password-reset{
+        background-image: url("../images/barclays/password-reset.jpg");
     }
     .next-project .container{
         display: block;
@@ -409,10 +410,10 @@ font-size: 1.2em;
             width: auto;
             padding: 16px 24px; 
         }
-        section div.container.home-projects .next-project h2 span{
+        section div.container.home-projects .next-project h3 span{
             display: none;
         }
-        section div.container.home-projects .next-project h2{
+        section div.container.home-projects .next-project h3{
             font-size: 3em; 
             margin:0 0 8px 0;
         line-height: .95em;
@@ -437,6 +438,12 @@ font-size: 1.2em;
         }
         section div.container.home-projects .next-project.lexus{
             background-position: 90%;
+        }
+        section div.container.home-projects .next-project.phonebook{
+            background-position: 85%;
+        }
+        section div.container.home-projects .next-project.password-reset{
+            background-position: 70%;
         }
 
 
@@ -493,7 +500,6 @@ footer ul{
 
 .carousel{
 margin: 0 auto;
-   width:1410px;
 }
 .carousel-inner{
     box-shadow: 10px 40px 60px rgb(0, 0, 0, 0.2);
@@ -676,14 +682,14 @@ margin-top: -90px;
         padding: 10%;
         text-align: center;
         line-height: 120px;
-        opacity: .8;
+        /*opacity: .8;*/
     }
     #client-list div.portrait img{
         height: 100%;
         width: auto;
     }
     #client-list div.landscape img{
-        width: 100%;
+        width: 80%;
         height: 100%;
         vertical-align: middle;
     }
@@ -697,8 +703,8 @@ margin-top: -90px;
         margin:0 auto 0 auto;
         display: grid;
         padding: 0 32px;
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-        grid-gap: 3rem;
+        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+        grid-gap: 2rem;
     }
     .row-of-screenshots img{
         margin-top: 0;
