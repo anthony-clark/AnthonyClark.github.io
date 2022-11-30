@@ -909,10 +909,11 @@ margin-top: -90px;
             font-size: 4em;
              }
             h1 {
-                font-size: 4.5em;
+                font-size: 4em;
+                margin-top: 64px;
             }
             h2, h2.larger-h2 {
-                font-size: 3.5em;
+                font-size: 3em;
             }
             h2.larger-h2 {
                 margin-bottom: 32px;
@@ -924,10 +925,10 @@ margin-top: -90px;
                 font-size: 1.5em;
             }
             ul li{
-                font-size: 1.2em;
+                font-size: 1em;
             }
             p {
-                font-size: 1.2em;
+                font-size: 16px;
             }
             #case-study-summary{
                 float:none;
