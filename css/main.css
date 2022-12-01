@@ -1,5 +1,5 @@
 body {
-    color: #e4e6eb;
+    color: #8191B1;
     font-size: .95em;
     margin:0;
     padding:0;
@@ -15,6 +15,9 @@ body {
   position: relative;
   clear: both;
 }
+.container.project-summary{
+    margin:160px auto 0 auto;
+  }
 .nav-container{
     margin: 0 auto;
     max-width:1220px; 
@@ -62,29 +65,7 @@ body {
   section.project-list div.container.narrow{
     margin: 0 auto;
   }
-#case-study-meta{
-    display: flex;
-    border-top:1px solid #2a3042;
-    border-bottom:1px solid #2a3042;
-    font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-    margin:0 0 40px 0;
-    padding:24px 0;
-     list-style: none;
-}
-#case-study-meta ul{
-    display: flex;
-    margin: 0 24px 0 0;
-}
-#case-study-meta li.meta-title{
-margin-right:16px;
-}
-#case-study-meta li{
-    display: flex;
-    padding: 0;
-    margin: 0 16px 0 0;
-    line-height: 1.7em;
-    color:#e4e6eb; 
-}
+
 #case-study-meta h2{
     font-size: 1em;
     line-height: 1.7em;
@@ -101,14 +82,17 @@ margin-right:16px;
 #case-study-intro h2{
 font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
 font-weight: 300;
-padding: 0 0 56px 0;
-margin-bottom: 56px;
+padding: 0 0 40px 0;
+margin-bottom: 40px;
 border-bottom:1px solid #2a3042;
-font-size: 2.6em;
+font-size: 36px;
 }
 #case-study-summary p{
     font-family:'Inter','Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-font-size: 1.2em;
+font-size: 16px;
+line-height: 28px;
+margin-top:-4px;
+color:#8191B1;
 }
 #case-study-aims h3, #case-study-deliverables h3, #case-study-summary h3{
     margin: 0 0 30px 0;
@@ -120,11 +104,11 @@ font-size: 1.2em;
     }
 #case-study-aims{
     float:left;
-width:28%;
+width:29%;
 }
 #case-study-deliverables{
     float:left;
-width:17%;
+width:16%;
 }
 a {
     text-decoration: none;
@@ -139,7 +123,7 @@ margin:0 0 0 16px;
 
 }
 ul li{
-    font-size: 1em;
+    font-size: 14px;
     padding:0 0 12px 0;
     line-height: 1.5em;
     font-family:'Inter', Arial, Helvetica, 'san serif';
@@ -162,18 +146,19 @@ nav a{
     left: 16px;
     margin-top: 24px;
     position:fixed;
+    border:1px solid #2a3042;
 }
 nav a span.material-icons-outlined{
     font-weight: 300;
     font-size: 40px;
     display: grid;
     align-items: center;
-    width:80px;
-    height: 80px;
+    width:76px;
+    height: 77px;
 }
 nav a:hover{
     text-decoration: none;
-    background: #FFD300;
+    background: #e4e6eb;
     color: #1A202C;
 
 }
@@ -184,7 +169,7 @@ nav img{
 }
 
 h1 {
-    font-size: 8em;
+    font-size: 80px;
     line-height: 1em;
      font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     margin:0 0 20px 0;
@@ -234,9 +219,9 @@ h3.center{
     font-size: 2.5em;
 }
 p {
-    font-size: .97em;
+    font-size: 14px;
     line-height: 1.9em;
-    color: #e4e6eb;
+    color:#8191B1;
     font-family:'Inter', Arial, Helvetica, 'san serif';
     font-weight:300;
     margin: 0 0 32px 0;
