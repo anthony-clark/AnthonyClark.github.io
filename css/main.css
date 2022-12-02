@@ -1,9 +1,9 @@
 body {
-    color: #8191B1;
+    color: #A5B4BB;
     font-size: .95em;
     margin:0;
     padding:0;
-    background: #1A202C; /*url(../images/Shine.png);*/
+    background: #181E2A; /*url(../images/Shine.png);*/
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-origin: content-box;
@@ -43,7 +43,8 @@ body {
     display: block;
   }
   .container.narrow p{
-    font-size: .97em;
+    font-size: 16px;
+    line-height: 28px;
   }
   .container.last{
     margin:0 auto 0 auto;
@@ -86,13 +87,14 @@ padding: 0 0 40px 0;
 margin-bottom: 40px;
 border-bottom:1px solid #2a3042;
 font-size: 36px;
+line-height: 48px;
 }
 #case-study-summary p{
     font-family:'Inter','Urbanist','Helvetica', 'Arial', 'Sans-Serif';
 font-size: 16px;
 line-height: 28px;
 margin-top:-4px;
-color:#8191B1;
+color:#A5B4BB;
 }
 #case-study-aims h3, #case-study-deliverables h3, #case-study-summary h3{
     margin: 0 0 30px 0;
@@ -124,7 +126,7 @@ margin:0 0 0 16px;
 }
 ul li{
     font-size: 14px;
-    padding:0 0 12px 0;
+    padding:0 0 8px 0;
     line-height: 1.5em;
     font-family:'Inter', Arial, Helvetica, 'san serif';
 }
@@ -170,14 +172,15 @@ nav img{
 
 h1 {
     font-size: 80px;
-    line-height: 1em;
+    line-height: 88px;
      font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     margin:0 0 20px 0;
      font-weight: 700;
      color: #e4e6eb;
 }
 h2 {
-    font-size: 6em;
+    font-size: 64px;
+    line-height: 68px;
      font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     font-weight: 700;
     padding-bottom: 56px;
@@ -191,21 +194,22 @@ h2.no-margin {
     margin-bottom: 0;
 }
 h3 {
-    font-size: 3.2em;
+    font-size: 44px;
      font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     font-weight: 700;
      margin: 40px 0 40px 0;
      color: #e4e6eb;
-     line-height: 1.2em;
+     line-height: 48px;
 }
 h4{
-    font-size: 2.7em;
+    font-size: 32px;
+    line-height: 40px;
     font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     margin: 32px 0 32px 0;
     color: #e4e6eb;
 }
 h4.template-features {
-    font-size: 1.5em;
+    font-size: 24px;
     font-weight: 700;
     margin: 0 0 32px 0;
     font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
@@ -216,14 +220,14 @@ h4.template-features {
 }
 h3.center{
     font-weight: 300;
-    font-size: 2.5em;
+    font-size: 32px;
 }
 p {
     font-size: 14px;
-    line-height: 1.9em;
-    color:#8191B1;
+    line-height: 26px;
+    color:#A5B4BB;
     font-family:'Inter', Arial, Helvetica, 'san serif';
-    font-weight:300;
+    font-weight:200;
     margin: 0 0 32px 0;
 }
 p  strong{
@@ -245,7 +249,7 @@ clear: both;
 margin-top:120px;
 }
 .hero-image h2 {
-    font-size: 8em;
+    font-size: 120px;
     color: #e4e6eb;
     display: grid;
     align-items: center;
@@ -649,7 +653,8 @@ margin-top: -90px;
     margin-bottom:20px;
     border:0;
     padding: 0;
-    font-size: 5em;
+    font-size: 72px;
+    line-height: 80px;
 }
 .responsive-views h3{
     margin:0 0 56px 0;
@@ -736,8 +741,51 @@ margin-top: -90px;
     position: relative;
     clear: both;
 }
+#case-study-intro h2 {
+    font-size: 44px;
+    line-height: 48px;
+}
+.container.narrow p{
+    font-size: 18px;
+    line-height: 30px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 28px;
+    color:#A5B4BB;
+    font-family:'Inter', Arial, Helvetica, 'san serif';
+    font-weight:200;
+    margin: 0 0 32px 0;
+}
+#case-study-summary p{
+    font-family:'Inter','Urbanist','Helvetica', 'Arial', 'Sans-Serif';
+font-size: 18px;
+line-height: 30px;
+}
 
+h1 {
+    font-size: 96px;
+    line-height: 104px;
+}
+h2 {
+    font-size: 48px;
+    line-height: 56px;
+}
 
+h3 {
+    font-size: 52px;
+    line-height: 56px;
+}
+
+.responsive-views h2 {
+    font-size: 88px;
+    line-height: 90px;
+}
+ul li {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 0 12px 0;
+}
 
 
     }
@@ -745,8 +793,8 @@ margin-top: -90px;
 
     @media only screen and (max-width: 960px) {
         h1 {
-            font-size: 4.5em;
-            line-height: 1em;
+            font-size: 64px;
+            line-height: 72px;
         }
     
         .container{
@@ -771,9 +819,10 @@ margin-top: -90px;
                 width:100%;
                 padding-right:0;
             }
+            
             #case-study-intro h2{
-                font-size: 2.5em;
-                line-height: 1.5em;
+                font-size: 32px;
+                line-height: 40px;
             }
             #case-study-aims{
                 float:left;
@@ -804,20 +853,16 @@ margin-top: -90px;
                 width:100%;
                margin-left:0;
             }
-           
-          
-            section.project-list ul li a{
-                    padding-right: 88px;
-                    font-size: 1.2em;
+            .hero-image {
+                height: 320px;
             }
-            section.project-list ul li a span{
-                    right: 0;
-                      margin-top:-56px;
-                }
-            section.project-list ul li a.active:hover span{
-                    right: 0;
-                
-                  }
+            .hero-image h2{
+                font-size: 88px;
+                line-height: 90px;
+                height: 350px;
+                border-bottom: 0;
+            }
+           
             .next-project.efc{
                     background-position: 80%;
                 }
@@ -844,7 +889,8 @@ margin-top: -90px;
                     margin-bottom:20px;
             }
             .responsive-views h3{
-                font-size: 2.8em; 
+                font-size: 32px;
+                line-height: 40px;
         }
         
         .row-of-screenshots{
@@ -887,30 +933,34 @@ margin-top: -90px;
             }
             .hero-image{
                 background-attachment:inherit;
+                height: 500px;
+                position: relative;
                 }
             .hero-image h2 {
-            width: 80%;
+            width: 85%;
             margin: 0 auto;
-            font-size: 4em;
+            font-size: 64px;
+            line-height: 68px;
+            height: 850px;
+            text-align: left;
              }
             h1 {
-                font-size: 4em;
+                font-size: 56px;
+                line-height: 64px;
                 margin-top: 64px;
             }
-            h2, h2.larger-h2 {
-                font-size: 3em;
-            }
+            
             h2.larger-h2 {
                 margin-bottom: 32px;
             }
             h3 {
-                font-size: 2.2em;
+                font-size: 36px;
             }
             h3.center{
                 font-size: 1.5em;
             }
             ul li{
-                font-size: 1em;
+                font-size: 16px;
             }
             p {
                 font-size: 16px;
@@ -921,8 +971,8 @@ margin-top: -90px;
                 padding-right:0;
             }
             #case-study-intro h2{
-            font-size: 2em;
-            line-height: 1.5em;
+                font-size: 32px;
+    line-height: 40px;
             }
             #case-study-aims{
                 float:none;
@@ -978,7 +1028,7 @@ margin-top: -90px;
             }
             .next-project{
                 height: 450px;
-                padding-top: 110px;
+                padding-top: 68px;
             }
             .home-projects .next-project .container{
                 margin-left:16px;
@@ -988,16 +1038,16 @@ margin-top: -90px;
                 padding: 16px 24px; 
             }
             .next-project h2 span{
-                font-size: .35em; 
+                font-size: 18px; 
                 margin:0; 
                 display: block; 
                 font-weight: 300;
                 text-transform: uppercase;
             }
             .next-project h2{
-                font-size: 3em; 
+                font-size: 48px; 
                 margin:24px 0 8px 0;
-            line-height: .95em;
+            line-height: 44px;
             width:250px;
         
         }
@@ -1024,11 +1074,12 @@ margin-top: -90px;
             }
 
             .responsive-views h2{
-                font-size: 3em; 
-                margin-bottom:20px;
+                font-size: 40px; 
+                line-height: 48px;
+                margin-bottom:12px;
         }
         .responsive-views h3{
-            font-size: 2em; 
+            font-size: 26px; 
     }
     #client-list{
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
