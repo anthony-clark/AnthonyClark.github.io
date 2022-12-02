@@ -146,6 +146,7 @@ nav a{
     position: relative; 
     background: #1A202C; 
     left: 16px;
+    top: 16px;
     margin-top: 24px;
     position:fixed;
     border:1px solid #2a3042;
@@ -919,6 +920,9 @@ ul li {
             margin:60px auto 0 auto;
             display: block;
             position: relative;
+          }
+          .container.project-summary{
+            margin:68px auto 0 auto;
           }
           .container.narrow{
               max-width:90%; 
