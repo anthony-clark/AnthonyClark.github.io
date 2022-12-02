@@ -166,7 +166,7 @@ nav a:hover{
 
 }
 nav img{
-    width:180px;
+    width:240px;
     margin-top: 22px;
 
 }
@@ -1031,8 +1031,8 @@ ul li {
                 padding-right: 64px;
             }
             .next-project{
-                height: 450px;
-                padding-top: 68px;
+                height: 360px;
+                padding-top: 24px;
             }
             .home-projects .next-project .container{
                 margin-left:16px;
