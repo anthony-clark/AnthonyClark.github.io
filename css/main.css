@@ -3,10 +3,10 @@ body {
     font-size: .95em;
     margin:0;
     padding:0;
-    background: #181E2A; /*url(../images/Shine.png);*/
+    background: #151A24 url(../images/bg-pattern.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-origin: content-box;
+    background-size: contain;
 }
 
 .container{
@@ -299,7 +299,7 @@ margin-top:120px;
         font-size: .25em; 
         margin:0; 
         display: block; 
-        font-weight: 300;
+        font-weight: 700;
         text-transform: uppercase;
     }
     .next-project h2{
@@ -435,16 +435,6 @@ font-size: 1.2em;
         section div.container.home-projects .next-project.password-reset{
             background-position: 70%;
         }
-
-
-
-
-
-
-
-
-
-
 .container.screenshot{
     display: flex;
     justify-content: space-between;
@@ -645,7 +635,7 @@ margin-top: -90px;
         bottom: 0;;
     }
     .responsive-views{
-        background-color:#151A23 ;
+        background-color:#0F131A ;
         padding: 1px 0 120px 0;
         clear: both;
         margin-top: 120px;
@@ -708,6 +698,45 @@ margin-top: -90px;
         width: 45%;
     }
 
+.container.my-projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-gap: 2rem;
+}
+    .project-tiles{
+        background: #1B222F;
+        display: block;
+        overflow: auto;
+        border-radius: 4px;
+    }
+    .project-tiles p{
+        font-family: ;
+        margin: 24px 24px 24px 24px;
+        font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
+        font-weight: 700;
+         color: #e4e6eb;
+         font-size: 24px;
+    }
+    .project-tiles p span{
+        display: block;
+        font-weight: 300;
+        color: #ABB6C9;
+        font-size: 16px;
+        margin-top: 4px;
+    }
+    .project-tiles a:hover{
+        background: #e4e6eb;
+        display: block;
+        overflow: auto;
+        border-radius: 8px;
+        text-decoration: none;
+    }
+    .project-tiles a:hover p{
+         color: #1B222F;
+    }
+    .project-tiles a:hover p span{
+        color: #7f8b9f;
+   }
 /*div{
     border:1px solid #555;
 }*/
@@ -721,6 +750,10 @@ margin-top: -90px;
 
 
     @media only screen and (min-width: 1600px) {
+        body {
+            background-size: 100%;
+            background-position-x: center;
+            }
         .container{
             max-width:1440px; 
           }
@@ -793,6 +826,11 @@ ul li {
 
 
     @media only screen and (max-width: 960px) {
+
+        body {
+        background-size: 150%;
+        background-position-x: center;
+        }
         h1 {
             font-size: 64px;
             line-height: 72px;
@@ -913,7 +951,10 @@ ul li {
 
 
     @media screen and (max-width: 600px) {
-       
+        body {
+            background-size: 250%;
+            background-position-x: center;
+            }
        
         .container{
             max-width:90%; 
@@ -1045,7 +1086,7 @@ ul li {
                 font-size: 18px; 
                 margin:0; 
                 display: block; 
-                font-weight: 300;
+                font-weight: 700;
                 text-transform: uppercase;
             }
             .next-project h2{
