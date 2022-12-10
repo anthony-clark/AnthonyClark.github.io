@@ -3,10 +3,15 @@ body {
     font-size: .95em;
     margin:0;
     padding:0;
-    background: #151A24 url(../images/bg-pattern.png);
+    background: #151A24 url(../images/bg-pattern-v2.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: contain;
+}
+body.homepage {
+
+    background: #151A24;
+
 }
 
 .container{
@@ -698,18 +703,27 @@ margin-top: -90px;
         width: 45%;
     }
 
-.container.my-projects{
+.my-projects{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     grid-gap: 2rem;
 }
-    .project-tiles{
+.my-projects a{
         background: #1B222F;
         display: block;
         overflow: auto;
         border-radius: 4px;
+        transition: background .50s ease-in-out;
+        -moz-transition: background .50s ease-in-out;
+        -webkit-transition: background .50s ease-in-out;
+        transition: color .50s ease-in-out;
+        -moz-transition: color .50s ease-in-out;
+        -webkit-transition: color .50s ease-in-out;
     }
-    .project-tiles p{
+    .my-projects ul{
+        list-style: none;
+    }
+    .my-projects p{
         font-family: ;
         margin: 24px 24px 24px 24px;
         font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
@@ -717,26 +731,92 @@ margin-top: -90px;
          color: #e4e6eb;
          font-size: 24px;
     }
-    .project-tiles p span{
+    .my-projects p span{
         display: block;
         font-weight: 300;
         color: #ABB6C9;
         font-size: 16px;
+        margin-top: 12px;
+    }
+    .my-projects p strong{
+        display: block;
+        font-weight: 300;
+        color: #e4e6eb;
+        font-size: 20px;
         margin-top: 4px;
     }
-    .project-tiles a:hover{
+    .my-projects a:hover{
         background: #e4e6eb;
         display: block;
         overflow: auto;
         border-radius: 8px;
         text-decoration: none;
+        color: #1B222F;
     }
-    .project-tiles a:hover p{
+    .my-projects a:hover p{
          color: #1B222F;
     }
-    .project-tiles a:hover p span{
+    .my-projects a:hover p span{
         color: #7f8b9f;
    }
+
+   .more-project-tiles{
+    background: #1B222F;
+    display:;
+    overflow: auto;
+    border-radius: 4px;
+}
+ul.more-my-projects{
+list-style: none;
+font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
+}
+ul.more-my-projects li{
+border-bottom:1px solid #2a3042;
+overflow: auto;
+padding: 0;
+}
+ul.more-my-projects li a{
+    display: block;
+    padding: 32px 0 36px 0;
+    overflow: auto;
+    transition: background .50s ease-in-out;
+    -moz-transition: background .50s ease-in-out;
+    -webkit-transition: background .50s ease-in-out;
+}
+ul.more-my-projects h3{
+    margin: 0;
+    font-weight: 700;
+     color: #e4e6eb;
+     font-size: 24px;
+     line-height: 24px;
+     width: 30%;
+     float: left;
+
+}
+ul.more-my-projects p{
+    font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
+    font-weight: 300;
+    color: #e4e6eb;
+    font-size: 20px;
+    line-height: 24px;
+    margin:0;
+    width: 50%;
+    float: left;
+}
+ul.more-my-projects span{
+    font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
+    color: #7f8b9f;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    width: 20%;
+    text-align: right;
+    float: left;
+    margin:0;
+}
+ul.more-my-projects li a:hover{
+    background: #e4e6eb; 
+}
 /*div{
     border:1px solid #555;
 }*/
@@ -750,6 +830,9 @@ margin-top: -90px;
 
 
     @media only screen and (min-width: 1600px) {
+        .container.my-projects{
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        }
         body {
             background-size: 100%;
             background-position-x: center;
@@ -828,7 +911,7 @@ ul li {
     @media only screen and (max-width: 960px) {
 
         body {
-        background-size: 150%;
+        background-size: 200%;
         background-position-x: center;
         }
         h1 {
