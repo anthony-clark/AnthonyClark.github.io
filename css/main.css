@@ -708,7 +708,23 @@ margin-top: -90px;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     grid-gap: 2rem;
 }
-.my-projects a{
+h2.more-projects-title{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 80px 0 0 0;
+    padding-left: 24px;
+padding-bottom: 16px;
+}
+h2.latest-projects-title{
+    font-size: 52px;
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+.my-projects, .more-my-projects{
+    list-style: none;
+    margin: 0;
+}
+.my-projects li a{
         background: #1B222F;
         display: block;
         overflow: auto;
@@ -716,9 +732,7 @@ margin-top: -90px;
         transition: background .50s ease-in-out;
         -moz-transition: background .50s ease-in-out;
         -webkit-transition: background .50s ease-in-out;
-        transition: color .50s ease-in-out;
-        -moz-transition: color .50s ease-in-out;
-        -webkit-transition: color .50s ease-in-out;
+     
     }
     .my-projects ul{
         list-style: none;
@@ -745,7 +759,7 @@ margin-top: -90px;
         font-size: 20px;
         margin-top: 4px;
     }
-    .my-projects a:hover{
+    .my-projects li a:hover{
         background: #e4e6eb;
         display: block;
         overflow: auto;
@@ -753,7 +767,7 @@ margin-top: -90px;
         text-decoration: none;
         color: #1B222F;
     }
-    .my-projects a:hover p{
+    .my-projects a:hover p, .my-projects a:hover p strong{
          color: #1B222F;
     }
     .my-projects a:hover p span{
@@ -771,24 +785,25 @@ list-style: none;
 font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
 }
 ul.more-my-projects li{
-border-bottom:1px solid #2a3042;
+
 overflow: auto;
 padding: 0;
 }
 ul.more-my-projects li a{
     display: block;
-    padding: 32px 0 36px 0;
+    padding: 32px 24px;
     overflow: auto;
     transition: background .50s ease-in-out;
     -moz-transition: background .50s ease-in-out;
     -webkit-transition: background .50s ease-in-out;
+    border-bottom:1px solid #2a3042;
 }
 ul.more-my-projects h3{
     margin: 0;
     font-weight: 700;
      color: #e4e6eb;
      font-size: 24px;
-     line-height: 24px;
+     line-height: 20px;
      width: 30%;
      float: left;
 
@@ -816,7 +831,14 @@ ul.more-my-projects span{
 }
 ul.more-my-projects li a:hover{
     background: #e4e6eb; 
+border-radius: 8px;
 }
+ul.more-my-projects li a:hover h3, ul.more-my-projects li a:hover p{
+color: #1B222F;
+}
+ul.more-my-projects li a:hover span{
+    color: #7f8b9f;
+    }
 /*div{
     border:1px solid #555;
 }*/
@@ -1021,11 +1043,17 @@ ul li {
             grid-gap: 3rem;
         }
         
+  
+        .more-my-projects p{
+            display: none;
+        }
+
+        ul.more-my-projects h3{
+            width: 80%;
+        }
 
 
-.home-projects .next-project .container{
-    margin-left:0;
-}
+
             
     }
 
@@ -1272,6 +1300,6 @@ section div.container.home-projects{
         background-position: 63%;
     }
 
-
+   
         
       }
