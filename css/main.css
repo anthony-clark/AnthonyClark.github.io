@@ -803,7 +803,7 @@ padding: 0;
 }
 ul.more-my-projects li a{
     display: block;
-    padding: 32px 0;
+    padding: 56px 0;
     overflow: auto;
     transition: background .50s ease-in-out;
     -moz-transition: background .50s ease-in-out;
@@ -814,7 +814,7 @@ ul.more-my-projects h3{
     margin: 0;
     font-weight: 700;
      color: #e4e6eb;
-     font-size: 24px;
+     font-size: 28px;
      line-height: 20px;
      width: 30%;
      float: left;
@@ -854,7 +854,7 @@ ul.more-my-projects span.material-icons-outlined{
     -webkit-transition: padding .30s ease-in-out;
 }
 ul.more-my-projects a:hover span.material-icons-outlined{
-    padding-left:80px;
+    padding-left:90px;
     color: #d9ef82;
 }
 ul.more-my-projects li a:hover h3, ul.more-my-projects li a:hover p{
@@ -876,8 +876,10 @@ ul.more-my-projects li a:hover span{
 
 
     @media only screen and (min-width: 1600px) {
-        .container.my-projects{
+        .my-projects{
+            display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 2rem;
         }
         body {
             background-size: 100%;
