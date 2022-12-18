@@ -3,7 +3,7 @@ body {
     font-size: .95em;
     margin:0;
     padding:0;
-    background: #151A24 url(../images/bg-pattern-v2.jpg);
+    background: rgb(21, 26, 36) url(../images/bg-pattern-v2.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: contain;
@@ -710,7 +710,7 @@ margin-top: -90px;
 
 .my-projects{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 2rem;
 }
 h2.more-projects-title{
@@ -751,8 +751,8 @@ h2.latest-projects-title{
     }
     .my-projects h3{
         margin: 24px 24px 0 24px;
-        font-size: 24px;
-        line-height: 26px;
+        font-size: 32px;
+        line-height: 48px;
         color: #e4e6eb;
         font-family: 'Inter', Arial, Helvetica,
     }
@@ -803,35 +803,34 @@ padding: 0;
 }
 ul.more-my-projects li a{
     display: block;
-    padding: 72px 0;
+    padding: 40px 0 56px 0;
     overflow: auto;
     transition: background .50s ease-in-out;
     -moz-transition: background .50s ease-in-out;
     -webkit-transition: background .50s ease-in-out;
     border-bottom:1px solid #2a3042;
 }
+ul.more-my-projects div{
+    width: 50%;
+    float: left;
+}
 ul.more-my-projects h3{
     margin: 0;
     font-weight: 700;
      color: #e4e6eb;
-     font-size: 56px;
-     line-height: 20px;
-     width: 50%;
-     float: left;
-
+     font-size: 40px;
+     line-height:72px;
 }
 ul.more-my-projects p{
     font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     font-weight: 300;
-    color: #e4e6eb;
+    color: #7f8b9f;
     font-size: 20px;
     line-height: 24px;
     margin:0;
-    width: 40%;
-    float: left;
 }
 ul.more-my-projects span.role{
-    font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Inter', Arial, Helvetica;
     color: #7f8b9f;
     font-size: 16px;
     line-height: 24px;
@@ -843,12 +842,11 @@ ul.more-my-projects span.role{
     display: none;
 }
 ul.more-my-projects span.material-icons-outlined{
-    font-size: 32px;
-    line-height: 24px;
+    font-size: 48px;
+    line-height: 96px;
     color: #f1f1f1;
     width: 10%;
     padding-left:56px;
-
     transition: padding .30s ease-in-out;
     -moz-transition: padding .30s ease-in-out;
     -webkit-transition: padding .30s ease-in-out;
@@ -863,6 +861,112 @@ ul.more-my-projects li a:hover h3, ul.more-my-projects li a:hover p{
 ul.more-my-projects li a:hover span{
     color:#A5B4BB;
     }
+
+
+
+
+
+
+
+
+   
+      .slider {
+        height: 60px;
+        position: relative;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+      }
+      .slider img{
+        height: 60px;
+      }
+      .slider::before,
+      .slider::after{
+        position:absolute;
+        background-image:linear-gradient(to right,rgba(21, 26, 36,1) 0%,rgba(21, 26, 36,0) 100%);
+        content:'';
+        height:100%;width:25%;
+        z-index:2;pointer-events:none;
+      }
+      .slider::before{
+        left:0;
+        top:0;
+      }
+      .slider::after{
+        right:0;
+        top:0;
+        transform:rotateZ(180deg);
+      }
+      
+      /*  IMPORTANT CODE BELOW */
+      
+      .slide-track {
+        width: calc(150px * 30);
+        display: flex;
+        animation: scroll 55s linear infinite;
+        justify-content: space-between;
+      }
+      
+     
+      
+      .slide {
+        width: auto;
+        height: 60px;
+        
+        display: grid;
+        place-items: center;
+        transition:0.5s;
+        cursor:pointer;
+      }
+      .slide:hover{
+        transform:scale(0.8)
+      }
+      
+      @keyframes scroll {
+        0% {
+          transform: translateX(0px);
+        }
+        100% {
+          transform: translateX(calc(-150px * 16));
+        }
+      }
+      
+      @keyframes scroll2 {
+        0% {
+          transform: translateX(0px);
+        }
+        100% {
+          transform: translateX(calc(-150px * 5));
+        }
+      }
+      
+      @media screen and (max-width: 768px) {
+        .slide-track {
+            animation: scroll 15s linear infinite;
+          }
+      
+       
+      
+        @keyframes scroll {
+          0% {
+            transform: translateX(0px);
+          }
+          100% {
+            transform: translateX(calc(-80px * 10));
+          }
+        }
+      
+        @keyframes scroll2 {
+          0% {
+            transform: translateX(0px);
+          }
+          100% {
+            transform: translateX(calc(-80px * 5));
+          }
+        }
+      }
+      
 /*div{
     border:1px solid #555;
 }*/
