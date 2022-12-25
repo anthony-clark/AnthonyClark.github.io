@@ -8,6 +8,7 @@ body {
     background-attachment: scroll;
     background-size: contain;
     overflow-x: hidden;
+
 }
 body.homepage {
 
@@ -726,145 +727,14 @@ h2.latest-projects-title{
     list-style: none;
     margin: 0;
 }
-.my-projects li a{
-        background: #1B222F;
-        display: block;
-        overflow: auto;
-        border-radius: 4px;
-        transition: background .50s ease-in-out;
-        -moz-transition: background .50s ease-in-out;
-        -webkit-transition: background .50s ease-in-out;
-     
-    }
-    .my-projects ul{
-        list-style: none;
-    }
-    .my-projects p{
-        margin: 4px 24px 16px 24px;
-        font-size: 14px;
-        line-height: 26px;
-        color: #A5B4BB;
-        font-family: 'Inter', Arial, Helvetica,
-    }
-    .my-projects h3{
-        margin: 24px 24px 0 24px;
-        font-size: 32px;
-        line-height: 48px;
-        color: #e4e6eb;
-        font-family: 'Inter', Arial, Helvetica,
-    }
-    .my-projects span.material-icons-outlined{
-        font-size: 32px;
-        line-height: 24px;
-        color: #f1f1f1;
-        width: 10%;
-        transition: padding .30s ease-in-out;
-        -moz-transition: padding .30s ease-in-out;
-        -webkit-transition: padding .30s ease-in-out;
-        margin: 0 24px 24px 24px;
-    }
-    .my-projects a:hover span.material-icons-outlined{
-        padding-left:24px;
-        color: #d9ef82;
-    }
-
-
-    .my-projects li a:hover{
-        display: block;
-        overflow: auto;
-        border-radius: 8px;
-        text-decoration: none;
-        color:#A5B4BB;
-    }
-    .my-projects a:hover h3{
-        color:#A5B4BB;
-    }
-    .my-projects a:hover img{
-        opacity: .5;
-    }
-
-   .more-project-tiles{
-    background: #1B222F;
-    display:;
-    overflow: auto;
-    border-radius: 4px;
-}
-ul.more-my-projects{
-list-style: none;
-font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-}
-ul.more-my-projects li{
-display: block;
-overflow: auto;
-padding: 0;
-}
-ul.more-my-projects li a{
-    display: block;
-    padding: 40px 0 56px 0;
-    overflow: auto;
-    transition: background .50s ease-in-out;
-    -moz-transition: background .50s ease-in-out;
-    -webkit-transition: background .50s ease-in-out;
-    border-bottom:1px solid #2a3042;
-}
-ul.more-my-projects div{
-    width: 50%;
-    float: left;
-}
-ul.more-my-projects h3{
-    margin: 0;
-    font-weight: 700;
-     color: #e4e6eb;
-     font-size: 40px;
-     line-height:72px;
-}
-ul.more-my-projects p{
-    font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-    font-weight: 300;
-    color: #7f8b9f;
-    font-size: 20px;
-    line-height: 24px;
-    margin:0;
-}
-ul.more-my-projects span.role{
-    font-family: 'Inter', Arial, Helvetica;
-    color: #7f8b9f;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 300;
-    width: 10%;
-    text-align: right;
-    float: left;
-    margin:0;
-    display: none;
-}
-ul.more-my-projects span.material-icons-outlined{
-    font-size: 48px;
-    line-height: 96px;
-    color: #f1f1f1;
-    width: 10%;
-    padding-left:56px;
-    transition: padding .30s ease-in-out;
-    -moz-transition: padding .30s ease-in-out;
-    -webkit-transition: padding .30s ease-in-out;
-}
-ul.more-my-projects a:hover span.material-icons-outlined{
-    padding-left:90px;
-    color: #d9ef82;
-}
-ul.more-my-projects li a:hover h3, ul.more-my-projects li a:hover p{
-    color:#A5B4BB;
-}
-ul.more-my-projects li a:hover span{
-    color:#A5B4BB;
-    }
 
 
 
 
 
 
-
+/* Logo carousel
+---------------------------------------------- */
 
    
       .slider {
@@ -974,13 +844,65 @@ https://flickity.metafizzy.co
 ---------------------------------------------- */
 * { box-sizing: border-box; }
 .carousel-cell {
-    width: 50%; /* half-width */
-    height: 160px;
-    margin-right: 10px;
-    background: #19F;
+    width: 300px; /* half-width */
+    margin-right: 24px;
+    counter-increment: gallery-cell;
   }
+  .carousel-cell a{
+    background: #1B222F;
+    display: block;
+    overflow: auto;
+    border-radius: 4px;
+    transition: background .50s ease-in-out;
+    -moz-transition: background .50s ease-in-out;
+    -webkit-transition: background .50s ease-in-out;
+ 
+}
+
+.carousel-cell p{
+    margin: 4px 24px 16px 24px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #A5B4BB;
+    font-family: 'Inter', Arial, Helvetica,
+}
+.carousel-cell h3{
+    margin: 24px 24px 0 24px;
+    font-size: 24px;
+    line-height: 32px;
+    color: #e4e6eb;
+    font-family: 'Inter', Arial, Helvetica,
+}
+.carousel-cell span.material-icons-outlined{
+    font-size: 32px;
+    line-height: 24px;
+    color: #f1f1f1;
+    width: 10%;
+    transition: padding .30s ease-in-out;
+    -moz-transition: padding .30s ease-in-out;
+    -webkit-transition: padding .30s ease-in-out;
+    margin: 0 24px 24px 24px;
+}
+.carousel-cell a:hover span.material-icons-outlined{
+    padding-left:24px;
+    color: #d9ef82;
+}
+
+
+.carousel-cell a:hover{
+    display: block;
+    overflow: auto;
+    border-radius: 8px;
+    text-decoration: none;
+    color:#A5B4BB;
+}
+.carousel-cell a:hover h3{
+    color:#A5B4BB;
+}
+.carousel-cell a:hover img{
+    opacity: .5;
+}
   .carousel-cell.is-selected {
-    background: #ED2;
   }
 .flickity-enabled {
     position: relative;
@@ -1058,7 +980,7 @@ https://flickity.metafizzy.co
   /* ---- previous/next buttons ---- */
   
   .flickity-prev-next-button {
-    top: 50%;
+    top: -80px;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -1066,8 +988,8 @@ https://flickity.metafizzy.co
     transform: translateY(-50%);
   }
   
-  .flickity-prev-next-button.previous { left: 10px; }
-  .flickity-prev-next-button.next { right: 10px; }
+  .flickity-prev-next-button.previous { right: 68px; }
+  .flickity-prev-next-button.next { right: 0; }
   /* right to left */
   .flickity-rtl .flickity-prev-next-button.previous {
     left: auto;
@@ -1106,9 +1028,9 @@ https://flickity.metafizzy.co
     width: 10px;
     height: 10px;
     margin: 0 8px;
-    background: #333;
+    background: #ffffff;
     border-radius: 50%;
-    opacity: 0.25;
+    opacity: 0.15;
     cursor: pointer;
   }
   /* position dots up a bit */
@@ -1342,6 +1264,14 @@ ul li {
 
 
     @media screen and (max-width: 600px) {
+        .carousel-cell {
+            width: 280px; /* half-width */
+            margin-right: 24px;
+            counter-increment: gallery-cell;
+          }
+          .carousel-cell p{
+            font-size: 16px;
+          }
         body {
             background-size: 250%;
             background-position-x: center;
