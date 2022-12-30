@@ -2,6 +2,7 @@
 https://flickity.metafizzy.co
 ---------------------------------------------- */
 * { box-sizing: border-box; }
+
 .carousel-cell {
     width: 300px; /* half-width */
     margin-right: 24px;
@@ -106,14 +107,15 @@ https://flickity.metafizzy.co
   
   .flickity-button {
     position: absolute;
-    background: hsla(0, 0%, 100%, 0.75);
-    border: none;
-    color: #333;
+    border: 1px solid #f1f1f1;
+    background: #1A202C;
+    color: #f1f1f1;
   }
   
   .flickity-button:hover {
     background: white;
     cursor: pointer;
+    color: #1A202C;
   }
   
   .flickity-button:focus {
@@ -140,14 +142,14 @@ https://flickity.metafizzy.co
   
   .flickity-prev-next-button {
     top: -80px;
-    width: 44px;
-    height: 44px;
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
     /* vertically center */
     transform: translateY(-50%);
   }
   
-  .flickity-prev-next-button.previous { right: 68px; }
+  .flickity-prev-next-button.previous { right: 80px; }
   .flickity-prev-next-button.next { right: 0; }
   /* right to left */
   .flickity-rtl .flickity-prev-next-button.previous {
@@ -161,9 +163,9 @@ https://flickity.metafizzy.co
   
   .flickity-prev-next-button .flickity-button-icon {
     position: absolute;
-    left: 20%;
+    left: 33%;
     top: 20%;
-    width: 60%;
+    width: 32%;
     height: 60%;
   }
   

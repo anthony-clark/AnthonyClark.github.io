@@ -7,8 +7,9 @@ body {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: contain;
+}
+#sitewrapper{
     overflow-x: hidden;
-
 }
 body.homepage {
 
