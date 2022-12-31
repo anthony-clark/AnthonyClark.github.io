@@ -69,7 +69,7 @@ body { font-family: sans-serif; }
 /* ---- flickity-button ---- */
 
 .flickity-button {
-  position: absolute;
+  position: relative;
   border: 1px solid #f1f1f1;
   background: #1A202C;
   color: #f1f1f1;
@@ -104,16 +104,16 @@ body { font-family: sans-serif; }
 /* ---- previous/next buttons ---- */
 
 .flickity-prev-next-button {
-  top: -80px;
   width: 64px;
     height: 64px;
   border-radius: 50%;
   /* vertically center */
-  transform: translateY(-50%);
+  margin-top: 16px;
+  margin-bottom: 120px;
 }
 
-.flickity-prev-next-button.previous { right: 80px; }
-.flickity-prev-next-button.next { right: 0; }
+.flickity-prev-next-button.previous { float: left; }
+.flickity-prev-next-button.next { float: right; }
 /* right to left */
 .flickity-rtl .flickity-prev-next-button.previous {
   left: auto;
@@ -137,7 +137,7 @@ body { font-family: sans-serif; }
 .flickity-page-dots {
   position: absolute;
   width: 100%;
-  bottom: -25px;
+
   padding: 0;
   margin: 0;
   list-style: none;
@@ -159,7 +159,7 @@ body { font-family: sans-serif; }
 }
 /* position dots up a bit */
 .flickity-page-dots {
-  bottom: -22px;
+  bottom: -48px;
 }
 /* dots are lines */
 .flickity-page-dots .dot {
@@ -174,11 +174,15 @@ body { font-family: sans-serif; }
 }   
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
      
   body {
       background-size: 250%;
       background-position-x: center;
       overflow-x: hidden;
+      }
+      .carousel {
+        background: #FAFAFA;
+        margin: 0; /* space for prev/next buttons */
       }
     }

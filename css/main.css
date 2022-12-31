@@ -7,15 +7,13 @@ body {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: contain;
-    height: 100%;
-overflow: hidden !important;
-width: 100%;
-position: fixed;
+    
 }
-/*#sitewrapper{
+#sitewrapper{
     overflow-x: hidden;
     width: 100%;
-}*/
+    position: relative
+}
 body.homepage {
 
     background: #151A24;
