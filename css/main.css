@@ -37,6 +37,9 @@ body.homepage {
 
     padding:24px 0;
 }
+.nav-container img{
+    width: 104px;
+}
 .container.fullwidth-screen{
     margin-top: 56px;
 }
