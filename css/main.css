@@ -1269,7 +1269,7 @@ section div.container.home-projects{
   }
 .carousel-cell p{
     margin: 4px 24px 16px 24px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 26px;
     color: #A5B4BB;
     font-family: 'Inter', Arial, Helvetica,
@@ -1281,6 +1281,8 @@ section div.container.home-projects{
     color: #e4e6eb;
     font-family: 'Inter', Arial, Helvetica,
 }
-
+.carousel-cell a{
+min-height: 415px;
+}
         
       }
