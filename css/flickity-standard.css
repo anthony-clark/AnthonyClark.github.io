@@ -108,7 +108,7 @@ body { font-family: sans-serif; }
     height: 64px;
   border-radius: 50%;
   /* vertically center */
-  margin-top: 16px;
+  margin-top: 24px;
   margin-bottom: 120px;
 }
 
@@ -159,7 +159,7 @@ body { font-family: sans-serif; }
 }
 /* position dots up a bit */
 .flickity-page-dots {
-  bottom: -48px;
+  bottom: -56px;
 }
 /* dots are lines */
 .flickity-page-dots .dot {
@@ -184,5 +184,8 @@ body { font-family: sans-serif; }
       .carousel {
         background: #FAFAFA;
         margin: 0; /* space for prev/next buttons */
+      }
+      .flickity-page-dots .dot {
+        width: 24px;
       }
     }

@@ -4,7 +4,7 @@ https://flickity.metafizzy.co
 * { box-sizing: border-box; }
 
 .carousel-cell {
-    width: 285px; /* half-width */
+    width: 300px; /* half-width */
     margin-right: 24px;
     counter-increment: gallery-cell;
   }
@@ -12,7 +12,7 @@ https://flickity.metafizzy.co
     background: #1B222F;
     display: block;
     overflow: auto;
-    border-radius: 4px;
+    border-radius: 8px;
     transition: background .50s ease-in-out;
     -moz-transition: background .50s ease-in-out;
     -webkit-transition: background .50s ease-in-out;
@@ -145,7 +145,7 @@ https://flickity.metafizzy.co
     height: 64px;
   border-radius: 50%;
   /* vertically center */
-  margin-top: 16px;
+  margin-top: 24px;
   margin-bottom: 120px;
 }
 
@@ -196,7 +196,7 @@ https://flickity.metafizzy.co
 }
 /* position dots up a bit */
 .flickity-page-dots {
-  bottom: -48px;
+  bottom: -56px;
 }
 /* dots are lines */
 .flickity-page-dots .dot {
@@ -242,7 +242,10 @@ color: #e4e6eb;
 font-family: 'Inter', Arial, Helvetica,
 }
 .carousel-cell a{
-min-height: 425px;
+min-height: 330px;
+}
+.flickity-page-dots .dot {
+  width: 24px;
 }
     
   }
