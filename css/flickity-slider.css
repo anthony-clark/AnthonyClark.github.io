@@ -5,7 +5,7 @@ https://flickity.metafizzy.co
 
 .carousel-cell {
     width: 300px; /* half-width */
-    margin-right: 24px;
+    margin-right: 32px;
     counter-increment: gallery-cell;
   }
   .carousel-cell a{
@@ -45,7 +45,7 @@ https://flickity.metafizzy.co
 }
 .carousel-cell a:hover span.material-icons-outlined{
     padding-left:24px;
-    color: #d9ef82;
+    color: #DBFE87;
 }
 
 
@@ -223,20 +223,20 @@ h2.latest-projects-title{
 font-size: 36px;
 }
 .carousel-cell {
-width: 220px; /* half-width */
+width: 270px; /* half-width */
 margin-right: 24px;
 counter-increment: gallery-cell;
 }
 .carousel-cell p{
 margin: 4px 24px 16px 24px;
-font-size: 14px;
+font-size: 16px;
 line-height: 26px;
 color: #A5B4BB;
 font-family: 'Inter', Arial, Helvetica,
 }
 .carousel-cell h3{
 margin: 24px 24px 0 24px;
-font-size: 18px;
+font-size: 24px;
 line-height: 32px;
 color: #e4e6eb;
 font-family: 'Inter', Arial, Helvetica,
