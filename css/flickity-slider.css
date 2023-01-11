@@ -20,32 +20,35 @@ https://flickity.metafizzy.co
 }
 
 .carousel-cell p{
-    margin: 4px 24px 16px 24px;
-    font-size: 14px;
-    line-height: 26px;
-    color: #A5B4BB;
-    font-family: 'Inter', Arial, Helvetica,
+  margin: 0px 32px 32px 32px;
+  font-size: 15px;
+  line-height: 24px;
+  min-height:72px;
+  color: #A5B4BB;
+  font-family: 'Inter', Arial, Helvetica,
 }
 .carousel-cell h3{
-    margin: 24px 24px 0 24px;
-    font-size: 24px;
-    line-height: 32px;
-    color: #e4e6eb;
-    font-family: 'Inter', Arial, Helvetica,
+  margin: 32px;
+  font-size: 48px;
+  line-height: 48px;
+  color: #e4e6eb;
+  font-family: 'Inter', Arial, Helvetica,
 }
+
+
 .carousel-cell span.material-icons-outlined{
     font-size: 32px;
     line-height: 24px;
     color: #f1f1f1;
     width: 10%;
-    transition: padding .30s ease-in-out;
-    -moz-transition: padding .30s ease-in-out;
-    -webkit-transition: padding .30s ease-in-out;
+    transition: padding .20s ease-in-out;
+    -moz-transition: padding .20s ease-in-out;
+    -webkit-transition: padding .20s ease-in-out;
     margin: 0 24px 24px 24px;
 }
 .carousel-cell a:hover span.material-icons-outlined{
     padding-left:24px;
-    color: #DBFE87;
+    color:#151a23;
 }
 
 
@@ -54,10 +57,10 @@ https://flickity.metafizzy.co
     overflow: auto;
     border-radius: 8px;
     text-decoration: none;
-    color:#A5B4BB;
+    background:#f1f1f1;
 }
-.carousel-cell a:hover h3{
-    color:#A5B4BB;
+.carousel-cell a:hover h3, .carousel-cell a:hover p{
+  color:#151a23;
 }
 .carousel-cell a:hover img{
     opacity: .5;
@@ -228,24 +231,23 @@ margin-right: 24px;
 counter-increment: gallery-cell;
 }
 .carousel-cell p{
-margin: 4px 24px 16px 24px;
 font-size: 16px;
 line-height: 26px;
 color: #A5B4BB;
 font-family: 'Inter', Arial, Helvetica,
 }
 .carousel-cell h3{
-margin: 24px 24px 0 24px;
-font-size: 24px;
-line-height: 32px;
+font-size: 40px;
+line-height: 42px;
 color: #e4e6eb;
 font-family: 'Inter', Arial, Helvetica,
 }
-.carousel-cell a{
-min-height: 330px;
-}
+
 .flickity-page-dots .dot {
   width: 24px;
 }
+.carousel-cell a{
+  min-height: 320px;
+  }
     
   }
