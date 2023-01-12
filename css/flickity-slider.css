@@ -16,11 +16,22 @@ https://flickity.metafizzy.co
     transition: background .50s ease-in-out;
     -moz-transition: background .50s ease-in-out;
     -webkit-transition: background .50s ease-in-out;
- 
+    padding-top:32px;
 }
-
+.carousel-cell strong{
+  margin: 0 32px 0 32px;
+  font-size: 12px;
+  line-height: 24px;
+  min-height:72px;
+  background: #A5B4BB;
+  text-transform: uppercase;
+  color: #1B222F;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-family: 'Urbanist', Arial, Helvetica !important;
+}
 .carousel-cell p{
-  margin: 0px 32px 32px 32px;
+  margin: 0px 32px 24px 32px;
   font-size: 15px;
   line-height: 24px;
   min-height:72px;
@@ -28,7 +39,7 @@ https://flickity.metafizzy.co
   font-family: 'Inter', Arial, Helvetica,
 }
 .carousel-cell h3{
-  margin: 32px;
+  margin: 24px 32px 24px 32px;
   font-size: 48px;
   line-height: 48px;
   color: #e4e6eb;
@@ -233,14 +244,10 @@ counter-increment: gallery-cell;
 .carousel-cell p{
 font-size: 16px;
 line-height: 26px;
-color: #A5B4BB;
-font-family: 'Inter', Arial, Helvetica,
 }
 .carousel-cell h3{
 font-size: 40px;
 line-height: 42px;
-color: #e4e6eb;
-font-family: 'Inter', Arial, Helvetica,
 }
 
 .flickity-page-dots .dot {
@@ -249,5 +256,19 @@ font-family: 'Inter', Arial, Helvetica,
 .carousel-cell a{
   min-height: 320px;
   }
-    
+  
+  .carousel-cell a:hover{
+    display: block;
+    overflow: auto;
+    border-radius: 8px;
+    text-decoration: none;
+    background: #1B222F;
+    color: #e4e6eb;
+}
+.carousel-cell a:hover p, .carousel-cell a:hover h3{
+  color: #A5B4BB;
+}
+.carousel-cell a:hover h3, .carousel-cell a:hover  span.material-icons-outlined{
+  color: #e4e6eb;
+}
   }
