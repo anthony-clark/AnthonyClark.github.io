@@ -17,6 +17,7 @@ https://flickity.metafizzy.co
     -moz-transition: background .50s ease-in-out;
     -webkit-transition: background .50s ease-in-out;
     padding-top:32px;
+    min-height: 344px;
 }
 .carousel-cell strong{
   margin: 0 32px 0 32px;
@@ -68,13 +69,22 @@ https://flickity.metafizzy.co
     overflow: auto;
     border-radius: 8px;
     text-decoration: none;
-    background:#f1f1f1;
+    background:#003366 url(../images/testhover.jpg);
+    background-size: cover;
 }
 .carousel-cell a:hover h3, .carousel-cell a:hover p{
   color:#151a23;
 }
 .carousel-cell a:hover img{
     opacity: .5;
+}
+.carousel-cell a:hover p, .carousel-cell a:hover h3{
+  color: #A5B4BB;
+  display: none;
+}
+.carousel-cell a:hover h3, .carousel-cell a:hover  span.material-icons-outlined{
+  color: #e4e6eb;
+  display: none;
 }
   .carousel-cell.is-selected {
   }
