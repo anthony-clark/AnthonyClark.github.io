@@ -9,6 +9,7 @@ body {
     background-size: contain;
     
 }
+
 #sitewrapper{
     overflow-x: hidden;
     width: 100%;
@@ -26,6 +27,9 @@ body.homepage {
   position: relative;
   clear: both;
 }
+.container.about{
+    display: flex;
+  }
 .container.project-summary{
     margin:160px auto 0 auto;
   }
@@ -678,23 +682,25 @@ h2.latest-projects-title{
 .experience{
     position: relative;
 }
-.experience ul{
+ul.experience{
     list-style: none;
-    margin-left: 9px;
+    margin: 8px 0 9px 8px;
 }
-.experience ul strong{
+ul.experience strong{
     display: block;
-    padding: 12px 0 7px 0px;
+    padding: 8px 0 2px 0px;
+    color: #f1f1f1;
 }
-.experience ul li{
+ul.experience li{
     padding-bottom: 32px;
     border-left: 1px solid #A5B4BB;
     padding-left: 44px;
 }
-.experience ul li.current:before {
+ul.experience li.current:before {
     position: absolute;
-    left: 2px;
-    top: 0px;
+    left: -7px;
+    top: 4px;
+    margin-top: 0;
     content: " ";
     border: 8px solid rgba(255, 255, 255, 1);
     border-radius: 500%;
@@ -703,9 +709,10 @@ h2.latest-projects-title{
     width: 8px;
     transition: all 500ms ease-in-out;
   }
-  .experience ul li:before{
+  ul.experience li:before{
     position: absolute;
-    left: 4px;
+    left: -5px;
+    margin-top: 5px;
 border: 0;
     content: " ";
     border-radius: 500%;
@@ -718,11 +725,11 @@ border: 0;
     -moz-box-shadow: 0px 0px 0px 12px rgba(21,26,35,1);
     box-shadow: 0px 0px 0px 12px rgba(21,26,35,1);
   }
-  .experience ul li span{
+  ul.experience li span{
     margin-top: -2px;
     margin: 0;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 24px;
     min-height: 72px;
     background: #A5B4BB;
@@ -732,12 +739,75 @@ border: 0;
     border-radius: 4px;
     font-family: 'Urbanist', Arial, Helvetica !important;
   }
-  .experience ul li:last-child{
+  ul.experience li:last-child{
     padding-bottom:0;
     border-left: 0;
   }
+  .about-intro {
+ width:45%;
+    margin-right: 120px;
+  }
+  .about-me {
+    width: 60%;
+    margin-top: 8px;
+     }
+.about-intro h2{
+    padding: 0;
+    margin: 0 0 8px 0;
+    border: 0;
+    font-size: 56px;
+    line-height: 64px;
+}
+.about-intro h3{
+    font-weight: 300;
+    padding: 0 0 40px 0;
+    margin: 0 0 40px 0;
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #2a3042;
+}
+.about-me h3{
+    margin: 0 0 30px 0;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
+    color: #e4e6eb;
 
-
+}
+.about-me p{
+    font-size: 16px;
+}
+.headshot{
+    width: 160px;
+    height: 160px;
+    background: #A5B4BB;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 40px;
+}
+a.about-links{
+    width: auto;
+    color: #e4e6eb; 
+    background:none; 
+    font-size: 16px;
+    font-weight: 700; 
+    margin:0;
+    padding: 32px 0; 
+    cursor: pointer;
+    display: block;
+    font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
+    text-transform: uppercase;
+    border-bottom: 1px solid #2a3042;
+}
+a:hover.about-links{
+    width: 200px; 
+    color:#272727; 
+    background:#e4e6eb; 
+    border: 1px solid #e4e6eb; 
+    text-decoration: none;
+}
 
 
 
@@ -955,6 +1025,17 @@ ul li {
             display: block;
             position: relative;
           }
+          .container.about{
+            display: block;
+          }
+          .about-intro {
+            width:100%;
+               margin-right: 120px;
+             }
+             .about-me {
+               width: 100%;
+               margin-top: 8px;
+                }
           .container.narrow{
               max-width:80%; 
               margin:120px auto 0 auto;
