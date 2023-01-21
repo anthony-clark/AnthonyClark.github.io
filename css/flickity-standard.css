@@ -109,7 +109,7 @@ body { font-family: sans-serif; }
   border-radius: 50%;
   /* vertically center */
   margin-top: 24px;
-  margin-bottom: 120px;
+  margin-bottom: 200px;
 }
 
 .flickity-prev-next-button.previous { float: left; }
@@ -176,16 +176,15 @@ body { font-family: sans-serif; }
 
 @media screen and (max-width: 768px) {
      
-  body {
-      background-size: 250%;
-      background-position-x: center;
-      overflow-x: hidden;
-      }
+
       .carousel {
         background: #FAFAFA;
         margin: 0; /* space for prev/next buttons */
       }
       .flickity-page-dots .dot {
         width: 24px;
+      }
+      .flickity-prev-next-button {
+        margin-bottom: 80px;
       }
     }

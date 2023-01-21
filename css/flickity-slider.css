@@ -243,7 +243,9 @@ https://flickity.metafizzy.co
         }
    
 h2.latest-projects-title{
-font-size: 36px;
+  font-size: 48px;
+  line-height: 54px;
+  margin-bottom: 48px;
 }
 .carousel-cell {
 width: 270px; /* half-width */
@@ -255,8 +257,8 @@ font-size: 16px;
 line-height: 26px;
 }
 .carousel-cell h3{
-font-size: 40px;
-line-height: 42px;
+font-size: 32px;
+line-height: 40px;
 }
 
 .flickity-page-dots .dot {
@@ -276,8 +278,18 @@ line-height: 42px;
 }
 .carousel-cell a:hover p, .carousel-cell a:hover h3{
   color: #A5B4BB;
+  display: block;
 }
 .carousel-cell a:hover h3, .carousel-cell a:hover  span.material-icons-outlined{
   color: #e4e6eb;
+  display: block;
+}
+
+.flickity-prev-next-button {
+
+  margin-bottom: 80px;
+}
+.container.key-projects {
+  min-height: auto;
 }
   }
