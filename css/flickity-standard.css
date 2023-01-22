@@ -8,6 +8,10 @@ body { font-family: sans-serif; }
   background: #FAFAFA;
   margin: 0 60px; /* space for prev/next buttons */
 }
+.carousel.lexus {
+  background: #FAFAFA;
+  margin: 0; /* space for prev/next buttons */
+}
 
 .carousel-cell {
   width: 100%;
