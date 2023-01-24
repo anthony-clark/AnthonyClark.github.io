@@ -27,9 +27,7 @@ body.homepage {
   position: relative;
   clear: both;
 }
-.container.about{
-    display: flex;
-  }
+
   .container.key-projects{
     min-height: 600px;
   }
@@ -207,7 +205,7 @@ h1 {
      color: #e4e6eb;
 }
 h2 {
-    font-size: 80px;
+    font-size: 72px;
     line-height: 68px;
      font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     font-weight: 700;
@@ -277,7 +275,7 @@ clear: both;
 margin-top:120px;
 }
 .hero-image h2 {
-    font-size: 80px;
+    font-size: 72px;
     color: #e4e6eb;
     display: grid;
     align-items: center;
@@ -676,9 +674,10 @@ margin-top: -90px;
 }
 
 h2.latest-projects-title{
-    font-size: 80px;
+    font-size: 72px;
     border-bottom: 0;
-    margin-bottom: 56px;
+    margin-bottom: 64px;
+    padding: 0;
 }
 .my-projects, .more-my-projects{
     list-style: none;
@@ -689,7 +688,7 @@ h2.latest-projects-title{
 }
 ul.experience{
     list-style: none;
-    margin: 56px 0 56px 8px;
+    margin: 24px 0 56px 8px;
 }
 ul.experience strong{
     display: block;
@@ -752,18 +751,18 @@ border: 0;
     display: flex;
   }
   .about-intro {
- width:40%;
+ width:60%;
     margin: 0 120px 40px 0;
   }
   .about-me {
-    width: 60%;
+
     margin-top: 8px;
      }
-.about-intro h2{
+     .about-intro h2{
     padding: 0;
     margin: 0 0 32px 0;
     border: 0;
-    font-size: 80px;
+    font-size: 72px;
     line-height: 72px;
 }
 .about-intro h3{
@@ -801,7 +800,7 @@ a.about-links{
         background:none; 
         font-size: .85em;
         font-weight: 700; 
-        margin:0 auto 24px auto; 
+        margin:16px auto 24px auto; 
         padding: 16px 24px; 
         border: 2px solid #e4e6eb; 
         border-radius: 100px;
