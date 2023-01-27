@@ -19,6 +19,7 @@ https://flickity.metafizzy.co
     padding-top:32px;
     min-height: 344px;
 }
+
 .carousel-cell strong{
   margin: 0 32px 0 32px;
   font-size: 12px;
@@ -77,6 +78,80 @@ https://flickity.metafizzy.co
 .carousel-cell a:hover img{
     opacity: .5;
 }
+.carousel-cell a:hover{
+  display: block;
+  overflow: auto;
+  border-radius: 8px;
+  text-decoration: none;
+
+}
+
+
+.carousel-cell.barclays a{
+  background: #00aeef;
+}
+.carousel-cell.barclays strong{
+  color:   #00aeef;
+  background:   #003459;
+}
+.carousel-cell.barclays span.material-icons-outlined{
+  color: #003459;
+}
+.carousel-cell.barclays p, .carousel-cell.barclays h3{
+  color: #003459;
+}
+.carousel-cell.barclays a:hover{
+  background:#003366 url(../images/testhover.jpg);
+  background-size: cover;
+}
+
+
+
+.carousel-cell.playmaker a{
+  background: #63D471;
+}
+.carousel-cell.playmaker strong{
+  color:   #63D471;
+  background:   #073E3A;
+}
+.carousel-cell.playmaker span.material-icons-outlined{
+  color: #073E3A;
+}
+.carousel-cell.playmaker p, .carousel-cell.playmaker h3{
+  color: #073E3A;
+}
+.carousel-cell.playmaker a:hover{
+  background:#003366 url(../images/testhover.jpg);
+  background-size: cover;
+}
+
+
+
+.carousel-cell.lfc a{
+  background: #F5EE9E;
+}
+.carousel-cell.lfc strong{
+  color:   #F5EE9E;
+  background:   #E01A4B;
+}
+.carousel-cell.lfc span.material-icons-outlined{
+  color: #E01A4B;
+}
+.carousel-cell.lfc p, .carousel-cell.lfc h3{
+  color: #E01A4B;
+}
+.carousel-cell.lfc a:hover{
+  background:#003366 url(../images/testhover.jpg);
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
 .carousel-cell a:hover p, .carousel-cell a:hover h3{
   color: #A5B4BB;
   display: none;
@@ -85,7 +160,7 @@ https://flickity.metafizzy.co
   color: #e4e6eb;
   display: none;
 }
-  .carousel-cell.is-selected {
+.carousel-cell.is-selected {
   }
 .flickity-enabled {
     position: relative;
