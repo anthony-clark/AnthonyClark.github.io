@@ -38,12 +38,14 @@ https://flickity.metafizzy.co
   line-height: 24px;
   min-height:72px;
   color: #A5B4BB;
-  font-family: 'Inter', Arial, Helvetica,
+  font-family: 'Inter', Arial, Helvetica;
+  font-weight: 400;
 }
 .carousel-cell h3{
-  margin: 24px 80px 24px 32px;
-  font-size: 40px;
+  margin: 24px 24px 24px 32px;
+  font-size: 44px;
   line-height: 44px;
+  letter-spacing: -1;
   color: #e4e6eb;
 }
 
@@ -88,10 +90,10 @@ https://flickity.metafizzy.co
 
 
 .carousel-cell.barclays a{
-  background: #00aeef;
+  background: #00A6FB;
 }
 .carousel-cell.barclays strong{
-  color:   #00aeef;
+  color:   #00A6FB;
   background:   #003459;
 }
 .carousel-cell.barclays span.material-icons-outlined{
@@ -128,23 +130,84 @@ https://flickity.metafizzy.co
 
 
 .carousel-cell.lfc a{
-  background: #F5EE9E;
+  background: #E01A4B;
 }
 .carousel-cell.lfc strong{
-  color:   #F5EE9E;
-  background:   #E01A4B;
+  color:   #E01A4B;
+  background:   #F9FBB8;
 }
 .carousel-cell.lfc span.material-icons-outlined{
-  color: #E01A4B;
+  color: #F9FBB8;
 }
 .carousel-cell.lfc p, .carousel-cell.lfc h3{
-  color: #E01A4B;
+  color: #F9FBB8;
 }
 .carousel-cell.lfc a:hover{
   background:#003366 url(../images/testhover.jpg);
   background-size: cover;
 }
 
+
+
+
+.carousel-cell.efc a{
+  background: #063FB8;
+}
+.carousel-cell.efc strong{
+  color:   #063FB8;
+  background:   #AEC5EB;
+}
+.carousel-cell.efc span.material-icons-outlined{
+  color: #AEC5EB;
+}
+.carousel-cell.efc p, .carousel-cell.efc h3{
+  color: #AEC5EB;
+}
+.carousel-cell.efc a:hover{
+  background:#003366 url(../images/testhover.jpg);
+  background-size: cover;
+}
+
+
+
+.carousel-cell.lexus a{
+  background: #BDD4E7;
+}
+.carousel-cell.lexus strong{
+  color:   #BDD4E7;
+  background:   #002642;
+}
+.carousel-cell.lexus span.material-icons-outlined{
+  color: #002642;
+}
+.carousel-cell.lexus p, .carousel-cell.lexus h3{
+  color: #002642;
+}
+.carousel-cell.lexus a:hover{
+  background:#002642 url(../images/testhover.jpg);
+  background-size: cover;
+}
+
+
+
+
+.carousel-cell.goape a{
+  background: #FFFD77;
+}
+.carousel-cell.goape strong{
+  color:   #FFFD77;
+  background:   #13505B;
+}
+.carousel-cell.goape span.material-icons-outlined{
+  color: #13505B;
+}
+.carousel-cell.goape p, .carousel-cell.goape h3{
+  color: #13505B;
+}
+.carousel-cell.goape a:hover{
+  background:#13505B url(../images/testhover.jpg);
+  background-size: cover;
+}
 
 
 
