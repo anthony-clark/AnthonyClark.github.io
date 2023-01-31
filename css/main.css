@@ -3,7 +3,7 @@ body {
     font-size: .95em;
     margin:0;
     padding:0;
-    background: #151a23 url(../images/bg-pattern-v3.png);
+    background: #1A2027 /*url(../images/bg-pattern-v3.png)*/;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: 1280px;  
@@ -23,7 +23,7 @@ body.homepage {
 
 .container{
   max-width:1240px; 
-  margin:160px auto 0 auto;
+  margin:200px auto 0 auto;
   position: relative;
   clear: both;
 }
@@ -58,12 +58,12 @@ body.homepage {
 
 .container.narrow{
     max-width:960px; 
-    margin:160px auto 0 auto;
+    margin:200px auto 0 auto;
     display: block;
   }
   .container.narrow p{
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 32px;
   }
   .container.last{
     margin:0 auto 0 auto;
@@ -102,15 +102,16 @@ body.homepage {
 #case-study-intro h2{
     font-family: 'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     font-weight: 300;
-    padding: 0 0 40px 0;
-    margin-bottom: 40px;
+    padding: 0 0 120px 0;
+    margin: 56px 0 40px 0;
     border-bottom: 1px solid #2a3042;
     font-size: 42px;
     line-height: 56px;
+    text-align: center;
 }
 #case-study-summary p{
-    font-family: 'Inter','Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-    font-size: 18px;
+    font-family: 'Mulish','Urbanist','Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 16px;
     line-height: 32px;
     margin-top: -4px;
     color: #A5B4BB;
@@ -119,9 +120,10 @@ body.homepage {
     margin: 0 0 16px 0;
     font-size: 13px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
     font-family: 'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     color: #e4e6eb;
+    letter-spacing: 1px;
     }
 #case-study-aims{
     float:left;
@@ -139,21 +141,31 @@ a:hover {
     text-decoration: underline;
 }
 ul{
-margin:0 0 0 16px;
+margin:0;
     padding:0;
 
 }
 ul li{
     font-size: 14px;
-    padding:0 0 8px 0;
+    padding: 0 0 8px 0;
     line-height: 1.5em;
-    font-family:'Inter', Arial, Helvetica, 'san serif';
+    font-weight: 300;
+    font-family: 'Mulish', Arial, Helvetica, 'san serif';
+    list-style: none;
 }
+content
 nav{
 width: 100%;
 position: relative;
 z-index: 150000;
 display: flex;
+}
+nav div{
+    float: right;
+    text-align: right;
+margin-top: 12px;
+    position:fixed;
+    right: 24px;
 }
 nav a{
     width:80px;
@@ -191,18 +203,25 @@ nav a:hover{
 
 }
 nav img{
-    width:240px;
-    margin-top: 22px;
+    width: 110px;
+    margin: 22px 0 2px 0;
 
 }
-
+nav span{
+    font-size: 14px;
+    font-family:'Mulish', Arial, Helvetica, 'san serif';
+    font-weight:300;
+    text-align: right;
+    display: block;
+}
 h1 {
-    font-size: 180px;
-    line-height: 250px;
+    font-size: 170px;
+    line-height: 175px;
     font-family: 'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-    margin: 0 0 20px 0;
+    margin: 40px 0 20px 0;
     font-weight: 700;
     color: #e4e6eb;
+    text-align: center;
 }
 h2 {
     font-size: 72px;
@@ -249,11 +268,11 @@ h3.center{
     font-size: 32px;
 }
 p {
-    font-size: 14px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 30px;
     color:#A5B4BB;
-    font-family:'Inter', Arial, Helvetica, 'san serif';
-    font-weight:200;
+    font-family:'Mulish', Arial, Helvetica, 'san serif';
+    font-weight:300;
     margin: 0 0 32px 0;
 }
 p  strong{
@@ -270,9 +289,9 @@ background-attachment: fixed;
 background-repeat: no-repeat;
 background-size:cover; 
 background-position: center;
-height: 450px;
+height: 760px;
 clear: both;
-margin-top:120px;
+margin-top:200px;
 }
 .hero-image h2 {
     font-size: 72px;
@@ -288,7 +307,7 @@ margin-top:120px;
     background-image: url("../images/playmaker/playmaker-hero-3.jpg");
 }
 .hero-image.lexus{
-    background-image: url("../images/lexus/lexus-hero.jpg");
+    background-image: url("../images/lexus/lexus-hero-new.jpg");
 }
 .hero-image.lexus2{
     background-image: url("../images/lexus/lexus-hero-v2.jpg");
@@ -487,6 +506,14 @@ section.container.home-projects .next-project p{
 .screenshot-info h3{
     margin-top: 0;
 }
+.screenshot-info ul li{
+    font-size: 16px;
+    padding: 0 0 12px 0;
+    line-height: 1.5em;
+    font-weight: 300;
+    font-family: 'Mulish', Arial, Helvetica, 'san serif';
+    list-style: none;
+}
 .screenshots{
     width:62%;
 }
@@ -496,8 +523,9 @@ section.container.home-projects .next-project p{
 .container.narrow .screenshots{
     width: 45%;
 }
-.screenshot img{
+.screenshot img, .screenshots-alt img{
 box-shadow: 10px 40px 60px rgb(0, 0, 0, 0.2);
+border-radius: 16px;
 }
 footer {
     border-top: 1px solid #d5d5d5;
@@ -1011,20 +1039,13 @@ a:hover.about-links{
 }
 .container.narrow p{
     font-size: 18px;
-    line-height: 30px;
+    line-height: 32px;
   }
-  p {
-    font-size: 16px;
-    line-height: 28px;
-    color:#A5B4BB;
-    font-family:'Inter', Arial, Helvetica, 'san serif';
-    font-weight:200;
-    margin: 0 0 32px 0;
-}
+
 #case-study-summary p{
-    font-family:'Inter','Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-    font-size: 20px;
-    line-height: 36px;
+    font-family:'Mulish','Urbanist','Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 16px;
+    line-height: 32px;
 }
 
 h1 {
@@ -1048,7 +1069,6 @@ h3 {
 ul li {
     font-size: 16px;
     line-height: 24px;
-    padding: 0 0 12px 0;
 }
 
 
@@ -1062,8 +1082,8 @@ ul li {
         background-position-x: center;
         }
         h1 {
-            font-size: 64px;
-            line-height: 72px;
+            font-size: 104px;
+            line-height: 104px;
         }
     
         .container{
