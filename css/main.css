@@ -319,7 +319,33 @@ margin-top:200px;
     background-image: url("../images/playmaker/playermaker-template-hero-v2.jpg");
     background-position: 0% 30%;
 }
+#home-project-list{
 
+    max-width: 1240px;
+    margin: 200px auto 0 auto;
+    position: relative;
+    clear: both;
+
+    
+}
+.home-projects:first-child{
+
+    margin-top: 0;
+        width: 48%;
+    }
+.home-projects{
+float: left;
+margin-top: 70px;
+    width: 48%;
+}
+.home-projects a{
+    border-radius: 12px;
+    height: 500px;
+    padding: 40px;
+    display: block;
+    background-image: url("../images/lexus/lexus-hero-new.jpg");
+    background-size: cover;
+}
 
 .next-project{
     background-attachment: fixed;
@@ -1064,6 +1090,9 @@ ul li {
     font-size: 16px;
     line-height: 24px;
 }
+nav{
+    background-image:none;
+    }
 .hero-image{
 
 height: 1080px;
