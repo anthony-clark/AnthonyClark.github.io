@@ -320,33 +320,94 @@ margin-top:200px;
     background-position: 0% 30%;
 }
 #home-project-list{
-
     max-width: 1240px;
     margin: 200px auto 0 auto;
     position: relative;
-    clear: both;
-
-    
 }
-.home-projects:first-child{
+.home-project-col1{
+    float: left;
+    width: 47%;
+    margin-top:88px;
+}
+.home-project-col2{
+    float: right;
+    width: 47%;
 
-    margin-top: 0;
-        width: 48%;
-    }
+}
+
 .home-projects{
 float: left;
 margin-top: 70px;
-    width: 48%;
+   display: block;
+   width: 100%;
 }
 .home-projects a{
-    border-radius: 12px;
+
+    position: relative;
     height: 500px;
+    display: block;
+
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-out;
+
+}
+.home-projects.lexus a{
+background-image: url("../images/lexus/lexus-hero-new.jpg");
+}
+.home-projects.playmaker a{
+    background-image: url("../images/playmaker/playmaker-hero-3.jpg");
+}
+ .home-projects.lfc a{
+     background-image: url("../images/lfc/lfc-hero.jpg");
+ }
+.home-projects a:hover{
+opacity: .4;
+}
+.home-projects a div{
+    position: absolute;
+    bottom: 0;
     padding: 40px;
     display: block;
-    background-image: url("../images/lexus/lexus-hero-new.jpg");
-    background-size: cover;
+    width: 100%;
+}
+.home-projects a h3{
+font-size: 44px;
+font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
+font-weight: 700;
+margin:0;
+color: #e4e6eb;
+line-height: 48px;
+}
+.home-projects a p{
+    margin: 0;
+}
+.home-projects a strong{
+    font-size: 12px;
+    line-height: 24px;
+    background: #A5B4BB;
+    text-transform: uppercase;
+    color: #1B222F;
+    padding: 3px 12px;
+    border-radius: 4px;
+    font-family: 'Urbanist', Arial, Helvetica !important;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+.home-projects a span{
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    transition: all 0.3s ease-out;
 }
 
+.home-projects a:hover span{
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+    color: #f1f1f1;
+}
 .next-project{
     background-attachment: fixed;
     background-repeat: no-repeat;
