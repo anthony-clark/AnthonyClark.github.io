@@ -608,6 +608,9 @@ section.container.home-projects .next-project p{
 box-shadow: 10px 40px 60px rgb(0, 0, 0, 0.2);
 border-radius: 8px;
 }
+.screenshot img.no-shadow, .screenshots-alt img.no-shadow{
+    box-shadow: none;
+}
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
