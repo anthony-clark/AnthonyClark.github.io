@@ -61,6 +61,12 @@ body.homepage {
     margin:200px auto 0 auto;
     display: block;
   }
+  .container.narrow-small-margin{
+    max-width:960px; 
+    margin:96px auto 0 auto;
+    display: block;
+  }
+ 
   .container.narrow p{
     font-size: 18px;
     line-height: 32px;
@@ -970,7 +976,17 @@ a:hover.about-links{
     width: 72px;
 }
 
-
+.image-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 1220px;
+    margin: 56px auto 0 auto;
+    grid-gap: 12px 12px; 
+}
+.image-grid img{
+    border-radius: 4px;
+}
 
 
 
