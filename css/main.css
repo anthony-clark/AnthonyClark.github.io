@@ -66,7 +66,12 @@ body.homepage {
     margin:96px auto 0 auto;
     display: block;
   }
- 
+  .container.small-margin{
+    margin:56px auto 0 auto;
+  }
+  .container.small-margin img{
+    border-radius: 8px;
+  }
   .container.narrow p{
     font-size: 18px;
     line-height: 32px;
