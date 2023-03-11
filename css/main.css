@@ -1,4 +1,4 @@
-body,html {
+body {
     color: #A5B4BB;
     font-size: .95em;
     margin:0;
@@ -9,12 +9,38 @@ body,html {
     background-size: 1280px;  
     background-position: top center;  
 }
+body#lfc, html#lfc {
+    color: #000405;
+    background: #C4C4C4;
+}
+body#lfc h1 {
+    color: #ED254E;
+}
+body#lfc h2 {
+    color: #000405;
 
+}
+body#lfc h3 {
+    color: #000405;
+}
+body#lfc h4{
+    color: #000405;
+}
+body#lfc h4.template-features {
+    color: #000405;
+}
+body#lfc p {
+    color:#595F72;
+}
+body#lfc nav{
+    background-image:linear-gradient(to bottom,rgb(26, 32, 39) 0%,rgba(26, 32, 39, 0) 100%);
+    }
 #sitewrapper{
     overflow-x: hidden;
     width: 100%;
     position: relative
 }
+
 body.homepage {
 
     /*background: #151A24;*/
@@ -307,10 +333,9 @@ background-color: #0F131A;
     color: #e4e6eb;
     display: grid;
     align-items: center;
-    text-align: center;
-    height: 1080px;
-    margin: 0 auto;
-    width: 60%;
+    height:1120px;
+    margin: 0;
+    width: 1000px;
     text-shadow: 1px 6px 40px #1A202C;
 }
 .hero-image.playmaker{
@@ -332,7 +357,7 @@ background-color: #0F131A;
     background-image: url("../images/avfc/avfc-hero.jpg");
 }
 .hero-image.playmaker-templates{
-    /*background-image: url("../images/playmaker/playermaker-template-hero-v2.jpg");*/
+    background-image: url("../images/playmaker/playmaker-template-hero.jpg");
     background-position: 0% 30%;
 }
 #home-project-list{
@@ -1124,8 +1149,8 @@ a:hover.about-links{
         .container{
             max-width:1440px; 
           }
-        .container.narrow{
-            max-width:1024px; 
+        .container.narrow, .container.narrow-small-margin{
+            max-width:1080px; 
           }
           .sticky-content{
             position: -webkit-sticky;
@@ -1145,7 +1170,7 @@ a:hover.about-links{
 #case-study-intro h2 {
     font-size: 44px;
     line-height: 48px;
-    padding: 0 0 48px 0;
+    padding: 0 0 160px 0;
 }
 .container.narrow p{
     font-size: 18px;
@@ -1173,8 +1198,8 @@ h3 {
 }
 
 .responsive-views h2 {
-    font-size: 88px;
-    line-height: 90px;
+    font-size: 136px;
+    line-height: 144px;
 }
 ul li {
     font-size: 16px;
