@@ -53,7 +53,12 @@ body.homepage {
   position: relative;
   clear: both;
 }
-
+.darkbg{
+    background: #14191F;
+    padding:0 0 200px 0;
+    margin-top:200px;
+    display: flow-root;
+}
   .container.key-projects{
     min-height: 600px;
   }
@@ -148,7 +153,7 @@ body.homepage {
     text-align: center;
 }
 #case-study-summary p{
-    font-family: 'Mulish','Urbanist','Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Inter','Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     font-size: 16px;
     line-height: 32px;
     margin-top: -4px;
@@ -188,7 +193,7 @@ ul li{
     padding: 0 0 8px 0;
     line-height: 1.5em;
     font-weight: 300;
-    font-family: 'Mulish', Arial, Helvetica, 'san serif';
+    font-family: 'Inter', Arial, Helvetica, 'san serif';
     list-style: none;
 }
 nav{
@@ -242,7 +247,7 @@ nav img{
 }
 nav span{
     font-size: 14px;
-    font-family:'Mulish', Arial, Helvetica, 'san serif';
+    font-family:'Inter', Arial, Helvetica, 'san serif';
     font-weight:300;
     text-align: right;
     display: block;
@@ -304,7 +309,7 @@ p {
     font-size: 16px;
     line-height: 30px;
     color:#A5B4BB;
-    font-family:'Mulish', Arial, Helvetica, 'san serif';
+    font-family:'Inter', Arial, Helvetica, 'san serif';
     font-weight:300;
     margin: 0 0 32px 0;
 }
@@ -351,7 +356,11 @@ background-color: #0F131A;
     background-image: url("../images/lfc/lfc-hero.jpg");
 }
 .hero-image.efc{
-    background-image: url("../images/efc/efc-hero.jpg");
+    background-image: url("../images/efc/everton-hero-stadium.jpg");
+}
+.hero-image.efc2{
+    background-image: url("../images/efc/everton-hero-howard.jpg");
+    background-position: 0% 0%;
 }
 .hero-image.avfc{
     background-image: url("../images/avfc/avfc-hero.jpg");
@@ -633,7 +642,7 @@ section.container.home-projects .next-project p{
     padding: 0 0 12px 0;
     line-height: 1.5em;
     font-weight: 300;
-    font-family: 'Mulish', Arial, Helvetica, 'san serif';
+    font-family: 'Inter', Arial, Helvetica, 'san serif';
     list-style: none;
 }
 .screenshots{
@@ -1178,7 +1187,7 @@ a:hover.about-links{
   }
 
 #case-study-summary p{
-    font-family:'Mulish','Urbanist','Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'Inter','Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     font-size: 16px;
     line-height: 32px;
 }
