@@ -9,6 +9,7 @@ body {
     background-size: 1280px;  
     background-position: top center;  
 }
+
 body#lfc, html#lfc {
     color: #000405;
     background: #C4C4C4;
@@ -36,14 +37,16 @@ body#lfc nav{
     background-image:linear-gradient(to bottom,rgb(26, 32, 39) 0%,rgba(26, 32, 39, 0) 100%);
     }
 #sitewrapper{
-    overflow-x: hidden;
+ 
     width: 100%;
     position: relative
 }
 
 body.homepage {
-
-    /*background: #151A24;*/
+    background: #1A2027 url(../images/ant.jpg) bottom center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-attachment: fixed;
 
 }
 
