@@ -4,7 +4,7 @@ https://flickity.metafizzy.co
 * { box-sizing: border-box; }
 
 .carousel-cell {
-    width: 300px; /* half-width */
+    width: 320px; /* half-width */
     margin-right: 32px;
     counter-increment: gallery-cell;
   }
@@ -13,11 +13,11 @@ https://flickity.metafizzy.co
     display: block;
     overflow: auto;
     border-radius: 8px;
-    transition: background .50s ease-in-out;
+    transition: background-position .50s ease-in-out;
     -moz-transition: background .50s ease-in-out;
     -webkit-transition: background .50s ease-in-out;
     padding-top:32px;
-    min-height: 344px;
+    min-height: 420px;
 }
 
 .carousel-cell strong{
@@ -25,7 +25,7 @@ https://flickity.metafizzy.co
   font-size: 12px;
   line-height: 24px;
   min-height:72px;
-  background: #A5B4BB;
+  background: #e4e6eb;
   text-transform: uppercase;
   color: #1B222F;
   padding: 4px 12px;
@@ -33,19 +33,18 @@ https://flickity.metafizzy.co
   font-family: 'Urbanist', Arial, Helvetica !important;
 }
 .carousel-cell p{
-  margin: 0px 32px 24px 32px;
+  margin: 0px 32px 8px 32px;
   font-size: 15px;
   line-height: 24px;
-  min-height:72px;
+  min-height:56px;
   color: #A5B4BB;
   font-family: 'Inter', Arial, Helvetica;
   font-weight: 400;
 }
 .carousel-cell h3{
-  margin: 24px 24px 24px 32px;
-  font-size: 44px;
+  margin: 200px 24px 0 32px;
+  font-size: 32px;
   line-height: 44px;
-  letter-spacing: -1;
   color: #e4e6eb;
 }
 
@@ -55,14 +54,13 @@ https://flickity.metafizzy.co
     line-height: 24px;
     color: #f1f1f1;
     width: 10%;
-    transition: padding .20s ease-in-out;
-    -moz-transition: padding .20s ease-in-out;
-    -webkit-transition: padding .20s ease-in-out;
-    margin: 0 24px 24px 24px;
+    transition: padding .40s ease-in-out;
+    -moz-transition: padding .40s ease-in-out;
+    -webkit-transition: padding .40s ease-in-out;
+    margin: 0 24px 24px 28px;
 }
 .carousel-cell a:hover span.material-icons-outlined{
-    padding-left:24px;
-    color:#151a23;
+    padding-left:50px;
 }
 
 
@@ -73,9 +71,6 @@ https://flickity.metafizzy.co
     text-decoration: none;
     background:#003366 url(../images/testhover.jpg);
     background-size: cover;
-}
-.carousel-cell a:hover h3, .carousel-cell a:hover p{
-  color:#151a23;
 }
 .carousel-cell a:hover img{
     opacity: .5;
@@ -90,21 +85,14 @@ https://flickity.metafizzy.co
 
 
 .carousel-cell.barclays a{
-  background: #00A6FB;
+  background: url(../images/lexus/lexus-hero-new.jpg);
+  background-size: 195%;
+  background-position: -175px -45px;
 }
-.carousel-cell.barclays strong{
-  color:   #00A6FB;
-  background:   #003459;
-}
-.carousel-cell.barclays span.material-icons-outlined{
-  color: #003459;
-}
-.carousel-cell.barclays p, .carousel-cell.barclays h3{
-  color: #003459;
-}
+
 .carousel-cell.barclays a:hover{
-  background:#003366 url(../images/testhover.jpg);
-  background-size: cover;
+  background-position: -202px -80px;
+  background-size: 210%;
 }
 
 
@@ -215,14 +203,6 @@ https://flickity.metafizzy.co
 
 
 
-.carousel-cell a:hover p, .carousel-cell a:hover h3{
-  color: #A5B4BB;
-  display: none;
-}
-.carousel-cell a:hover h3, .carousel-cell a:hover  span.material-icons-outlined{
-  color: #e4e6eb;
-  display: none;
-}
 .carousel-cell.is-selected {
   }
 .flickity-enabled {
