@@ -9,15 +9,14 @@ https://flickity.metafizzy.co
     counter-increment: gallery-cell;
   }
   .carousel-cell a{
-    background: #1B222F;
+    background: #FFF;
     display: block;
     overflow: auto;
-    border-radius: 8px;
+    border-radius: 16px;
     transition: background-position .50s ease-in-out;
     -moz-transition: background .50s ease-in-out;
     -webkit-transition: background .50s ease-in-out;
     padding-top:32px;
-    min-height: 420px;
 }
 
 .carousel-cell strong{
@@ -33,24 +32,27 @@ https://flickity.metafizzy.co
   font-family: 'Urbanist', Arial, Helvetica !important;
 }
 .carousel-cell p{
-  margin: 0px 32px 8px 32px;
-  font-size: 15px;
-  line-height: 24px;
-  min-height:56px;
+  margin: 0px 32px 0 32px;
+  font-size: 13px;
+  line-height: 20px;
+  min-height:48px;
   color: #A5B4BB;
   font-family: 'Inter', Arial, Helvetica;
   font-weight: 400;
+
 }
 .carousel-cell h3{
-  margin: 200px 24px 0 32px;
-  font-size: 32px;
+  margin: 250px 24px 0px 32px;
+  font-size: 28px;
   line-height: 44px;
   color: #e4e6eb;
 }
-
+.carousel-cell a div{
+  background-image:linear-gradient(to top,rgb(0 0 0) 0%,rgba(26, 32, 39, 0) 65%);
+}
 
 .carousel-cell span.material-icons-outlined{
-    font-size: 32px;
+    font-size: 24px;
     line-height: 24px;
     color: #f1f1f1;
     width: 10%;
@@ -67,135 +69,72 @@ https://flickity.metafizzy.co
 .carousel-cell a:hover{
     display: block;
     overflow: auto;
-    border-radius: 8px;
     text-decoration: none;
-    background:#003366 url(../images/testhover.jpg);
-    background-size: cover;
 }
-.carousel-cell a:hover img{
-    opacity: .5;
+.carousel-cell :active{
+  opacity: .5;
 }
+
 .carousel-cell a:hover{
   display: block;
   overflow: auto;
-  border-radius: 8px;
   text-decoration: none;
 
 }
 
 
 .carousel-cell.barclays a{
+  background-image:url(../images/barclays/barclays-hero-v4.jpg);
+  background-size: 180%;
+  background-position: -115px -170px;
+}
+
+.carousel-cell.barclays a:hover{
+  background-size: 200%;
+  background-position: -145px -210px;
+}
+.carousel-cell.efc a{
+  background-image:url(../images/efc/efc-hero.jpg);
+  background-size: 190%;
+  background-position: -148px -10px;
+}
+
+.carousel-cell.efc a:hover{
+  background-size: 210%;
+  background-position: -178px -30px;
+}
+.carousel-cell.lexus a{
   background: url(../images/lexus/lexus-hero-new.jpg);
   background-size: 195%;
   background-position: -175px -45px;
 }
 
-.carousel-cell.barclays a:hover{
-  background-position: -202px -80px;
+.carousel-cell.lexus a:hover{
+  background-position: -202px -60px;
   background-size: 210%;
 }
-
-
-
-.carousel-cell.playmaker a{
-  background: #63D471;
-}
-.carousel-cell.playmaker strong{
-  color:   #63D471;
-  background:   #073E3A;
-}
-.carousel-cell.playmaker span.material-icons-outlined{
-  color: #073E3A;
-}
-.carousel-cell.playmaker p, .carousel-cell.playmaker h3{
-  color: #073E3A;
-}
-.carousel-cell.playmaker a:hover{
-  background:#003366 url(../images/testhover.jpg);
-  background-size: cover;
-}
-
-
-
 .carousel-cell.lfc a{
-  background: #E01A4B url(../images/coutinho.png);
+  background-image:url(../images/lfc/lfc-hero.jpg);
+  background-size: 210%;
+  background-position: -345px -25px;
 }
-.carousel-cell.lfc strong{
-  color:   #E01A4B;
-  background:   #F9FBB8;
-}
-.carousel-cell.lfc span.material-icons-outlined{
-  color: #F9FBB8;
-}
-.carousel-cell.lfc p, .carousel-cell.lfc h3{
-  color: #F9FBB8;
-}
+
 .carousel-cell.lfc a:hover{
-  background:#003366 url(../images/testhover.jpg);
-  background-size: cover;
+  background-size: 230%;
+  background-position: -395px -45px;
+}
+.carousel-cell.playmaker a{
+  background-image:url(../images/playmaker/playmaker-hero.jpg);
+  background-size: 260%;
+  background-position: -265px -15px;
+}
+
+.carousel-cell.playmaker a:hover{
+  background-size: 290%;
+  background-position: -305px -45px;
 }
 
 
-
-
-.carousel-cell.efc a{
-  background: #063FB8;
-}
-.carousel-cell.efc strong{
-  color:   #063FB8;
-  background:   #AEC5EB;
-}
-.carousel-cell.efc span.material-icons-outlined{
-  color: #AEC5EB;
-}
-.carousel-cell.efc p, .carousel-cell.efc h3{
-  color: #AEC5EB;
-}
-.carousel-cell.efc a:hover{
-  background:#003366 url(../images/testhover.jpg);
-  background-size: cover;
-}
-
-
-
-.carousel-cell.lexus a{
-  background: #BDD4E7;
-}
-.carousel-cell.lexus strong{
-  color:   #BDD4E7;
-  background:   #002642;
-}
-.carousel-cell.lexus span.material-icons-outlined{
-  color: #002642;
-}
-.carousel-cell.lexus p, .carousel-cell.lexus h3{
-  color: #002642;
-}
-.carousel-cell.lexus a:hover{
-  background:#002642 url(../images/testhover.jpg);
-  background-size: cover;
-}
-
-
-
-
-.carousel-cell.goape a{
-  background: #FFFD77;
-}
-.carousel-cell.goape strong{
-  color:   #FFFD77;
-  background:   #13505B;
-}
-.carousel-cell.goape span.material-icons-outlined{
-  color: #13505B;
-}
-.carousel-cell.goape p, .carousel-cell.goape h3{
-  color: #13505B;
-}
-.carousel-cell.goape a:hover{
-  background:#13505B url(../images/testhover.jpg);
-  background-size: cover;
-}
 
 
 
