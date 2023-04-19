@@ -146,13 +146,14 @@ https://flickity.metafizzy.co
   }
 .flickity-enabled {
     position: relative;
+
   }
   
   .flickity-enabled:focus { outline: none; }
   
   .flickity-viewport {
-
-    position: relative;
+    overflow: hidden;
+    position: static;
     height: 100%;
   }
   
@@ -310,43 +311,72 @@ margin-right: 24px;
 counter-increment: gallery-cell;
 }
 .carousel-cell p{
-font-size: 16px;
-line-height: 26px;
+display: none;
 }
 .carousel-cell h3{
-font-size: 32px;
-line-height: 40px;
+font-size: 24px;
+line-height: 32px;
+margin: 200px 24px 8px 32px;
 }
 
 .flickity-page-dots .dot {
   width: 24px;
 }
-.carousel-cell a{
-  min-height: 320px;
-  }
-  
-  .carousel-cell a:hover{
-    display: block;
-    overflow: auto;
-    border-radius: 8px;
-    text-decoration: none;
-    background: #1B222F;
-    color: #e4e6eb;
-}
-.carousel-cell a:hover p, .carousel-cell a:hover h3{
-  color: #A5B4BB;
-  display: block;
-}
-.carousel-cell a:hover h3, .carousel-cell a:hover  span.material-icons-outlined{
-  color: #e4e6eb;
-  display: block;
-}
+
 
 .flickity-prev-next-button {
 
   margin-bottom: 80px;
-}
-.container.key-projects {
-  min-height: auto;
-}
+
+  }
+
+  .carousel-cell.barclays a{
+    background-image:url(../images/barclays/barclays-hero-v4.jpg);
+    background-size: 180%;
+    background-position: -95px -170px;
+  }
+  
+  .carousel-cell.barclays a:hover{
+    background-size: 200%;
+    background-position: -125px -200px;
+  }
+  .carousel-cell.efc a{
+    background-image:url(../images/efc/efc-hero.jpg);
+    background-size: 190%;
+    background-position: -128px 0px;
+  }
+  
+  .carousel-cell.efc a:hover{
+    background-size: 210%;
+    background-position: -158px -20px;
+  }
+  .carousel-cell.lexus a{
+    background: url(../images/lexus/lexus-hero-new.jpg);
+    background-size: 195%;
+    background-position: -155px -35px;
+  }
+  
+  .carousel-cell.lexus a:hover{
+    background-position: -182px -50px;
+    background-size: 210%;
+  }
+  .carousel-cell.lfc a{
+    background-image:url(../images/lfc/lfc-hero.jpg);
+    background-size: 210%;
+    background-position: -290px -15px;
+  }
+  
+  .carousel-cell.lfc a:hover{
+    background-size: 230%;
+    background-position: -375px -45px;
+  }
+  .carousel-cell.playmaker a{
+    background-image:url(../images/playmaker/playmaker-hero.jpg);
+    background-size: 260%;
+    background-position: -245px -15px;
+  }
+  
+  .carousel-cell.playmaker a:hover{
+    background-size: 290%;
+    background-position: -285px -45px;
   }

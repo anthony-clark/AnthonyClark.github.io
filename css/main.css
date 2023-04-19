@@ -9,7 +9,9 @@ body {
     background-size: 1280px;  
     background-position: top center;  
 }
-
+html{
+    overflow-x: hidden;
+}
 body#lfc, html#lfc {
     color: #000405;
     background: #C4C4C4;
@@ -60,7 +62,7 @@ body.homepage {
     display: flow-root;
 }
   .container.key-projects{
-    min-height: 600px;
+    min-height: 820px;
   }
 
 .container.project-summary{
@@ -1427,6 +1429,9 @@ height: 1080px;
               margin:80px auto 0 auto;
               display: block;
             }
+            .container.key-projects{
+                min-height: 820px;
+              }
             .container.screenshot, .container.screenshots-alt{
                 margin-top:80px;
             }
