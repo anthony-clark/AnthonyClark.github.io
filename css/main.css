@@ -325,12 +325,12 @@ h3.center{
     font-size: 32px;
 }
 p {
-    font-size: 16px;
-    line-height: 30px;
-    color:#A5B4BB;
-    font-family:'Inter', Arial, Helvetica, 'san serif';
-    font-weight:300;
-    margin: 0 0 32px 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: #A5B4BB;
+    font-family: 'Inter', Arial, Helvetica, 'san serif';
+    font-weight: 300;
+    margin: 0 0 24px 0;
 }
 p  strong{
 font-weight: 700;
@@ -660,9 +660,9 @@ section.container.home-projects .next-project p{
     margin-top: 0;
 }
 .screenshot-info ul li{
-    font-size: 16px;
-    padding: 0 0 12px 0;
-    line-height: 1.5em;
+    font-size: 14px;
+    padding: 0 0 8px 0;
+    line-height: 24px;
     font-weight: 300;
     font-family: 'Inter', Arial, Helvetica, 'san serif';
     list-style: none;
@@ -808,8 +808,10 @@ margin-top: -90px;
     }
     #client-list{
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
         grid-gap: 2rem;
+        opacity: .7;
+        clear: both;
     }
     #client-list div{
         height: 120px;
@@ -818,9 +820,10 @@ margin-top: -90px;
         line-height: 120px;
         /*opacity: .8;*/
     }
-    #client-list div.portrait img{
-        height: 100%;
-        width: auto;
+    #client-list img{
+        background: #1A2027;
+        padding: 16px 0;
+        border-radius: 8px;
     }
     #client-list div.landscape img{
         width: 80%;
@@ -879,7 +882,7 @@ h2.home-about{
 }
 ul.experience{
     list-style: none;
-    margin: 24px 0 56px 8px;
+    margin: 0 0 56px 8px;
 }
 ul.experience strong{
     display: block;
@@ -1063,6 +1066,137 @@ a:hover.about-links{
 }
 .image-grid img{
     border-radius: 4px;
+}
+.work{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    grid-gap: 2rem;
+}
+
+  .carousel-cell a{
+    background: #1A2027;
+    display: block;
+    overflow: auto;
+    border-radius: 16px;
+    transition: background-position .50s ease-in-out;
+    -moz-transition: background .50s ease-in-out;
+    -webkit-transition: background .50s ease-in-out;
+    padding-top:32px;
+}
+
+.carousel-cell strong{
+  margin: 0 32px 0 32px;
+  font-size: 12px;
+  line-height: 24px;
+  min-height:72px;
+  background: #e4e6eb;
+  text-transform: uppercase;
+  color: #1B222F;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-family: 'Urbanist', Arial, Helvetica !important;
+}
+.carousel-cell p{
+  margin: 0px 32px 0 32px;
+  font-size: 16px;
+  line-height: 20px;
+  min-height:48px;
+  color: #A5B4BB;
+  font-family: 'Inter', Arial, Helvetica;
+  font-weight: 400;
+display: none;
+}
+.carousel-cell h3{
+    margin: 320px 24px 16px 32px;
+    font-size: 48px;
+    line-height: 56px;
+  color: #e4e6eb;
+}
+.carousel-cell a div{
+  background-image:linear-gradient(to top,rgb(0 0 0) 0%,rgba(26, 32, 39, 0) 50%);
+}
+
+.carousel-cell span.material-icons-outlined{
+    font-size: 40px;
+    line-height: 40px;
+    color: #f1f1f1;
+    width: 10%;
+    transition: padding .40s ease-in-out;
+    -moz-transition: padding .40s ease-in-out;
+    -webkit-transition: padding .40s ease-in-out;
+    margin: 0 24px 32px 28px;
+}
+.carousel-cell a:hover span.material-icons-outlined{
+    padding-left:50px;
+}
+
+
+.carousel-cell a:hover{
+    display: block;
+    overflow: auto;
+    text-decoration: none;
+}
+.carousel-cell :active{
+  opacity: .5;
+}
+
+.carousel-cell a:hover{
+  display: block;
+  overflow: auto;
+  text-decoration: none;
+
+}
+
+
+.carousel-cell.barclays a{
+  background-image:url(../images/barclays/barclays-hero-v4.jpg);
+  background-size: 150%;
+  background-position: -115px -220px;
+}
+
+.carousel-cell.barclays a:hover{
+    background-size: 160%;
+    background-position: -135px -240px;
+}
+.carousel-cell.efc a{
+  background-image:url(../images/efc/efc-hero.jpg);
+  background-size: 200%;
+  background-position: -231px -30px;
+}
+
+.carousel-cell.efc a:hover{
+  background-size: 210%;
+  background-position: -178px -30px;
+}
+.carousel-cell.lexus a{
+  background: url(../images/lexus/lexus-hero-new.jpg);
+  background-size: 195%;
+  background-position: -245px -75px;
+}
+
+.carousel-cell.lexus a:hover{
+    background-position: -284px -100px;
+    background-size: 210%;
+}
+.carousel-cell.lfc a{
+  background-image:url(../images/lfc/lfc-hero.jpg);
+  background-size: 193%;
+  background-position: -416px -35px;
+}
+
+.carousel-cell.lfc a:hover{
+    background-size: 210%;
+    background-position: -477px -60px;
+}
+.carousel-cell.playmaker a{
+  background-image:url(../images/playmaker/playermaker-template-hero-v2.jpg);
+  background-size: 220%;
+  background-position: -263px -105px;
+}
+
+.carousel-cell.playmaker a:hover{
+  background-size: 290%;
+  background-position: -305px -45px;
 }
 
 
