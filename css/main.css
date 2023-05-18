@@ -29,7 +29,7 @@ body#lfc nav{
   clear: both;
 }
 .darkbg{
-    background: #070A0E;
+    background: #101419;
     padding:0 0 200px 0;
     margin-top:200px;
     display: flow-root;
@@ -299,7 +299,7 @@ h3.center{
 }
 p {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 28px;
     color: #A5B4BB;
     font-family: 'Inter', Arial, Helvetica, 'san serif';
     font-weight: 300;
@@ -651,7 +651,7 @@ section.container.home-projects .next-project p{
 }
 .screenshot img, .screenshots-alt img{
 /*box-shadow: 10px 40px 60px rgb(0, 0, 0, 0.2);*/
-border-radius: 8px;
+
 }
 .screenshot img.no-shadow, .screenshots-alt img.no-shadow{
     box-shadow: none;
