@@ -113,7 +113,7 @@ body { font-family: sans-serif; }
   border-radius: 50%;
   /* vertically center */
   margin-top: 24px;
-  margin-bottom: 200px;
+  margin-bottom: 0;
 }
 
 .flickity-prev-next-button.previous { float: left; }

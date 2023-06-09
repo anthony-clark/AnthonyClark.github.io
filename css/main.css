@@ -1,5 +1,5 @@
 body {
-    color: #A5B4BB;
+    color: #94a6ae;
     font-size: .95em;
     margin:0;
     padding:0;
@@ -139,7 +139,7 @@ body#lfc nav{
     font-size: 16px;
     line-height: 32px;
     margin-top: -4px;
-    color: #A5B4BB;
+    color: #94a6ae;
 }
 #case-study-aims h3, #case-study-deliverables h3, #case-study-summary h3{
     margin: 0 0 16px 0;
@@ -300,7 +300,7 @@ h3.center{
 p {
     font-size: 14px;
     line-height: 28px;
-    color: #A5B4BB;
+    color: #94a6ae;
     font-family: 'Inter', Arial, Helvetica, 'san serif';
     font-weight: 300;
     margin: 0 0 24px 0;
@@ -430,7 +430,7 @@ line-height: 48px;
 .home-projects a strong{
     font-size: 12px;
     line-height: 24px;
-    background: #A5B4BB;
+    background: #94a6ae;
     text-transform: uppercase;
     color: #1B222F;
     padding: 3px 12px;
@@ -864,7 +864,7 @@ ul.experience strong{
 }
 ul.experience li{
     padding-bottom: 32px;
-    border-left: 1px solid #A5B4BB;
+    border-left: 1px solid #94a6ae;
     padding-left: 44px;
 }
 ul.experience li.current:before {
@@ -903,7 +903,7 @@ border: 0;
     font-size: 13px;
     line-height: 24px;
     min-height: 72px;
-    background: #A5B4BB;
+    background: #94a6ae;
     text-transform: uppercase;
     color: #1B222F;
     padding: 4px 12px;
@@ -960,7 +960,7 @@ border: 0;
 .headshot{
     width: 160px;
     height: 160px;
-    background: #A5B4BB;
+    background: #94a6ae;
     border-radius: 8px;
     display: block;
     margin-bottom: 40px;
@@ -1074,7 +1074,7 @@ a:hover.about-links{
   font-size: 16px;
   line-height: 20px;
   min-height:48px;
-  color: #A5B4BB;
+  color: #94a6ae;
   font-family: 'Inter', Arial, Helvetica;
   font-weight: 400;
 display: none;
