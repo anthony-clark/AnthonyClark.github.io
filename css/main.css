@@ -761,7 +761,8 @@ margin-top: -90px;
         bottom: 0;;
     }
     .responsive-views{
-        background-color: #070A0E;
+        background: #070A0E;
+        background: radial-gradient(rgb(18, 26, 36), rgb(37, 52, 70));
         padding: 1px 0 160px 0;
         clear: both;
         margin-top: 160px;
