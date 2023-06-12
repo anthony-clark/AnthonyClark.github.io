@@ -136,8 +136,8 @@ body#lfc nav{
 }
 #case-study-summary p{
     font-family: 'Inter','Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-    font-size: 16px;
-    line-height: 32px;
+    font-size: 19px;
+    line-height: 34px;
     margin-top: -4px;
     color: #94a6ae;
 }
@@ -202,6 +202,7 @@ nav div img.avatar{
     width: 42px;
     margin-left: 12px;
     border-radius: 40px;
+    margin-top: 11px;
 }
 nav a{
     width:80px;
@@ -642,6 +643,7 @@ section.container.home-projects .next-project p{
 }
 .screenshots{
     width:62%;
+
 }
 .container.narrow .screenshot-info{
     width: 45%;
@@ -761,17 +763,18 @@ margin-top: -90px;
         bottom: 0;;
     }
     .responsive-views{
-        background-color: #070A0E;
+        
+        background: radial-gradient(circle, #2d3743, #101419 55%);
         padding: 1px 0 160px 0;
         clear: both;
         margin-top: 160px;
     }
     .responsive-views h2{
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         border: 0;
         padding: 0;
         font-size: 136px;
-        line-height: 144px;
+        line-height: 130px;
 }
 .responsive-views h3{
     margin:0 0 56px 0;
@@ -1328,11 +1331,7 @@ display: none;
     line-height: 32px;
   }
 
-#case-study-summary p{
-    font-family:'Inter','Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-    font-size: 16px;
-    line-height: 32px;
-}
+
 
 h1 {
     font-size: 204px;
