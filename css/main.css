@@ -34,6 +34,14 @@ body#lfc nav{
     margin-top:200px;
     display: flow-root;
 }
+.darkbg.thumbnail{
+    background: #101419;
+    padding:0 0 0 0;
+    display: flow-root;
+}
+.darkbg.thumbnail img{
+    margin-top:-180px;
+}
   .container.key-projects{
     min-height: 820px;
 
@@ -1416,6 +1424,10 @@ height: 1080px;
             }
             .hero-image.lfc{
                 background-position: right;
+            }
+
+            .darkbg.thumbnail img{
+                margin-top:0;
             }
             #case-study-summary{
                 float:none;
