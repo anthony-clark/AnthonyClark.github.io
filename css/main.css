@@ -42,6 +42,14 @@ body#lfc nav{
 .darkbg.thumbnail img{
     margin-top:-180px;
 }
+.darkbg.thumbnail-opta{
+    background: #101419;
+    padding:0 0 0 0;
+    display: flow-root;
+}
+.darkbg.thumbnail-opta img{
+    margin-top:-120px;
+}
   .container.key-projects{
     min-height: 820px;
 
@@ -1426,7 +1434,7 @@ height: 1080px;
                 background-position: right;
             }
 
-            .darkbg.thumbnail img{
+            .darkbg.thumbnail img, .darkbg.thumbnail-opta img{
                 margin-top:0;
             }
             #case-study-summary{
