@@ -29,7 +29,7 @@ body#lfc nav{
   clear: both;
 }
 .darkbg{
-    background: #101419;
+    background: #0d0f12;
     padding:0 0 200px 0;
     margin-top:200px;
     display: flow-root;
@@ -780,7 +780,7 @@ margin-top: -90px;
     }
     .responsive-views{
         
-        background: radial-gradient(circle, #2d3743, #101419 55%);
+        background: radial-gradient(circle, #2d3743, #0d0f12 55%);
         padding: 1px 0 160px 0;
         clear: both;
         margin-top: 160px;
@@ -1515,9 +1515,6 @@ height: 1080px;
                 font-size: 32px;
                 line-height: 40px;
         }
-        .responsive-views img {
-            margin-top: -48px;
-        }
         
         .row-of-screenshots{
             width: 80%;
@@ -1734,9 +1731,7 @@ height: 1080px;
         .responsive-views h3{
             font-size: 26px; 
     }
-    .responsive-views img {
-        margin-top: -16px;
-    }
+
     .responsive-views{
         margin-top: 100px;
     }
