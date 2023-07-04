@@ -25,6 +25,7 @@ body#lfc nav{
 .container{
   max-width:1240px; 
   margin:200px auto 0 auto;
+  padding: 0;
   position: relative;
   clear: both;
 }
@@ -157,10 +158,10 @@ width: 100%;
     text-align: center;
 }
 #case-study-summary p{
-    font-family: 'Inter','Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-    font-size: 19px;
-    line-height: 34px;
-    margin-top: -4px;
+    font-family: 'Lato','Urbanist','Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: 0;
     color: #94a6ae;
 }
 #case-study-aims h3, #case-study-deliverables h3, #case-study-summary h3{
@@ -193,12 +194,13 @@ margin:0;
 
 }
 ul li{
-    font-size: 14px;
+    font-size: 15px;
     padding: 0 0 8px 0;
-    line-height: 1.5em;
+    margin-left:12px;
+    line-height: 25px;
     font-weight: 300;
-    font-family: 'Inter', Arial, Helvetica, 'san serif';
-    list-style: none;
+    font-family: 'Lato', Arial, Helvetica, 'san serif';
+    list-style:disc;
 }
 nav{
 width: 100%;
@@ -262,7 +264,7 @@ nav img{
 }
 nav span{
     font-size: 13px;
-    font-family:'Inter', Arial, Helvetica, 'san serif';
+    font-family:'Lato', Arial, Helvetica, 'san serif';
     font-weight:300;
     text-align: right;
     display: block;
@@ -324,7 +326,6 @@ h4.template-features {
     margin: 0 0 32px 0;
     font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     color: #e4e6eb;
-    letter-spacing: 3px;
 }
 .center{
     text-align: center;
@@ -334,10 +335,10 @@ h3.center{
     font-size: 32px;
 }
 p {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 28px;
     color: #94a6ae;
-    font-family: 'Inter', Arial, Helvetica, 'san serif';
+    font-family: 'Lato', Arial, Helvetica, 'san serif';
     font-weight: 300;
     margin: 0 0 24px 0;
 }
@@ -672,12 +673,13 @@ section.container.home-projects .next-project p{
     margin-top: 0;
 }
 .screenshot-info ul li{
-    font-size: 14px;
+    font-size: 15px;
     padding: 0 0 8px 0;
-    line-height: 24px;
+    margin: 0 0 0 12px;
+    line-height: 25px;
     font-weight: 300;
-    font-family: 'Inter', Arial, Helvetica, 'san serif';
-    list-style: none;
+    font-family: 'Lato', Arial, Helvetica, 'san serif';
+    list-style: disc;
 }
 .screenshots{
     width:62%;
@@ -824,7 +826,6 @@ margin-top: -90px;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
         grid-gap: 2rem;
-        
         clear: both;
     }
     #client-list div{
@@ -835,9 +836,8 @@ margin-top: -90px;
         /*opacity: .8;*/
     }
     #client-list img{
-       /*border: 1px solid #2a3042;*/
+
         padding: 16px 0;
-        border-radius: 8px;
     }
     #client-list div.landscape img{
         width: 80%;
@@ -1116,7 +1116,7 @@ a:hover.about-links{
   line-height: 20px;
   min-height:48px;
   color: #94a6ae;
-  font-family: 'Inter', Arial, Helvetica;
+  font-family: 'Lato', Arial, Helvetica;
   font-weight: 400;
 display: none;
 }
@@ -1365,8 +1365,8 @@ display: none;
     padding: 0 0 160px 0;
 }
 .container.narrow p{
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 15px;
+    line-height: 25px;
   }
 
 
