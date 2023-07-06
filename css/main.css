@@ -104,6 +104,7 @@ width: 100%;
   }
   .container.small-margin{
     margin:64px auto 0 auto;
+    overflow: auto;
   }
   .container.small-margin img{
     border-radius: 8px;
@@ -156,6 +157,7 @@ width: 100%;
     font-size: 42px;
     line-height: 56px;
     text-align: center;
+    letter-spacing: 1px;
 }
 #case-study-summary p{
     font-family: 'Lato','Urbanist','Helvetica', 'Arial', 'Sans-Serif';
@@ -277,6 +279,7 @@ h1 {
     font-weight: 700;
     color: #e4e6eb;
     text-align: center;
+    letter-spacing: -2px;
 }
 h2 {
     font-size: 72px;
@@ -288,7 +291,20 @@ h2 {
     width: 100%;
      margin: 0 0 48px 0;
           color: #e4e6eb;
+          letter-spacing: -2px;
           /*border-bottom: 1px solid #2a3042;*/
+}
+h2.title-padding {
+    font-size: 128px;
+    line-height: 144px;
+     font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
+    font-weight: 700;
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+    width: 1240px;
+    letter-spacing: -2px;
+
 }
 h2.no-margin {
     margin-bottom: 0;
@@ -302,8 +318,8 @@ h3 {
      line-height: 48px;
 }
 h3.small{
-    margin: 100px 0 40px 0;
-    font-size: 13px;
+    margin: 160px 0 40px 0;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;
     font-family: 'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
@@ -441,7 +457,7 @@ margin-top: 70px;
 
 }
 .home-projects a:hover{
-background: #00aeef;
+background: #eb5939;
 text-decoration: none;
 }
 .home-projects a div{
@@ -451,17 +467,18 @@ text-decoration: none;
     margin: 0 auto;
 }
 .home-projects a h3{
-font-size: 88px;
-font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-font-weight: 700;
-margin:4px 0 0 0;
-color: #e4e6eb;
-line-height: 112px;
+    font-size: 80px;
+    font-family: 'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
+    font-weight: 700;
+    margin: 4px 0 0 0;
+    color: #e4e6eb;
+    line-height: 104px;
 }
 .home-projects a p{
     margin: 0;
     font-size: 18px;
     line-height: 40px;
+    font-weight: 400;
 }
 .home-projects a strong{
     font-size: 12px;
@@ -484,7 +501,7 @@ line-height: 112px;
 color: #0d0f12;
 }
 .home-projects a:hover strong{
-color: #00aeef;
+color: #eb5939;
 }
 .home-projects a:hover strong{
     background: #0d0f12;
@@ -813,8 +830,8 @@ margin-top: -90px;
         margin-bottom: 40px;
         border: 0;
         padding: 0;
-        font-size: 136px;
-        line-height: 130px;
+        font-size: 128px;
+        line-height: 152px;
 }
 .responsive-views h3{
     margin:0 0 56px 0;
@@ -858,7 +875,7 @@ margin-top: -90px;
         grid-gap: 2rem;
     }
     .row-of-screenshots img{
-        margin-top: 0;
+        margin-top: 40px;
     }
     .container.narrow .screenshot-info-left, .container.narrow .screenshot-info-right{
        width:45%;
@@ -1413,6 +1430,9 @@ height: 1080px;
     max-width: 1420px;
     margin: 56px auto 0 auto;
     grid-gap: 24px 24px; 
+}
+.home-projects li a div{
+    width: 1440px;
 }
 
     }
