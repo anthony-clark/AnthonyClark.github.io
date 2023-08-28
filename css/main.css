@@ -31,8 +31,10 @@ body#lfc nav{
 }
 .darkbg{
     background: #0d0f12;
-    padding:0 0 200px 0;
-    margin-top:200px;
+    padding: 0 0 200px 0;
+    margin: 200px auto 0 auto;
+    border-radius: 16px;
+    max-width: 1600px;
     display: flow-root;
 }
 .darkbg-simple{
@@ -161,8 +163,8 @@ width: 100%;
 }
 #case-study-summary p{
     font-family: 'Lato','Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-    font-size: 15px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 32px;
     margin-top: 0;
     color: #94a6ae;
 }
@@ -374,8 +376,10 @@ background-size:cover;
 background-position: center;
 height: 400px;
 clear: both;
-margin-top:200px;
+margin:200px auto 0 auto;
 background-color: #0F131A;
+max-width: 1600px;
+border-radius: 16px;
 }
 .hero-image h2 {
     font-size: 128px;
@@ -1381,9 +1385,13 @@ display: none;
     line-height: 48px;
     padding: 0 0 160px 0;
 }
+#case-study-summary p{
+    font-size: 22px;
+    line-height: 40px;
+}
 .container.narrow p{
-    font-size: 15px;
-    line-height: 25px;
+    font-size: 22px;
+    line-height: 32px;
   }
 
 
