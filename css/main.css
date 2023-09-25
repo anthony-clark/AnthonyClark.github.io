@@ -29,13 +29,12 @@ body#lfc nav{
   padding: 0;
   position: relative;
   clear: both;
-  overflow: auto;
+  display: flow-root;
 }
 .darkbg{
     background: #0d0f12;
     padding: 0 0 200px 0;
     margin: 200px auto 0 auto;
-    border-radius: 16px;
     max-width: 1600px;
     display: flow-root;
 }
@@ -377,7 +376,7 @@ height: 400px;
 clear: both;
 margin:200px auto 0 auto;
 background-color: #0F131A;
-max-width: 1600px;
+
 border-radius: 16px;
 }
 .hero-image h2 {
@@ -430,7 +429,7 @@ border-radius: 16px;
 
 #featured-projects ul li{
     margin: 0 40px 0 0;
-    width: 22.9%;
+    width: 22.5%;
     list-style: none;
     float: left;
 }
@@ -720,6 +719,57 @@ border: 0;
 
 
 
+#diversepixels{
+    clear: both;
+    background: #86A0B2;
+    border-radius: 16px;
+padding: 56px;
+margin-bottom:160px;
+}
+#diversepixels h2{
+    padding: 0;
+    color: #142C46;
+    margin-bottom: 24px;
+    font-size: 44px;
+    line-height: 48px;
+    width: 480px;
+}
+#diversepixels p{
+    color: #142C46;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+#diversepixels a.button{
+    margin: 0;
+    background: #142C46;
+    color:  #86A0B2;
+    border-color:  #86A0B2;
+}
+a.button{
+    width: 200px; 
+    color: #e4e6eb; 
+    background:none; 
+    font-size: .85em;
+    font-weight: 700; 
+    margin:24px auto; 
+    padding: 16px 24px; 
+    border: 2px solid #e4e6eb; 
+    text-decoration: none;
+    border-radius: 100px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
+    text-transform: uppercase;
+}
+a.button:hover{
+    width: 200px; 
+    color:#272727; 
+    background:#e4e6eb; 
+    border: 2px solid #e4e6eb; 
+}
+
 
 
 
@@ -1001,7 +1051,7 @@ section.container.project-list .next-project p{
     width: 45%;
 }
 .screenshot img, .screenshots-alt img{
-box-shadow: 10px 40px 40px rgb(14 20 26);
+/*box-shadow: 10px 40px 40px rgb(14 20 26);*/
 
 }
 .screenshot img.no-shadow, .screenshots-alt img.no-shadow{
