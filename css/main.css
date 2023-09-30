@@ -22,10 +22,31 @@ body#lfc nav{
     position: relative
 }
 
-
+a.button{
+    width:fit-content; 
+    color: #ffffff; 
+    background:none; 
+    font-size: .85em;
+    font-weight: 800; 
+    padding: 16px 24px; 
+    border: 2px solid #e4e6eb; 
+    text-decoration: none;
+    border-radius: 100px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
+    text-transform: uppercase;
+}
+a.button:hover{
+    color:#272727; 
+    background:#e4e6eb; 
+    border: 2px solid #e4e6eb;
+    text-decoration: none;
+}
 .container{
   max-width:1240px; 
-  margin:200px auto 0 auto;
+  margin:300px auto 0 auto;
   padding: 0;
   position: relative;
   clear: both;
@@ -33,14 +54,14 @@ body#lfc nav{
 }
 .darkbg{
     background: #0d0f12;
-    padding: 0 0 200px 0;
-    margin: 200px auto 0 auto;
+    padding: 0 0 300px 0;
+    margin: 300px auto 0 auto;
     max-width: 1600px;
     display: flow-root;
 }
 .darkbg-simple{
     background: #0d0f12;
-    padding:0 0 200px 0;
+    padding:0 0 300px 0;
 float: left;
 width: 100%;
 }
@@ -62,10 +83,36 @@ width: 100%;
 }
   .container.key-projects{
     min-height: 820px;
-
-
   }
-
+  #home-hero{
+  border-radius: 16px;
+  background-color: #00aeef;
+  padding: 48px 88px 80px 88px;
+  margin: 80px auto 24px auto;
+  }
+  #home-hero h1{
+  font-size: 200px; 
+  color: #1a1f29;
+  text-align: left;
+  margin-left: -100px;
+  }
+  #home-hero h2{
+    color: #1a1f29;
+    font-size:24px;
+    line-height: 32px;
+    font-weight:300;
+    letter-spacing: -.2px;
+    width:40%;
+    margin: 0 0 32px 0;
+    padding: 0;
+}
+#home-hero a.button{
+    color: #1a1f29;
+    border-color:#1a1f29;
+}
+#home-hero a.button:hover{
+    background:#1a1f29 ;
+}
 .container.project-summary{
     margin:120px auto 0 auto;
   }
@@ -94,7 +141,7 @@ width: 100%;
 
 .container.narrow{
     max-width:960px; 
-    margin:200px auto 0 auto;
+    margin:300px auto 0 auto;
     display: block;
   }
   .container.narrow-small-margin{
@@ -276,7 +323,7 @@ h1 {
     line-height: 175px;
     font-family: 'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     margin: 40px 0 20px 0;
-    font-weight: 700;
+    font-weight: 800;
     color: #e4e6eb;
     text-align: center;
     letter-spacing: -2px;
@@ -285,7 +332,7 @@ h2 {
     font-size: 80px;
     line-height: 68px;
      font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-    font-weight: 700;
+    font-weight: 800;
     padding-bottom: 56px;
     display: block;
     width: 100%;
@@ -298,7 +345,7 @@ h2.title-padding {
     font-size: 128px;
     line-height: 144px;
      font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-    font-weight: 700;
+    font-weight: 800;
     padding: 0;
     margin: 0 auto;
     display: block;
@@ -312,14 +359,15 @@ h2.no-margin {
 h3 {
     font-size: 44px;
      font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-    font-weight: 700;
+    font-weight: 800;
      margin: 40px 0 40px 0;
      color: #e4e6eb;
      line-height: 48px;
 }
 h3.small{
-    margin: 160px 0 40px 0;
-    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
     text-transform: uppercase;
     font-weight: 600;
     font-family: 'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
@@ -338,7 +386,7 @@ h4{
 }
 h4.template-features {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 800;
     margin: 0 0 32px 0;
     font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     color: #e4e6eb;
@@ -359,7 +407,7 @@ p {
     margin: 0 0 24px 0;
 }
 p  strong{
-font-weight: 700;
+font-weight: 800;
 }
 img{
     width: 100%;
@@ -374,7 +422,7 @@ background-size:cover;
 background-position: center;
 height: 400px;
 clear: both;
-margin:200px auto 0 auto;
+margin:300px auto 0 auto;
 background-color: #0F131A;
 
 border-radius: 16px;
@@ -425,13 +473,18 @@ border-radius: 16px;
 #featured-projects ul{
     padding: 0;
     margin:0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #featured-projects ul li{
     margin: 0 40px 0 0;
-    width: 22.5%;
+    width: 48%;
     list-style: none;
     float: left;
+}
+#featured-projects ul li.no-margin{
+    margin: 0;
 }
 #featured-projects ul li:last-child{
     margin:0;
@@ -446,7 +499,7 @@ border-radius: 16px;
     transition: background-position .50s ease-in-out;
     -moz-transition: background .50s ease-in-out;
     -webkit-transition: background .50s ease-in-out;
-    height: 444px;
+    height: 280px;
     padding:24px 32px 32px 32px;
 }
 
@@ -460,10 +513,11 @@ border-radius: 16px;
 }
 .home-featured-projects h3{
   margin: 0;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 64px;
+  line-height: 64px;
   color: #e4e6eb;
   margin-bottom: 8px;
+  margin-left:-36px;
 }
 
 
@@ -503,7 +557,7 @@ border-radius: 16px;
   background-color: #D1F0FF;
 }
 .home-featured-projects.barclays a:hover{
-    background-size: 200%;
+    background-size: 300%;
     background-position: -145px -210px;
   }
 .home-featured-projects.barclays a h3, .home-featured-projects.barclays a p{ 
@@ -533,7 +587,7 @@ border-radius: 16px;
   background-size: 195%;
   background-position: -175px -45px;
   background-color: #D2D5D7;
-  margin-top: 260px;
+  margin-top: 32px;
 }
 .home-featured-projects.lexus a:hover{
   background-position: -202px -60px;
@@ -553,7 +607,7 @@ border-radius: 16px;
   background-size: 210%;
   background-position: -345px -25px;
   background-color: #EBEBD3;
-  margin-top: -40px;
+  margin-top: -110px;
 }
 
 .home-featured-projects.lfc a:hover{
@@ -722,55 +776,51 @@ border: 0;
 #diversepixels{
     clear: both;
     background: #86A0B2;
+    background-image: url(../images/homepage/diversepixels-bg.png);
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: right;
     border-radius: 16px;
-padding: 56px;
-margin-bottom:160px;
+    padding: 88px 56px 80px 56px;
+    margin-bottom: 160px;
+    position: relative;
 }
 #diversepixels h2{
     padding: 0;
-    color: #142C46;
+    color: #1a1f29;
     margin-bottom: 24px;
-    font-size: 44px;
+    margin-left: -62px;
+    font-size: 88px;
     line-height: 48px;
     width: 480px;
+    letter-spacing: -.9px;
 }
 #diversepixels p{
-    color: #142C46;
+    color: #1a1f29;
     font-size: 24px;
-    line-height: 40px;
+    line-height: 32px;
+    width:40%
 }
 
 #diversepixels a.button{
     margin: 0;
-    background: #142C46;
+    color:  #1a1f29;
+    border-color:  #1a1f29;
+}
+#diversepixels a.button:hover{
+    margin: 0;
     color:  #86A0B2;
-    border-color:  #86A0B2;
-}
-a.button{
-    width: 200px; 
-    color: #e4e6eb; 
-    background:none; 
-    font-size: .85em;
-    font-weight: 700; 
-    margin:24px auto; 
-    padding: 16px 24px; 
-    border: 2px solid #e4e6eb; 
-    text-decoration: none;
-    border-radius: 100px;
-    cursor: pointer;
-    display: block;
-    text-align: center;
-    font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-    text-transform: uppercase;
-}
-a.button:hover{
-    width: 200px; 
-    color:#272727; 
-    background:#e4e6eb; 
-    border: 2px solid #e4e6eb; 
+    border-color:  #1a1f29;
+    background: #1a1f29;
 }
 
 
+#diversepixels img{
+    width: 520px;
+    position: absolute;
+    right: 24px;
+    top: -105px;
+}
 
 
 
@@ -811,7 +861,7 @@ text-decoration: none;
 .project-list a h3{
     font-size: 80px;
     font-family: 'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-    font-weight: 700;
+    font-weight: 800;
     margin: 4px 0 0 0;
     color: #e4e6eb;
     line-height: 104px;
@@ -830,7 +880,7 @@ text-decoration: none;
     color: #1B222F;
     padding: 4px 12px;
     border-radius: 4px;
-    font-weight: 700;
+    font-weight: 800;
     font-family: 'Urbanist', Arial, Helvetica !important;
 }
 .project-list a span{
@@ -868,7 +918,7 @@ color: #eb5939;
         font-size: .25em; 
         margin:0; 
         display: block; 
-        font-weight: 700;
+        font-weight: 800;
         text-transform: uppercase;
     }
     .next-project h2{
@@ -878,7 +928,7 @@ color: #eb5939;
     line-height: .95em;
     width:450px;
     border: 0;
-    font-weight: 700;
+    font-weight: 800;
 
 }
 
@@ -890,11 +940,11 @@ font-size: 1.2em;
 
 
     .next-project a{
-        width: 200px; 
+        width: 300px; 
         color: #e4e6eb; 
         background:none; 
         font-size: .85em;
-        font-weight: 700; 
+        font-weight: 800; 
         margin:24px auto; 
         padding: 16px 24px; 
         border: 2px solid #e4e6eb; 
@@ -907,7 +957,7 @@ font-size: 1.2em;
         text-transform: uppercase;
     }
     .next-project a:hover{
-        width: 200px; 
+        width: 300px; 
         color:#272727; 
         background:#e4e6eb; 
         border: 1px solid #e4e6eb; 
@@ -1012,13 +1062,13 @@ section.container.project-list .next-project p{
 .container.screenshot{
     display: flex;
     justify-content: space-between;
-    margin-top:200px;
+    margin-top:300px;
 }
 .container.screenshots-alt{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin-top:200px;
+    margin-top:300px;
 }
 
 .screenshot-info{
@@ -1105,7 +1155,7 @@ margin-top: -90px;
     font-size: 2em;
     line-height: 1em;
      font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-    font-weight: 700;
+    font-weight: 800;
      color: #e4e6eb;
   }
   section.project-list ul li a span{
@@ -1209,7 +1259,7 @@ margin-top: -90px;
     }
 
     .row-of-screenshots{
-        max-width:1200px; 
+        max-width:1300px; 
         margin:0 auto 0 auto;
         display: grid;
         padding: 0 32px;
@@ -1257,7 +1307,7 @@ h2.home-work{
 }
 .current-role p{
     color: #ffffff;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 24px;
     font-size: 20px;
     font-family: 'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
@@ -1317,6 +1367,9 @@ h2.home-work{
 
         margin-bottom: 104px;
       }
+      .slider.container {
+      margin:0 auto;
+    }
       .slider img{
         height: 60px;
       }
@@ -1515,7 +1568,7 @@ height: 1080px;
     @media only screen and (max-width: 960px) {
 
         body {
-        background-size: 200%;
+        background-size: 300%;
         background-position-x: center;
         }
         h1 {
@@ -1805,7 +1858,7 @@ height: 1080px;
                 font-size: 18px; 
                 margin:0; 
                 display: block; 
-                font-weight: 700;
+                font-weight: 800;
                 text-transform: uppercase;
             }
             .next-project h2{
@@ -1884,7 +1937,7 @@ height: 1080px;
         font-size: 48px; 
     margin:0 0 8px 0;
 line-height: 56px;
-width:200px;
+width:300px;
 
 }
 section div.container.project-list{
@@ -1950,7 +2003,7 @@ a.about-links{
         color: #e4e6eb; 
         background:none; 
         font-size: .85em;
-        font-weight: 700; 
+        font-weight: 800; 
         margin:0 auto 24px auto; 
         padding: 16px 24px; 
         border: 2px solid #e4e6eb; 
@@ -1963,7 +2016,7 @@ a.about-links{
         text-transform: uppercase;
 }
 a:hover.about-links{
-    width: 200px; 
+    width: 300px; 
     color:#272727; 
     background:#e4e6eb; 
     border: 2px solid #e4e6eb; 
