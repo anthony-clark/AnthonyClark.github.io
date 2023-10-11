@@ -482,7 +482,7 @@ border-radius: 16px;
     width: 48%;
     list-style: none;
     float: left;
-    position: relative;
+
 }
 #featured-projects ul li.no-margin{
     margin: 0;
@@ -499,12 +499,15 @@ border-radius: 16px;
     transition: background-position .50s ease-in-out;
     -moz-transition: background .50s ease-in-out;
     -webkit-transition: background .50s ease-in-out;
-    padding:24px 32px 32px 32px;
+    padding:8px 32px 32px 32px;
+    position: relative;
+
 }
 .home-featured-projects a img{
-position: absolute;
-right: 0;
-top: 80px;
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    width: 290px;
 }
 .home-featured-projects p{
   font-size: 16px;
@@ -521,8 +524,9 @@ top: 80px;
   font-size: 80px;
   line-height: 96px;
   color: #1a1f29;
-  margin-bottom: 8px;
-  margin-left:-38px;
+  margin-bottom: 16px;
+  margin-left: -38px;
+  letter-spacing: -0.69;
 }
 .home-featured-projects span{
     background:#1a1f29 ;
@@ -558,13 +562,11 @@ top: 80px;
 
 }
 .home-featured-projects.barclays a{
-  background-size: 180%;
-  background-position: -115px -170px;
-  background-color: #ADFCF9;
+    background: #adfcf9 url(../images/homepage/shine.png) top right no-repeat;
+    background-size: 82%;
 }
 .home-featured-projects.barclays a:hover{
-    background-size: 300%;
-    background-position: -145px -210px;
+
   }
 /*.home-featured-projects.barclays a h3, .home-featured-projects.barclays a p{ 
     color: #003C5D;
@@ -587,14 +589,13 @@ top: 80px;
 
 
 .home-featured-projects.lexus a{
-  background-size: 195%;
-  background-position: -175px -45px;
-  background-color: #D1DAEC;
+
   margin-top: 32px;
+  background: #D1DAEC url(../images/homepage/shine.png) top right no-repeat;
+  background-size: 82%;
 }
 .home-featured-projects.lexus a:hover{
-  background-position: -202px -60px;
-  background-size: 210%;
+
 }
 /*
 .home-featured-projects.lexus a h3, .home-featured-projects.lexus a p{ 
@@ -606,15 +607,13 @@ top: 80px;
 
 
 .home-featured-projects.lfc a{
-  background-size: 210%;
-  background-position: -345px -25px;
-  background-color: #FC1255;
   margin-top: -110px;
+  background: #FC1255 url(../images/homepage/shine.png) top right no-repeat;
+    background-size: 82%;
 }
 
 .home-featured-projects.lfc a:hover{
-  background-size: 230%;
-  background-position: -395px -45px;
+
 }
 /*
 .home-featured-projects.lfc a h3, .home-featured-projects.lfc a p{ 
@@ -627,14 +626,12 @@ top: 80px;
 
 
 .home-featured-projects.playmaker a{
-  background-size: 260%;
-  background-position: -265px -15px;
-  background-color: #C8FF95;
+    background: #C8FF95 url(../images/homepage/shine.png) top right no-repeat;
+    background-size: 82%;
   margin-top: 140px;
 }
 .home-featured-projects.playmaker a:hover{
-  background-size: 290%;
-  background-position: -305px -45px;
+
 }
 /*.home-featured-projects.playmaker a h3, .home-featured-projects.playmaker a p{ 
     color: #253A1C;
