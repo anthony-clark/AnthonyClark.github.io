@@ -84,6 +84,12 @@ width: 100%;
   .container.key-projects{
     min-height: 820px;
   }
+  .archive{
+    background: #101419;
+    padding: 40px 0 40px 0;
+    margin: 0 auto 0 auto;
+    display: flow-root;
+}
   #home-hero{
   border-radius: 16px;
   background-color: #00aeef;
@@ -330,7 +336,7 @@ h1 {
 }
 h2 {
     font-size: 120px;
-    line-height: 68px;
+    line-height: 120px;
      font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     font-weight: 800;
     padding-bottom: 56px;
@@ -499,34 +505,33 @@ border-radius: 16px;
     transition: background-position .50s ease-in-out;
     -moz-transition: background .50s ease-in-out;
     -webkit-transition: background .50s ease-in-out;
-    padding:8px 32px 32px 32px;
+    padding:16px 32px 32px 32px;
     position: relative;
 
 }
 .home-featured-projects a img{
     position: absolute;
-    right: 0;
+    right: 16px;
     bottom: 10%;
-    width: 290px;
+    width: 305px;
 }
 .home-featured-projects p{
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 28px;
   color: #1a1f29;
-  font-family: 'Inter', Arial, Helvetica;
-  font-weight: 400;
+  font-family: 'Lato', Arial, Helvetica;
+  font-weight: 300;
   margin-bottom: 16px;
   width:220px;
-  min-height: 64px;
 }
 .home-featured-projects h3{
   margin: 0;
   font-size: 80px;
   line-height: 96px;
   color: #1a1f29;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   margin-left: -38px;
-  letter-spacing: -0.69;
+  letter-spacing: -2px;
 }
 .home-featured-projects span{
     background:#1a1f29 ;
@@ -607,7 +612,7 @@ border-radius: 16px;
 
 
 .home-featured-projects.lfc a{
-  margin-top: -110px;
+  margin-top: -130px;
   background: #FC1255 url(../images/homepage/shine.png) top right no-repeat;
     background-size: 82%;
 }
@@ -628,7 +633,7 @@ border-radius: 16px;
 .home-featured-projects.playmaker a{
     background: #C8FF95 url(../images/homepage/shine.png) top right no-repeat;
     background-size: 82%;
-  margin-top: 140px;
+  margin-top: 160px;
 }
 .home-featured-projects.playmaker a:hover{
 
@@ -688,15 +693,29 @@ img.small-archive-image{
     grid-gap: 40px;
     margin-bottom: 160px;
   }
+  #bio h2{
+    margin: 0 0 16px 0;
+    padding: 0;
+}
+
+  #bio h3{
+    font-weight: 300;
+    margin: 0 0 32px 0;
+} 
+
+#bio p{
+    font-size: 18px;
+} 
+
 #headshot img{
 width: 320px;
   }
 #bio{
     width: 640px;
-    margin-top: 112px;
+    margin-top: 284px;
 }
 #history{
-margin-top: 360px;
+margin-top: 868px;
 }
 
 ul.experience{
@@ -788,7 +807,7 @@ border: 0;
 #diversepixels h2{
     padding: 0;
     color: #1a1f29;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     margin-left: -64px;
     font-size: 120px;
     line-height: 120px;
@@ -799,7 +818,8 @@ border: 0;
     color: #1a1f29;
     font-size: 24px;
     line-height: 32px;
-    width:40%
+    width:40%;
+    margin-bottom:32px;
 }
 
 #diversepixels a.button{
@@ -1348,6 +1368,29 @@ h2.home-work{
     grid-gap: 2rem;
 }
 
+footer{
+    margin:160px 0 0 0;
+}
+footer h2{
+    margin: 0 0 8px 0;
+    padding: 0;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
+    color: #e4e6eb;
+    float: left;
+    width: 100%;
+    letter-spacing: 3px;
+    text-align: center;
+}
+footer a{
+    display: block;
+    width: 48px;
+    height: 48px;
+    color: #ffffff;
+
+}
  
 
 
