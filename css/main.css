@@ -1,6 +1,7 @@
 body {
     color: #94a6ae;
-    font-size: .95em;
+    font-size: 16px;
+    line-height: 1.6em;
     margin:0;
     padding:0;
     background: #1a1f29;
@@ -21,7 +22,52 @@ body#lfc nav{
     width: 100%;
     position: relative
 }
+.heading1Bold{
+    font-size:11.089rem;
+    font-weight: 800;
+    font-family: 'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
+    margin: 40px 0 20px 0;
+    color: #e4e6eb;
+    text-align: center;
+    letter-spacing: -2px;
+}
+.heading2Bold{
+    font-size:6.854rem;
+    font-weight: 800;
+}
+.heading3Bold{
+    font-size:4.236rem;
+    font-weight: 800;
+}
+.heading4Bold{
+    font-size:2.618rem;
+    font-weight: 800;
+}
+.heading5Bold{
+    font-size:1.618rem;
+    font-weight: 800;
+}
 
+.heading1Light{
+    font-size:11.089rem;
+    font-weight: 300;
+}
+.heading2Light{
+    font-size:6.854rem;
+    font-weight: 300;
+}
+.heading3BLight{
+    font-size:4.236rem;
+    font-weight: 300;
+}
+.heading4Light{
+    font-size:2.618rem;
+    font-weight: 300;
+}
+.heading5BLight{
+    font-size:1.618rem;
+    font-weight: 300;
+}
 a.button{
     width:fit-content; 
     color: #ffffff; 
@@ -97,15 +143,14 @@ width: 100%;
   margin: 80px auto 24px auto;
   }
   #home-hero h1{
-  font-size: 160px; 
+    font-size:11.089rem;
   color: #1a1f29;
   text-align: left;
   margin-left: -100px;
   }
   #home-hero h2{
     color: #1a1f29;
-    font-size:24px;
-    line-height: 32px;
+    font-size:21.618rem;
     font-weight:300;
     letter-spacing: -.2px;
     width:40%;
@@ -190,7 +235,6 @@ width: 100%;
 
 #case-study-meta h2{
     font-size: 1em;
-    line-height: 1.7em;
     margin:0;
 }
 #case-study-summary{
@@ -207,8 +251,7 @@ width: 100%;
     padding: 0 0 120px 0;
     margin: 32px 0 40px 0;
     border-bottom: 1px solid #2a3042;
-    font-size: 40px;
-    line-height: 56px;
+    font-size: 2.618rem;
     text-align: center;
     letter-spacing: 1px;
 }
@@ -220,8 +263,8 @@ width: 100%;
     color: #94a6ae;
 }
 #case-study-aims h3, #case-study-deliverables h3, #case-study-summary h3{
-    margin: 0 0 16px 0;
-    font-size: 13px;
+    margin: 0 0 32px 0;
+    font-size: 0.8rem;
     text-transform: uppercase;
     font-weight: 600;
     font-family: 'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
@@ -325,8 +368,7 @@ nav span{
     display: block;
 }
 h1 {
-    font-size: 160px;
-    line-height: 176px;
+    font-size:11.089rem;
     font-family: 'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     margin: 40px 0 20px 0;
     font-weight: 800;
@@ -335,8 +377,7 @@ h1 {
     letter-spacing: -2px;
 }
 h2 {
-    font-size: 120px;
-    line-height: 120px;
+    font-size: 6.854rem;
      font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     font-weight: 800;
     padding-bottom: 56px;
@@ -348,8 +389,7 @@ h2 {
           /*border-bottom: 1px solid #2a3042;*/
 }
 h2.title-padding {
-    font-size: 128px;
-    line-height: 144px;
+    font-size: 6.854rem;
      font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     font-weight: 800;
     padding: 0;
@@ -363,17 +403,16 @@ h2.no-margin {
     margin-bottom: 0;
 }
 h3 {
-    font-size: 40px;
+    font-size: 2.618rem;
      font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     font-weight: 800;
      margin: 40px 0 40px 0;
      color: #e4e6eb;
-     line-height: 48px;
 }
 h3.small{
-    margin: 0 0 8px 0;
+    margin: 16px 0 32px 0;
     padding: 0;
-    font-size: 13px;
+    font-size: 0.8rem;
     text-transform: uppercase;
     font-weight: 600;
     font-family: 'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
@@ -402,11 +441,10 @@ h4.template-features {
 }
 h3.center{
     font-weight: 300;
-    font-size: 32px;
+    font-size: 1.618rem;
 }
 p {
-    font-size: 15px;
-    line-height: 28px;
+
     color: #94a6ae;
     font-family: 'Lato', Arial, Helvetica, 'san serif';
     font-weight: 300;
@@ -434,8 +472,7 @@ background-color: #0F131A;
 border-radius: 16px;
 }
 .hero-image h2 {
-    font-size: 120px;
-    line-height: 144px;
+    font-size: 6.854rem;
     color: #e4e6eb;
     display: grid;
     align-items: center;
@@ -526,8 +563,7 @@ border-radius: 16px;
 }
 .home-featured-projects h3{
   margin: 0;
-  font-size: 80px;
-  line-height: 96px;
+  font-size: 4.236rem;
   color: #1a1f29;
   margin-bottom: 8px;
   margin-left: -38px;
@@ -809,8 +845,7 @@ border: 0;
     color: #1a1f29;
     margin-bottom: 16px;
     margin-left: -64px;
-    font-size: 120px;
-    line-height: 120px;
+    font-size: 6.854rem;
     width: 480px;
     letter-spacing: -3px;
 }
@@ -879,12 +914,11 @@ text-decoration: none;
     margin: 0 auto;
 }
 .project-list a h3{
-    font-size: 80px;
+    font-size: 4.236rem;
     font-family: 'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     font-weight: 800;
     margin: 4px 0 0 0;
     color: #e4e6eb;
-    line-height: 104px;
 }
 .project-list a p{
     margin: 0;
@@ -935,14 +969,14 @@ color: #eb5939;
     text-align: left;
     }
     .next-project h2 span{
-        font-size: .25em; 
+        font-size: .25rem; 
         margin:0; 
         display: block; 
         font-weight: 800;
         text-transform: uppercase;
     }
     .next-project h2{
-        font-size: 4.5em; 
+        font-size: 4.5rem; 
         margin:0 0 16px 0;
         padding:20px 0 0 0;
     line-height: .95em;
@@ -1044,9 +1078,8 @@ font-size: 1.2em;
             display: none;
         }
         section.container.project-list .next-project h3{
-            font-size: 64px; 
+            font-size: 4.236rem; 
             margin:0 0 8px 0;
-        line-height: 64px;
         width:380px;
     
     }
@@ -1210,7 +1243,7 @@ margin-top: -90px;
     background: #00019e;
     }
     .project h3{
-        font-size: 4em;
+        font-size: 4rem;
         margin-bottom:16px;
     }
     .project span{
@@ -1242,8 +1275,7 @@ margin-top: -90px;
         margin-bottom: 40px;
         border: 0;
         padding: 0;
-        font-size: 128px;
-        line-height: 152px;
+        font-size: 6.854rem;
 }
 .responsive-views h3{
     margin:0 0 56px 0;
@@ -1304,8 +1336,7 @@ margin-top: -90px;
 }
 
 h2.home-work{
-    font-size: 120px;
-    line-height: 144px;
+    font-size: 6.854rem;
     border-bottom: 0;
     margin-bottom: 64px;
     padding: 0;
@@ -1336,7 +1367,7 @@ h2.home-work{
 }
 .current-role p strong{
     padding: 4px 8px;
-    font-size: 12px;
+    font-size: 0.7rem;
     font-weight: 800;
     background: #0F131A;
     border-radius: 4px;
@@ -1374,7 +1405,7 @@ footer{
 footer h2{
     margin: 0 0 8px 0;
     padding: 0;
-    font-size: 13px;
+    font-size: 0.9rem;
     text-transform: uppercase;
     font-weight: 600;
     font-family: 'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
@@ -1543,8 +1574,7 @@ footer a{
     clear: both;
 }
 #case-study-intro h2 {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 2.618rem;
     padding: 0 0 160px 0;
 }
 #case-study-summary p{
@@ -1559,22 +1589,18 @@ footer a{
 
 
 h1 {
-    font-size: 204px;
-    line-height: 270px;
+    font-size: 29.03rem;
 }
 h2 {
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 4.236rem;
 }
 
 h3 {
-    font-size: 52px;
-    line-height: 56px;
+    font-size: 2.618rem;
 }
 
 .responsive-views h2 {
-    font-size: 136px;
-    line-height: 144px;
+    font-size: 4.236rem;
 }
 ul li {
     font-size: 16px;
@@ -1589,8 +1615,7 @@ height: 1080px;
 }
 
 .hero-image h2{
-    font-size: 172px;
-    line-height: 188px;
+    font-size: 6.854rem;
     height: 1650px;
 }
 .image-grid{
@@ -1615,8 +1640,7 @@ height: 1080px;
         background-position-x: center;
         }
         h1 {
-            font-size: 104px;
-            line-height: 104px;
+            font-size: 6.854rem;
         }
     
         .container{
@@ -1656,8 +1680,7 @@ height: 1080px;
             }
             
             #case-study-intro h2{
-                font-size: 32px;
-                line-height: 40px;
+                font-size: 2.618rem;
             }
             #case-study-aims{
                 float:left;
@@ -1692,8 +1715,7 @@ height: 1080px;
                 height: 320px;
             }
             .hero-image h2{
-                font-size: 88px;
-                line-height: 90px;
+                font-size: 4.236rem;
                 height: 350px;
                 border-bottom: 0;
             }
@@ -1720,12 +1742,11 @@ height: 1080px;
                     width: 330px;
                         }
             .responsive-views h2{
-                font-size: 98px;
-                line-height: 104px;
+                font-size: 6.854rem;
             }
             .responsive-views h3{
-                font-size: 32px;
-                line-height: 40px;
+                font-size: 1.618rem;
+
         }
         
         .row-of-screenshots{
@@ -1802,28 +1823,26 @@ height: 1080px;
             .hero-image h2 {
             width: 85%;
             margin: 0;
-            font-size: 48px;
-            line-height: 56px;
+            font-size: 2.618rem;
             height: 850px;
             text-align: left;
              }
             h1 {
-                font-size: 56px;
-                line-height: 64px;
+                font-size: 4.236rem;
                 margin-top: 64px;
             }
            
             h3 {
-                font-size: 36px;
+                font-size: 2.618rem;
             }
             h3.center{
-                font-size: 1.5em;
+                font-size: 2.618rem;
             }
             ul li{
-                font-size: 16px;
+                font-size: 1rem;
             }
             p {
-                font-size: 16px;
+                font-size: 1rem;
             }
             #case-study-summary{
                 float:none;
@@ -1831,7 +1850,7 @@ height: 1080px;
                 padding-right:0;
             }
             #case-study-intro h2{
-                font-size: 32px;
+                font-size: 1.618rem;
     line-height: 40px;
             }
             #case-study-aims{
@@ -1905,9 +1924,8 @@ height: 1080px;
                 text-transform: uppercase;
             }
             .next-project h2{
-                font-size: 48px; 
+                font-size: 1rem; 
                 margin:24px 0 8px 0;
-            line-height: 56px;
             width:250px;
         
         }
@@ -1936,13 +1954,12 @@ height: 1080px;
                 
             }
             .responsive-views h2 {
-                font-size: 48px;
-                line-height: 56px;
+                font-size: 2.618rem;
                 margin: 0 auto;
                 width: 70%;
             }
         .responsive-views h3{
-            font-size: 26px; 
+            font-size: 1.618rem; 
     }
 
     .responsive-views{
@@ -1977,9 +1994,8 @@ height: 1080px;
         display: none;
     }
     section div.container.project-list .next-project h2{
-        font-size: 48px; 
+        font-size: 2.618rem; 
     margin:0 0 8px 0;
-line-height: 56px;
 width:300px;
 
 }
@@ -2015,30 +2031,25 @@ section div.container.project-list{
     }
     .more-my-projects h3{
          color: #e4e6eb;
-         font-size: 20px;
-         line-height: 18px;
+         font-size: 1.618rem;
          width: 80%;
     }
     .more-my-projects span.material-icons-outlined{
         color: #e4e6eb;
-        line-height: 18px;
         text-align: right;
         width: 10%;
         padding-left: 0;
    }
    h2.latest-projects-title{
-    font-size: 48px;
-    line-height: 54px;
+    font-size: 2.618rem;
     margin-bottom: 32px;
     padding: 0;
 }
 .about-intro h2{
-    font-size: 48px;
-    line-height: 54px;
+    font-size: 2.618rem;
 }
 .about-intro h3{
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 1.618rem;
 
 }
 a.about-links{
