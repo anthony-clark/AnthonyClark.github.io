@@ -116,14 +116,14 @@ a.button:hover, a.button-small:hover{
 }
 .darkbg{
     background: #0d0f12;
-    padding: 0 0 300px 0;
-    margin: 300px auto 0 auto;
+    padding: 0;
+    margin: 200px auto 0 auto;
     max-width: 1600px;
     display: flow-root;
 }
 .darkbg-simple{
     background: #0d0f12;
-    padding:0 0 300px 0;
+    padding:0 0 200px 0;
 float: left;
 width: 100%;
 }
@@ -132,17 +132,12 @@ width: 100%;
     padding:0 0 0 0;
     display: flow-root;
 }
-.darkbg.thumbnail img{
-    margin-top:-180px;
-}
 .darkbg.thumbnail-opta{
     background: #101419;
     padding:0 0 0 0;
     display: flow-root;
 }
-.darkbg.thumbnail-opta img{
-    margin-top:-160px;
-}
+
   .container.key-projects{
     min-height: 820px;
   }
@@ -210,7 +205,7 @@ width: 100%;
 
 .container.narrow{
     max-width:960px; 
-    margin:300px auto 0 auto;
+    margin:200px auto 0 auto;
     display: block;
   }
   .container.narrow-small-margin{
@@ -482,7 +477,7 @@ background-size:cover;
 background-position: center;
 height: 400px;
 clear: both;
-margin:300px auto 0 auto;
+margin:200px auto 0 auto;
 background-color: #0F131A;
 
 border-radius: 16px;
@@ -1145,13 +1140,27 @@ section.container.project-list .next-project p{
 .container.screenshot{
     display: flex;
     justify-content: space-between;
-    margin-top:300px;
+    margin-top:200px;
 }
 .container.screenshots-alt{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin-top:300px;
+    margin-top:200px;
+}
+
+.container.screenshot-snapshot{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+.container.screenshots-snapshot-alt{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin:200px auto 0 autp;
+    align-items: center;
 }
 
 .screenshot-info{
