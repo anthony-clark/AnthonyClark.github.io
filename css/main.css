@@ -117,7 +117,7 @@ a.button:hover, a.button-small:hover{
 .darkbg{
     background: #0d0f12;
     padding: 0;
-    margin: 200px auto 0 auto;
+    margin: 0 auto 0 auto;
     max-width: 1600px;
     display: flow-root;
 }
@@ -129,7 +129,8 @@ width: 100%;
 }
 .darkbg.thumbnail{
     background: #101419;
-    padding:0 0 0 0;
+    padding:0;
+    margin: 0 auto;
     display: flow-root;
 }
 .darkbg.thumbnail-opta{
@@ -522,17 +523,23 @@ border-radius: 16px;
     background-image: url("../images/playmaker/playermaker-template-hero-v2.jpg");
     background-position: 0% 30%;
 }
-
+#featured-projects.container{
+    margin-top: 120px;
+}
+#featured-projects h2{
+    display: none;
+}
 
 #featured-projects ul{
     padding: 0;
-    margin:80px 0 0 0;
+    margin:0;
     display: flex;
     flex-wrap: wrap;
 }
 
 #featured-projects ul li{
-    margin: 0 40px 0 0;
+    margin: 0 48px 0 0;
+    padding: 0;
     width: 48%;
     list-style: none;
     float: left;
@@ -560,7 +567,7 @@ border-radius: 16px;
 .home-featured-projects a img{
     position: absolute;
     right: 16px;
-    bottom: 10%;
+    bottom: 9%;
     width: 305px;
 }
 .home-featured-projects p{
@@ -569,16 +576,16 @@ border-radius: 16px;
   color: #1a1f29;
   font-family: 'Lato', Arial, Helvetica;
   font-weight: 300;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   width:220px;
 }
 .home-featured-projects h3{
   margin: 0;
-  font-size: 4.236rem;
+  font-size: 5.236rem;
   color: #1a1f29;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   margin-left: -38px;
-  letter-spacing: -2px;
+  letter-spacing: -3px;
 }
 .home-featured-projects span{
     background:#1a1f29 ;
@@ -617,6 +624,9 @@ border-radius: 16px;
     background: #adfcf9 url(../images/homepage/shine.png) top right no-repeat;
     background-size: 82%;
 }
+.home-featured-projects.barclays span.material-icons-outlined{
+    color: #adfcf9;
+}
 .home-featured-projects.barclays a:hover{
 
   }
@@ -642,9 +652,12 @@ border-radius: 16px;
 
 .home-featured-projects.lexus a{
 
-  margin-top: 32px;
+  margin-top: 48px;
   background: #C5D5E4 url(../images/homepage/shine.png) top right no-repeat;
   background-size: 82%;
+}
+.home-featured-projects.lexus span.material-icons-outlined{
+    color: #C5D5E4;
 }
 .home-featured-projects.lexus a:hover{
 
@@ -659,11 +672,13 @@ border-radius: 16px;
 
 
 .home-featured-projects.lfc a{
-  margin-top: -130px;
+  margin-top: -112px;
   background: #E2EB98 url(../images/homepage/shine.png) top right no-repeat;
     background-size: 82%;
 }
-
+.home-featured-projects.lfc span.material-icons-outlined{
+    color: #E2EB98;
+}
 .home-featured-projects.lfc a:hover{
 
 }
@@ -681,6 +696,9 @@ border-radius: 16px;
     background: #D6FF79 url(../images/homepage/shine.png) top right no-repeat;
     background-size: 82%;
   margin-top: 160px;
+}
+.home-featured-projects.playmaker span.material-icons-outlined{
+    color: #D6FF79;
 }
 .home-featured-projects.playmaker a:hover{
 
@@ -1153,13 +1171,15 @@ section.container.project-list .next-project p{
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    padding:  48px 0;
     align-items: center;
 }
 .container.screenshots-snapshot-alt{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin:200px auto 0 autp;
+    margin:0 auto 0 auto;
+    padding:  48px 0;
     align-items: center;
 }
 
@@ -1314,7 +1334,7 @@ margin-top: -90px;
 .conclusion ul{
     display: flex;
     grid-gap: 40px;
-    flex-wrap: no-wrap;
+    flex-wrap: wrap;
     margin-bottom: 40px;
 
 }
@@ -1325,7 +1345,7 @@ margin-top: -90px;
     padding: 24px 32px;
     list-style: none;
     text-align: center;
-    width:25%;
+    width:22%;
 }
 .conclusion ul li strong{
     font-family: 'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
@@ -1442,10 +1462,10 @@ h2.home-work{
     grid-template-rows: 1fr 1fr;
     max-width: 1220px;
     margin: 56px auto 0 auto;
-    grid-gap: 24px 24px; 
+    grid-gap: 48px 48px; 
 }
 .image-grid img{
-    border-radius: 4px;
+    border-radius: 12px;
 }
 .work{
     display: grid;
@@ -1456,7 +1476,7 @@ h2.home-work{
 footer{
     margin:160px 0 0 0;
 }
-footer h2{
+#bio h4{
     margin: 16px 0 24px 0;
     padding: 0;
     font-size: 0.8rem;
@@ -1467,32 +1487,32 @@ footer h2{
     float: left;
     width: 100%;
     letter-spacing: 3px;
-    text-align: center;
     line-height: 1.6rem;
 }
 
-footer ul{
+#bio ul{
     clear: both;
     display: flex;
     margin: 0 auto;
-    grid-gap: 40px;
+    grid-gap: 32px;
     list-style: none;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: left;
 
 }
-footer ul li{
+#bio ul li{
     list-style: none;
     font-weight: 600;
     font-family: 'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     font-size: 1.618rem;
+    margin: 0;
 }
-footer ul li a{
+#bio ul li a{
     display: block;
     color: #ffffff;
     text-decoration: underline;
 }
-footer ul li a:hover{
+#bio ul li a:hover{
     color: #94a6ae;
 }
 
