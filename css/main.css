@@ -257,9 +257,7 @@ max-width:1240px;
     width:55%;
     padding-right:64px;
 }
-#case-study-intro{
-    overflow: auto;
-}
+
 #case-study-intro h2{
     font-family: 'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     font-weight: 300;
@@ -1001,31 +999,35 @@ color: #eb5939;
     color: #0d0f12;
 }
 .next-project{
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size:auto; 
-    background-position: left;
+    background: #101419;
     clear: both;
-    margin-top:0;
-    padding: 160px 0;
+    margin:160px auto;
+
     align-items: center;
     text-align: center;
+    max-width:1600px;
+    }
+    .next-project a{
+        display: block;
+        padding: 0 0 160px 0;
     }
     .next-project a h2 strong{
-        font-size: 1rem; 
-        margin:0; 
-        display: block; 
-        font-weight: 800;
-        text-transform: uppercase;
-        letter-spacing: 0;
-        line-height: 2.618rem;
+        margin: 0 0 24px 0;
+        padding:0;
+font-size: 0.8rem;
+text-transform: uppercase;
+font-weight: 600;
+font-family: 'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
+color: #e4e6eb;
+letter-spacing: 3px;
+display: block;
     }
     .next-project a h2{
-        font-size: 5.6rem; 
-        margin:0 auto 16px auto;
+        font-size: 6.854rem; 
+        margin:0 auto 32px auto;
         padding:20px 0 0 0;
     line-height: 1em;
-    width:450px;
+    width:768px;
     border: 0;
     font-weight: 800;
 
@@ -1037,31 +1039,26 @@ color: #eb5939;
         font-size: 1.618rem;
         color: #f1f1f1;
         padding-top: 16px;
+        margin-bottom: 80px;
     }
 .next-project a span{
-    font-size: 24px;
-    line-height: 24px;
-    color: #f1f1f1;
+    font-size: 32px;
+    line-height:32px;
+    color: #101419;
     transition: padding .24s ease-in-out;
     -moz-transition: padding .24s ease-in-out;
     -webkit-transition: padding .24s ease-in-out;
-    padding: 16px;
+    padding: 24px;
     border-radius: 40px;
     background: #00aeef;
 }
 .next-project a:hover span.material-icons-outlined{
-padding:16px 16px 16px 64px;
+padding:24px 24px 24px 64px;
 }
     .next-project a:hover{
         text-decoration: none;
     }
 
-    .next-project{
-        background-attachment: scroll;
-        background-size: cover;
-        background-position: right;
-        background-color: #1A202C;
-    }
     .next-project.efc{
         background-image: url("../images/efc/next-project-efc.jpg");
     }
@@ -1310,12 +1307,12 @@ margin-top: -90px;
     .conclusion{
         
         background:#0d0f12;
-        padding: 1px 0 160px 0;
+        padding: 1px 0 40px 0;
         clear: both;
         margin-top: 160px;
     }
     .conclusion div.container{
-        margin-top: 136px;
+        margin-top: 80px;
     }
     .conclusion h2{
         margin-bottom: 88px;
@@ -1676,7 +1673,7 @@ footer{
 
 
 h1 {
-    font-size: 29.03rem;
+    font-size: 19.03rem;
 }
 h2 {
     font-size: 4.236rem;
@@ -1694,7 +1691,7 @@ ul li {
     line-height: 24px;
 }
 nav{
-    /*background-image:none;*/
+    background-image:none;
     }
 .hero-image{
 
@@ -1715,6 +1712,17 @@ height: 1080px;
 }
 .project-list li a div{
     width: 1440px;
+}
+.darkbg.thumbnail{
+border-radius: 24px;
+}
+.conclusion{
+    max-width: 1600px;
+margin: 160px auto 0 auto;
+border-radius: 24px;
+}
+.next-project{
+    border-radius:24px;
 }
 
     }
