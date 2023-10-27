@@ -2,7 +2,7 @@ body {
     color: #94a6ae;
     font-size: 16px;
     line-height: 1.6em;
-    margin:0 0 40px 0;
+    margin:0;
     padding:0;
     background: #1a1f29;
     background-image: url("../images/watermark.png");
@@ -11,9 +11,7 @@ body {
     background-size: 1280px;  
     background-position: center right;  
 }
-html{
-    overflow-x: hidden;
-}
+
 body#lfc nav{
     background-image:linear-gradient(to bottom,rgb(26, 32, 39) 0%,rgba(26, 32, 39, 0) 100%);
     }
@@ -153,6 +151,9 @@ width: 100%;
   background-color: #00aeef;
   padding: 32px 88px 80px 88px;
   margin: 80px auto 24px auto;
+  }
+  #home-hero.container{
+max-width:1240px;
   }
   #home-hero h1{
     font-size:11.089rem;
@@ -1004,62 +1005,57 @@ color: #eb5939;
     background-repeat: no-repeat;
     background-size:auto; 
     background-position: left;
-    height: 450px;
     clear: both;
     margin-top:0;
-    padding-top: 32px;
-    align-items: left;
-    text-align: left;
+    padding: 160px 0;
+    align-items: center;
+    text-align: center;
     }
-    .next-project h2 span{
-        font-size: .25rem; 
+    .next-project a h2 strong{
+        font-size: 1rem; 
         margin:0; 
         display: block; 
         font-weight: 800;
         text-transform: uppercase;
+        letter-spacing: 0;
+        line-height: 2.618rem;
     }
-    .next-project h2{
-        font-size: 4.5rem; 
-        margin:0 0 16px 0;
+    .next-project a h2{
+        font-size: 5.6rem; 
+        margin:0 auto 16px auto;
         padding:20px 0 0 0;
-    line-height: .95em;
+    line-height: 1em;
     width:450px;
     border: 0;
     font-weight: 800;
 
 }
 
-    .next-project p{
-color: #e4e6eb;
-margin-bottom: 4px;
-font-size: 1.2em;
+    .next-project a p{
+        font-family: 'Lato', Arial, Helvetica;
+        font-weight: 300;
+        font-size: 1.618rem;
+        color: #f1f1f1;
+        padding-top: 16px;
     }
-
-
-    .next-project a{
-        width: 300px; 
-        color: #e4e6eb; 
-        background:none; 
-        font-size: .85em;
-        font-weight: 800; 
-        margin:24px auto; 
-        padding: 16px 24px; 
-        border: 2px solid #e4e6eb; 
-        border-radius: 100px;
-        cursor: pointer;
-        display: block;
-        text-align: center;
-        position: absolute;
-        font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-        text-transform: uppercase;
-    }
+.next-project a span{
+    font-size: 24px;
+    line-height: 24px;
+    color: #f1f1f1;
+    transition: padding .24s ease-in-out;
+    -moz-transition: padding .24s ease-in-out;
+    -webkit-transition: padding .24s ease-in-out;
+    padding: 16px;
+    border-radius: 40px;
+    background: #00aeef;
+}
+.next-project a:hover span.material-icons-outlined{
+padding:16px 16px 16px 64px;
+}
     .next-project a:hover{
-        width: 300px; 
-        color:#272727; 
-        background:#e4e6eb; 
-        border: 1px solid #e4e6eb; 
         text-decoration: none;
     }
+
     .next-project{
         background-attachment: scroll;
         background-size: cover;
@@ -1171,7 +1167,7 @@ section.container.project-list .next-project p{
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding:  48px 0;
+    padding:  160px 0;
     align-items: center;
 }
 .container.screenshots-snapshot-alt{
@@ -1179,7 +1175,7 @@ section.container.project-list .next-project p{
     flex-direction: row-reverse;
     justify-content: space-between;
     margin:0 auto 0 auto;
-    padding:  48px 0;
+    padding:  160px 0;
     align-items: center;
 }
 
@@ -1319,7 +1315,7 @@ margin-top: -90px;
         margin-top: 160px;
     }
     .conclusion div.container{
-        margin-top: 88px;
+        margin-top: 136px;
     }
     .conclusion h2{
         margin-bottom: 88px;
@@ -1342,7 +1338,7 @@ margin-top: -90px;
     background:#1a1f29;
     border-radius: 8px;
     margin: 0;
-    padding: 24px 32px;
+    padding: 40px 32px;
     list-style: none;
     text-align: center;
     width:22%;
