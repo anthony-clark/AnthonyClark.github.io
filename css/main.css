@@ -116,7 +116,7 @@ a.button:hover, a.button-small:hover{
     background: #0d0f12;
     padding: 0;
     margin: 0 auto 0 auto;
-    max-width: 1600px;
+    max-width: 1300px;
     display: flow-root;
 }
 .darkbg-simple{
@@ -127,9 +127,10 @@ width: 100%;
 }
 .darkbg.thumbnail{
     background: #101419;
-    padding:0;
+    padding:0 80px;
     margin: 0 auto;
     display: flow-root;
+    border-radius: 16px;
 }
 .darkbg.thumbnail-opta{
     background: #101419;
@@ -218,6 +219,7 @@ max-width:1240px;
   .container.small-margin{
     margin:64px auto 0 auto;
     overflow: auto;
+    max-width: 1080px;
   }
   .container.small-margin img{
     border-radius: 8px;
@@ -265,7 +267,6 @@ max-width:1240px;
     margin: 0 0 40px 0;
     border-bottom: 1px solid #2a3042;
     font-size: 2.618rem;
-    text-align: center;
     letter-spacing: 1px;
 }
 #case-study-summary p{
@@ -324,7 +325,7 @@ top: 0;
 nav div#logo{
 
     text-align: right;
-margin: 12px 24px 0 0;
+margin: 12px 16px 0 0;
 }
 nav div#logo div{
     float: left;
@@ -352,7 +353,7 @@ nav a span.material-icons-outlined{
     font-size: 40px;
     display: grid;
     align-items: center;
-    width:72px;
+    width:56px;
     height: 40px;
     transition: width 0.3s ease-out;
 }
@@ -368,7 +369,7 @@ nav a:hover{
 }
 nav img{
     width: 110px;
-    margin: 12px 0 2px 0;
+    margin: 12px 0 -2px 0;
 
 }
 nav span{
@@ -384,7 +385,6 @@ h1 {
     margin: 40px 0 20px 0;
     font-weight: 800;
     color: #e4e6eb;
-    text-align: center;
     letter-spacing: -2px;
 }
 h2 {
@@ -480,14 +480,13 @@ clear: both;
 margin:200px auto 0 auto;
 background-color: #0F131A;
 
-border-radius: 16px;
 }
 .hero-image h2 {
     font-size: 6.854rem;
     color: #e4e6eb;
     display: grid;
     align-items: center;
-    text-align: center;
+    text-align: left;
     height: 380px;
     margin: 0;
     padding-bottom: 0;
@@ -1001,7 +1000,7 @@ color: #eb5939;
 .next-project{
     background: #101419;
     clear: both;
-    margin:160px auto;
+    margin:160px auto 0 auto;
 
     align-items: center;
     text-align: center;
@@ -1009,12 +1008,13 @@ color: #eb5939;
     }
     .next-project a{
         display: block;
-        padding: 0 0 160px 0;
+        padding: 0 0 80px 0;
     }
     .next-project a h2 strong{
-        margin: 0 0 24px 0;
+        margin: 60px 0 24px 0;
         padding:0;
 font-size: 0.8rem;
+line-height: normal;
 text-transform: uppercase;
 font-weight: 600;
 font-family: 'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
@@ -1053,12 +1053,15 @@ display: block;
     background: #00aeef;
 }
 .next-project a:hover span.material-icons-outlined{
-padding:24px 24px 24px 64px;
+padding:24px 24px 24px 128px;
 }
     .next-project a:hover{
         text-decoration: none;
+        color: #94a6ae;
     }
-
+    .next-project a:hover p, .next-project a:hover h2, .next-project a:hover strong{
+        color: #94a6ae;
+    }
     .next-project.efc{
         background-image: url("../images/efc/next-project-efc.jpg");
     }
@@ -1085,7 +1088,7 @@ padding:24px 24px 24px 64px;
     }
     .next-project .container{
         display: block;
-        margin-top: 0;
+        margin: 0 auto;
     }
     section.projects{
     background: #151A23;
@@ -1152,12 +1155,14 @@ section.container.project-list .next-project p{
     display: flex;
     justify-content: space-between;
     margin-top:200px;
+    max-width: 1140px;
 }
 .container.screenshots-alt{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     margin-top:200px;
+    max-width: 1140px;
 }
 
 .container.screenshot-snapshot{
@@ -1174,6 +1179,7 @@ section.container.project-list .next-project p{
     margin:0 auto 0 auto;
     padding:  160px 0;
     align-items: center;
+    max-width: 1140px;
 }
 
 .screenshot-info{
@@ -1305,11 +1311,12 @@ margin-top: -90px;
         bottom: 0;;
     }
     .conclusion{
-        
+        max-width:1300px;
         background:#0d0f12;
-        padding: 1px 0 40px 0;
+        padding: 1px 80px 40px 80px;
         clear: both;
-        margin-top: 160px;
+        margin: 160px auto 0 auto;
+        border-radius: 16px;
     }
     .conclusion div.container{
         margin-top: 80px;
@@ -1338,7 +1345,7 @@ margin-top: -90px;
     padding: 40px 32px;
     list-style: none;
     text-align: center;
-    width:22%;
+    width:22.3%;
 }
 .conclusion ul li strong{
     font-family: 'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
@@ -1453,9 +1460,9 @@ h2.home-work{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    max-width: 1220px;
-    margin: 56px auto 0 auto;
-    grid-gap: 48px 48px; 
+    max-width: 1140px;
+    margin: 56px auto 160px auto;
+    grid-gap: 24px 24px; 
 }
 .image-grid img{
     border-radius: 12px;
@@ -1707,7 +1714,7 @@ height: 1080px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     max-width: 1420px;
-    margin: 56px auto 0 auto;
+    margin: 56px auto 160px auto;
     grid-gap: 24px 24px; 
 }
 .project-list li a div{
