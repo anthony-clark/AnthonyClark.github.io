@@ -116,7 +116,7 @@ a.button:hover, a.button-small:hover{
     background: #0d0f12;
     padding: 0;
     margin: 0 auto 0 auto;
-    max-width: 1300px;
+    max-width: 1240px;
     display: flow-root;
 }
 .darkbg-simple{
@@ -150,7 +150,7 @@ width: 100%;
   #home-hero{
   border-radius: 16px;
   background-color: #00aeef;
-  padding: 32px 88px 80px 88px;
+  padding:56px 88px 88px 88px;
   margin: 80px auto 24px auto;
   }
   #home-hero.container{
@@ -181,9 +181,34 @@ max-width:1240px;
     background:#1a1f29 ;
 }
 .container.project-summary{
-    margin:88px auto 0 auto;
+    margin:48px auto 0 auto;
   }
-
+  #case-study-hero{
+    border-radius: 16px;
+    background-color: #00aeef;
+    padding:64px 88px 88px 88px;
+    margin: 96px auto 24px auto;
+    }
+    #case-study-hero.container{
+  max-width:1240px;
+    }
+    #case-study-hero h1{
+      font-size:11.089rem;
+      line-height: 12rem;
+    color: #1a1f29;
+    text-align: left;
+    margin:24px 0 40px -100px
+    }
+    #case-study-hero h2{
+      color: #1a1f29;
+      font-size:2.618rem;
+      line-height: 3.2rem;
+      font-weight:300;
+      letter-spacing: -.2px;
+      width:90%;
+      margin: 0 0 32px 0;
+      padding: 0;
+  }
 .nav-container{
     margin: 0 auto;
     max-width:1220px; 
@@ -325,7 +350,7 @@ top: 0;
 nav div#logo{
 
     text-align: right;
-margin: 12px 16px 0 0;
+margin: 12px 24px 0 0;
 }
 nav div#logo div{
     float: left;
@@ -353,7 +378,7 @@ nav a span.material-icons-outlined{
     font-size: 40px;
     display: grid;
     align-items: center;
-    width:56px;
+    width:72px;
     height: 40px;
     transition: width 0.3s ease-out;
 }
@@ -1155,14 +1180,14 @@ section.container.project-list .next-project p{
     display: flex;
     justify-content: space-between;
     margin-top:200px;
-    max-width: 1140px;
+
 }
 .container.screenshots-alt{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     margin-top:200px;
-    max-width: 1140px;
+
 }
 
 .container.screenshot-snapshot{
@@ -1179,7 +1204,7 @@ section.container.project-list .next-project p{
     margin:0 auto 0 auto;
     padding:  160px 0;
     align-items: center;
-    max-width: 1140px;
+    max-width: 1080px;
 }
 
 .screenshot-info{
@@ -1311,7 +1336,7 @@ margin-top: -90px;
         bottom: 0;;
     }
     .conclusion{
-        max-width:1300px;
+        max-width:1240px;
         background:#0d0f12;
         padding: 1px 80px 40px 80px;
         clear: both;
@@ -1345,7 +1370,7 @@ margin-top: -90px;
     padding: 40px 32px;
     list-style: none;
     text-align: center;
-    width:22.3%;
+    width:22%;
 }
 .conclusion ul li strong{
     font-family: 'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
@@ -1460,9 +1485,9 @@ h2.home-work{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    max-width: 1140px;
+    max-width: 1240px;
     margin: 56px auto 160px auto;
-    grid-gap: 24px 24px; 
+    grid-gap: 32px 32px; 
 }
 .image-grid img{
     border-radius: 12px;
