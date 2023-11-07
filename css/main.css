@@ -4,7 +4,7 @@ body {
     line-height: 1.6em;
     margin:0;
     padding:0;
-    background: #1a1f29;
+    background: #1a1f29 ;
     background-image: url("../images/watermark.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -12,6 +12,9 @@ body {
     background-position: center right;  
 }
 
+hr {
+    border: 1px solid #94a6ae;
+  }
 body#lfc nav{
     background-image:linear-gradient(to bottom,rgb(26, 32, 39) 0%,rgba(26, 32, 39, 0) 100%);
     }
@@ -19,52 +22,6 @@ body#lfc nav{
  
     width: 100%;
     position: relative
-}
-.heading1Bold{
-    font-size:11.089rem;
-    font-weight: 800;
-    font-family: 'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
-    margin: 40px 0 20px 0;
-    color: #e4e6eb;
-    text-align: center;
-    letter-spacing: -2px;
-}
-.heading2Bold{
-    font-size:6.854rem;
-    font-weight: 800;
-}
-.heading3Bold{
-    font-size:4.236rem;
-    font-weight: 800;
-}
-.heading4Bold{
-    font-size:2.618rem;
-    font-weight: 800;
-}
-.heading5Bold{
-    font-size:1.618rem;
-    font-weight: 800;
-}
-
-.heading1Light{
-    font-size:11.089rem;
-    font-weight: 300;
-}
-.heading2Light{
-    font-size:6.854rem;
-    font-weight: 300;
-}
-.heading3BLight{
-    font-size:4.236rem;
-    font-weight: 300;
-}
-.heading4Light{
-    font-size:2.618rem;
-    font-weight: 300;
-}
-.heading5BLight{
-    font-size:1.618rem;
-    font-weight: 300;
 }
 a.button{
     width:fit-content; 
@@ -414,7 +371,7 @@ h1 {
 }
 h2 {
     font-size: 6.854rem;
-    line-height: 6.854rem;
+    line-height: 7.6rem;
      font-family:'Urbanist','Helvetica', 'Arial', 'Sans-Serif';
     font-weight: 800;
     display: block;
@@ -437,6 +394,38 @@ h2.title-padding {
 }
 h2.no-margin {
     margin-bottom: 0;
+}
+#featured-projects h2{
+    margin-bottom:72px;
+    width: 48%;
+    clear: both;
+    }
+#featured-projects h2 span{
+    font-size: 0.85rem;
+    letter-spacing: normal;
+    margin-top: -57px;
+    letter-spacing: 3px;
+    display: block;
+    padding-right:24px;
+    width: fit-content;
+    line-height: 80px;
+    background: #1a1f29;
+}
+#about h2{
+    margin-bottom:72px;
+    width: 100%;
+    clear: both;
+    }
+#about h2 span{
+    font-size: 0.85rem;
+    letter-spacing: normal;
+    margin-top: -57px;
+    letter-spacing: 3px;
+    display: block;
+    padding-right:24px;
+    width: fit-content;
+    line-height: 80px;
+    background: #1a1f29;
 }
 h3 {
     font-size: 2.618rem;
@@ -546,12 +535,7 @@ background-color: #0F131A;
     background-image: url("../images/playmaker/playermaker-template-hero-v2.jpg");
     background-position: 0% 30%;
 }
-#featured-projects.container{
-    margin-top: 120px;
-}
-#featured-projects h2{
-    display: none;
-}
+
 
 #featured-projects ul{
     padding: 0;
@@ -789,11 +773,7 @@ img.small-archive-image{
 }
 
 
-#about{
-    display: flex;
-    grid-gap: 40px;
-    margin-bottom: 160px;
-  }
+
   #bio h2{
     margin: 0 0 16px 0;
     padding: 0;
@@ -1384,9 +1364,10 @@ margin-top: -90px;
 
     #client-list{
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
         grid-gap: 2rem;
         clear: both;
+        align-content: center;
     }
     #client-list div{
         height: 120px;
